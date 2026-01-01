@@ -111,7 +111,8 @@
         <p>© 2026 Seurausten talo – Itseoppiva & autonominen muisti</p>
     </footer>
 
-    <script>
+        <script>
+        // 6 päävaihetta virtausnäkymään
         const phases = [
             {
                 key: 1,
@@ -151,6 +152,51 @@
             }
         ];
 
+        // 30×30-nimistö: P1–P30, V1–V30, S1–S30, SO1–SO30, K1–K30, M1–M30
+        const phaseSlotNames = {
+            PAATOS: Array.from({ length: 30 }, (_, i) => ({
+                id: i + 1,
+                code: "P" + (i + 1),
+                label: "Päätös – kohta " + (i + 1)
+            })),
+            VAIKUTUS: Array.from({ length: 30 }, (_, i) => ({
+                id: i + 1,
+                code: "V" + (i + 1),
+                label: "Vaikutus – kohta " + (i + 1)
+            })),
+            SEURAUKSET: Array.from({ length: 30 }, (_, i) => ({
+                id: i + 1,
+                code: "S" + (i + 1),
+                label: "Seuraukset – kohta " + (i + 1)
+            })),
+            SOPEUTUMINEN: Array.from({ length: 30 }, (_, i) => ({
+                id: i + 1,
+                code: "SO" + (i + 1),
+                label: "Sopeutuminen – kohta " + (i + 1)
+            })),
+            KERTAUTUMINEN: Array.from({ length: 30 }, (_, i) => ({
+                id: i + 1,
+                code: "K" + (i + 1),
+                label: "Kertautuminen – kohta " + (i + 1)
+            })),
+            MUUTOS_NORMIKSI: Array.from({ length: 30 }, (_, i) => ({
+                id: i + 1,
+                code: "M" + (i + 1),
+                label: "Muutos normiksi – kohta " + (i + 1)
+            }))
+        };
+
+        // 30×30‑näkymässä käytettävät 6 vaihetta koodilla
+        const phases30x30 = [
+            { id: 1, name: "Päätös", code: "PAATOS" },
+            { id: 2, name: "Vaikutus", code: "VAIKUTUS" },
+            { id: 3, name: "Seuraukset", code: "SEURAUKSET" },
+            { id: 4, name: "Sopeutuminen", code: "SOPEUTUMINEN" },
+            { id: 5, name: "Kertautuminen", code: "KERTAUTUMINEN" },
+            { id: 6, name: "Muutos normiksi", code: "MUUTOS_NORMIKSI" }
+        ];
+
+        // Virtausnäkymän tilanhallinta
         let currentIndex = 0;
 
         const phaseLabelEl = document.getElementById("phase-label");
@@ -192,113 +238,95 @@
             renderPhase();
         }
 
-        // Alustetaan näkymä
+        // --- 30×30‑UI: klikattavat slotit ja placeholder-tekstit ---
+
+        function getSlotPlaceholder(phase, index) {
+            const map = {
+                "PAATOS": "P",
+                "VAIKUTUS": "V",
+                "SEURAUKSET": "S",
+                "SOPEUTUMINEN": "SO",
+                "KERTAUTUMINEN": "K",
+                "MUUTOS_NORMIKSI": "M"
+            };
+            const prefix = map[phase.code] || "";
+            const code = prefix + index;
+
+            return (
+                phase.id + ") " + phase.name + " – " + code + ". " +
+                "Paikka yksittäiselle havainnolle, caselle tai indikaattorille, " +
+                "joka liittyy tähän kohtaan Seurausten talon 30×30-rakenteessa."
+            );
+        }
+
+        function render30x30Matrix() {
+            const container = document.getElementById("matrix-30x30");
+            const detailBox = document.getElementById("slot-detail");
+            const detailTitle = document.getElementById("slot-title");
+            const detailDescription = document.getElementById("slot-description");
+
+            if (!container) return; // varmistus, jos sivulla ei ole 30×30-sektiota
+
+            container.innerHTML = "";
+
+            phases30x30.forEach(phase => {
+                const block = document.createElement("div");
+                block.style.marginBottom = "20px";
+                block.style.borderTop = "1px solid #eee";
+                block.style.paddingTop = "15px";
+
+                const title = document.createElement("h3");
+                title.textContent = phase.id + ") " + phase.name + " (" + phase.code + ")";
+                title.style.margin = "0 0 8px 0";
+                title.style.color = "#2c3e50";
+
+                const hint = document.createElement("p");
+                hint.textContent = "Klikkaa jotakin kohdista 1–30 tarkentaaksesi, mitä tähän paikkaan voidaan kirjata.";
+                hint.style.margin = "0 0 8px 0";
+                hint.style.fontSize = "0.9em";
+                hint.style.color = "#7f8c8d";
+
+                const slotsWrapper = document.createElement("div");
+                slotsWrapper.style.display = "flex";
+                slotsWrapper.style.flexWrap = "wrap";
+                slotsWrapper.style.gap = "4px";
+
+                for (let i = 1; i <= 30; i++) {
+                    const slot = document.createElement("div");
+                    slot.textContent = i;
+                    slot.style.width = "30px";
+                    slot.style.height = "30px";
+                    slot.style.display = "flex";
+                    slot.style.alignItems = "center";
+                    slot.style.justifyContent = "center";
+                    slot.style.borderRadius = "4px";
+                    slot.style.border = "1px solid " + "#ddd";
+                    slot.style.fontSize = "0.8em";
+                    slot.style.cursor = "pointer";
+                    slot.style.userSelect = "none";
+                    slot.title = phase.name + " – kohta " + i;
+
+                    slot.addEventListener("click", () => {
+                        detailTitle.textContent = phase.id + ") " + phase.name + " – " + i;
+                        detailDescription.textContent = getSlotPlaceholder(phase, i);
+                        detailBox.style.display = "block";
+                        detailBox.scrollIntoView({ behavior: "smooth", block: "center" });
+                    });
+
+                    slotsWrapper.appendChild(slot);
+                }
+
+                block.appendChild(title);
+                block.appendChild(hint);
+                block.appendChild(slotsWrapper);
+                container.appendChild(block);
+            });
+        }
+
+        // Alustetaan virtaus + 30×30-näkymä
         renderPhase();
+        render30x30Matrix();
     </script>
-    <section class="section">
-    <h2>30×30-rakenne (versio 0.2)</h2>
-    <p>
-        Alla näkyy, miten jokainen kuudesta päävaiheesta voidaan jakaa 30 alakohtaan. 
-        Klikkaa kohtaa nähdäksesi sille varatun paikan kuvauksen (paikkaholder).
-    </p>
-
-    <div id="matrix-30x30" style="max-width: 1000px; margin: 20px auto; background: white; border-radius: 10px; padding: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.08);">
-        <!-- Täytetään JavaScriptillä -->
-    </div>
-
-    <div id="slot-detail" style="max-width: 1000px; margin: 10px auto 0 auto; background: #ecf0f1; border-radius: 8px; padding: 15px; font-size: 0.95em; display: none;">
-        <strong id="slot-title"></strong>
-        <p id="slot-description" style="margin-top: 8px;"></p>
-    </div>
-</section>
-
-<script>
-    // 6 päävaihetta, jokaisella 30 paikkaa
-    const phases30x30 = [
-        { id: 1, name: "Päätös", code: "PAATOS" },
-        { id: 2, name: "Vaikutus", code: "VAIKUTUS" },
-        { id: 3, name: "Seuraukset", code: "SEURAUKSET" },
-        { id: 4, name: "Sopeutuminen", code: "SOPEUTUMINEN" },
-        { id: 5, name: "Kertautuminen", code: "KERTAUTUMINEN" },
-        { id: 6, name: "Muutos normiksi", code: "MUUTOS_NORMIKSI" }
-    ];
-
-    // Yksinkertaiset, geneeriset paikkaholder-kuvaukset – nämä voi myöhemmin korvata oikealla datalla
-    function getSlotPlaceholder(phase, index) {
-        return (
-            "Vaihe " + phase.id + " – " + phase.name + ", kohta " + index + ". " +
-            "Tämä on paikkavaraus yksittäiselle havainnolle, caselle tai indikaattorille, " +
-            "joka liittyy tähän kohtaan Seurausten talon 30×30-rakenteessa."
-        );
-    }
-
-    function render30x30Matrix() {
-        const container = document.getElementById("matrix-30x30");
-        const detailBox = document.getElementById("slot-detail");
-        const detailTitle = document.getElementById("slot-title");
-        const detailDescription = document.getElementById("slot-description");
-
-        container.innerHTML = "";
-
-        phases30x30.forEach(phase => {
-            const block = document.createElement("div");
-            block.style.marginBottom = "20px";
-            block.style.borderTop = "1px solid #eee";
-            block.style.paddingTop = "15px";
-
-            const title = document.createElement("h3");
-            title.textContent = phase.id + ") " + phase.name + " (" + phase.code + ")";
-            title.style.margin = "0 0 8px 0";
-            title.style.color = "#2c3e50";
-
-            const hint = document.createElement("p");
-            hint.textContent = "Klikkaa jotakin kohdista 1–30 tarkentaaksesi, mitä tähän paikkaan voidaan kirjata.";
-            hint.style.margin = "0 0 8px 0";
-            hint.style.fontSize = "0.9em";
-            hint.style.color = "#7f8c8d";
-
-            const slotsWrapper = document.createElement("div");
-            slotsWrapper.style.display = "flex";
-            slotsWrapper.style.flexWrap = "wrap";
-            slotsWrapper.style.gap = "4px";
-
-            for (let i = 1; i <= 30; i++) {
-                const slot = document.createElement("div");
-                slot.textContent = i;
-                slot.style.width = "30px";
-                slot.style.height = "30px";
-                slot.style.display = "flex";
-                slot.style.alignItems = "center";
-                slot.style.justifyContent = "center";
-                slot.style.borderRadius = "4px";
-                slot.style.border = "1px solid #ddd";
-                slot.style.fontSize = "0.8em";
-                slot.style.cursor = "pointer";
-                slot.style.userSelect = "none";
-                slot.title = phase.name + " – kohta " + i;
-
-                slot.addEventListener("click", () => {
-                    detailTitle.textContent = phase.id + ") " + phase.name + " – kohta " + i;
-                    detailDescription.textContent = getSlotPlaceholder(phase, i);
-                    detailBox.style.display = "block";
-                    // Scrollataan detail-boksi näkyviin mobiilissa
-                    detailBox.scrollIntoView({ behavior: "smooth", block: "center" });
-                });
-
-                slotsWrapper.appendChild(slot);
-            }
-
-            block.appendChild(title);
-            block.appendChild(hint);
-            block.appendChild(slotsWrapper);
-            container.appendChild(block);
-        });
-    }
-
-    // Alustetaan 30×30-näkymä
-    render30x30Matrix();
-</script>
-    <script>
 // 30×30-nimistö: jokaiselle vaiheelle omat tunnisteet
 const phaseSlotNames = {
     PAATOS: Array.from({ length: 30 }, (_, i) => ({
