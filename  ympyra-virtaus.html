@@ -298,5 +298,61 @@
     // Alustetaan 30×30-näkymä
     render30x30Matrix();
 </script>
+    <script>
+// 30×30-nimistö: jokaiselle vaiheelle omat tunnisteet
+const phaseSlotNames = {
+    PAATOS: Array.from({ length: 30 }, (_, i) => ({
+        id: i + 1,
+        code: "P" + (i + 1),
+        label: "Päätös – kohta " + (i + 1)
+    })),
+    VAIKUTUS: Array.from({ length: 30 }, (_, i) => ({
+        id: i + 1,
+        code: "V" + (i + 1),
+        label: "Vaikutus – kohta " + (i + 1)
+    })),
+    SEURAUKSET: Array.from({ length: 30 }, (_, i) => ({
+        id: i + 1,
+        code: "S" + (i + 1),
+        label: "Seuraukset – kohta " + (i + 1)
+    })),
+    SOPEUTUMINEN: Array.from({ length: 30 }, (_, i) => ({
+        id: i + 1,
+        code: "SO" + (i + 1),
+        label: "Sopeutuminen – kohta " + (i + 1)
+    })),
+    KERTAUTUMINEN: Array.from({ length: 30 }, (_, i) => ({
+        id: i + 1,
+        code: "K" + (i + 1),
+        label: "Kertautuminen – kohta " + (i + 1)
+    })),
+    MUUTOS_NORMIKSI: Array.from({ length: 30 }, (_, i) => ({
+        id: i + 1,
+        code: "M" + (i + 1),
+        label: "Muutos normiksi – kohta " + (i + 1)
+    }))
+};
+
+// Jos haluat käyttää näitä 30×30-UI:ssa, voit muokata getSlotPlaceholder-funktiota näin:
+
+function getSlotPlaceholder(phase, index) {
+    const map = {
+        "PAATOS": "P",
+        "VAIKUTUS": "V",
+        "SEURAUKSET": "S",
+        "SOPEUTUMINEN": "SO",
+        "KERTAUTUMINEN": "K",
+        "MUUTOS_NORMIKSI": "M"
+    };
+    const prefix = map[phase.code] || "";
+    const code = prefix + index;
+
+    return (
+        phase.id + ") " + phase.name + " – " + code + ". " +
+        "Paikka yksittäiselle havainnolle, caselle tai indikaattorille, " +
+        "joka liittyy tähän kohtaan Seurausten talon 30×30-rakenteessa."
+    );
+}
+</script>
 </body>
 </html>
