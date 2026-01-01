@@ -1,146 +1,251 @@
 // data-cases.js
-// Täydellinen data-cases.js Seurausten talon ympyra-virtaus.html-sivulle
-// Sisältää laadukkaita historiallisia ja yhteiskunnallisia esimerkkejä päätöksistä,
-// joiden seuraukset ulottuvat vuosikymmeniin tai vuosisatoihin.
-// Teemat: "Kansallinen lainsäädäntöuudistus, jonka tavoitteena oli yksinkertaistaa järjestelmää ja vähentää kustannuksia kääntyivät päinvastaisiksi. Mielenterveys ja psykiatria, sodan mekanismit, kybersota, kumouksellinen sota, lastensuojelu, työttömyys, pakkotyö, kuntouttava työtoiminta sekä muut yhteiskunnalliset päätökset.
+//  Seurausten talo – data-cases.js
+// Instituution muistikerros: päätökset ja niiden ajallinen elinkaari
+ *
+// Kaikki tapaukset noudattavat samaa rakennetta,
+// jotta vertailu ja jatkuvuuksien tunnistaminen on mahdollista.
+ */
 
-const dataCases = {
-  "cases": [
-    // Mielenterveys ja psykiatria perustuu alan tutkimuksirjallisuuteen )
-    {
-      "title": "Lobotomian käyttö psykiatriassa 1930–1960-luvuilla",
-      "decision": "Lobotomiaa käytettiin laajasti vakavien mielenterveyshäiriöiden hoitona, erityisesti skitsofrenian ja masennuksen kohdalla.",
-      "assumptions": "Leikkaus rauhoittaisi potilaan käytöstä ja mahdollistaisi laitoksista kotiuttamisen ilman merkittäviä riskejä.",
-      "risks": "Pysyvät aivovauriot, persoonallisuuden tuhoutuminen ja kuolemanriski.",
-      "consequences": {
-        "1year": "Potilaiden käytös rauhoittui, mutta monet menettivät aloitekykynsä ja tunne-elämänsä.",
-        "5years": "Kymmeniä tuhansia leikkauksia, mutta haitat alkoivat tulla ilmi.",
-        "10years": "Kritiikki kasvoi, käyttö väheni psykoosilääkkeiden myötä.",
-        "25years": "Lobotomia kiellettiin eettisistä syistä, uhrit kärsivät elinikäisistä vaurioista.",
-        "50years": "Yksi psykiatrian synkimmistä luvuista, johti tiukempiin eettisiin normeihin."
-      }
-    },
-    {
-      "title": "Eugenikka ja pakkosteriloinnit 1900-luvun alkupuolella",
-      "decision": "Useat maat, mukaan lukien Suomi, toteuttivat pakkosterilointeja mielisairaille ja vammaisille 'rodun parantamisen' nimissä.",
-      "assumptions": "Steriloinnit vähentäisivät mielisairauksia tulevissa sukupolvissa.",
-      "risks": "Ihmisoikeusloukkaukset ja väärät diagnoosit.",
-      "consequences": {
-        "1year": "Tuhansia sterilointeja toteutettiin.",
-        "5years": "Käytäntö laajeni, uhrit kärsivät hiljaisuudessa.",
-        "10years": "Natsi-Saksan väärinkäyttö paljasti kauhut.",
-        "25years": "Käytäntö kiellettiin sodan jälkeen, korvauksia alettiin maksaa.",
-        "50years": "Eugenikka nähdään ihmisoikeusrikoksena, vaikuttaa yhä genetiikan etiikkaan."
-      }
-    },
-    {
-      "title": "Suuret mielisairaalat ja institutionalisaatio 1800–1900-luvuilla",
-      "decision": "Mielisairaita eristettiin suuriin laitoksiin 'hoidon ja suojelun' nimissä.",
-      "assumptions": "Eristäminen parantaisi potilaita ja suojelisi yhteiskuntaa.",
-      "risks": "Ylikuormitus, väärinkäyttö ja potilaiden institutionalisoituminen.",
-      "consequences": {
-        "1year": "Laitokset täyttyivät nopeasti.",
-        "5years": "Hoidon laatu laski, olosuhteet karut.",
-        "10years": "Kritiikki kasvoi, reformeja vaadittiin.",
-        "25years": "Laitosten purku alkoi, avohoito kehittyi.",
-        "50years": "Yhteisöpohjainen hoito korvasi laitokset useimmissa maissa."
-      }
-    },
-    {
-      "title": "Rauhoittavien lääkkeiden massakäyttö 1960–1970-luvuilla",
-      "decision": "Bentsodiatsepiineja määrättiin laajasti ahdistukseen ja unettomuuteen.",
-      "assumptions": "Lääkkeet olivat turvallisia ja tehokkaita pitkäaikaiseen käyttöön.",
-      "risks": "Riippuvuus ja vieroitusoireet.",
-      "consequences": {
-        "1year": "Käyttö räjähti, miljoonia reseptejä.",
-        "5years": "Riippuvuustapaukset nousivat voimakkaasti.",
-        "10years": "Sääntely tiukkenee, vaihtoehtoja kehitettiin.",
-        "25years": "Pitkäaikaiset terveyshaitat näkyivät.",
-        "50years": "Varovaisempi määrääminen, opioidi-kriisin kaltaiset opetukset."
-      }
-    },
-{
-"title": "Sosiaalisen median algoritmit 2010-luvulla",
-"decision": "Sosiaalisen median yritykset kehittivät algoritmeja, jotka priorisoivat käyttäjien engagementia sisällön suosittelussa.",
-"assumptions": "Algoritmit lisäisivät käyttäjien aikaa alustalla ja parantaisivat mainostuloja näyttämällä kiinnostavaa sisältöä.",
-"risks": "Filter bubbles, misinformaation leviäminen ja polarisaatio.",
-"consequences": {
-"1year": "Lisääntynyt käyttäjien sitoutuminen ja alustojen kasvu.",
-"5years": "Polarisaation kasvu, mielenterveysongelmat kuten ahdistus ja masennus lapsilla ja nuorilla.",
-"10years": "Väärän tiedon leviäminen, kulttuurin tasoittuminen ja sosiaalinen eristäytyminen.",
-"25years": "Pitkäaikaiset vaikutukset demokratiaan, kuten ekstremististen näkemysten nousu.",
-"50years": "Yhteiskunnallinen jakautuminen ja luottamuksen menetys instituutioihin."
-}
-},
-{
-"title": "Lastensuojelun huostaanotto",
-"decision": "Lastensuojelujärjestelmät poistavat lapsia perheistään ja sijoittavat heidät sijaiskoteihin tai laitoksiin suojellakseen heitä.",
-"assumptions": "Huostaanotto parantaa lasten turvallisuutta ja hyvinvointia verrattuna vaaralliseen kotiympäristöön.",
-"risks": "Traumatisoituminen, väärinkäyttö sijaiskodeissa ja pitkäaikaiset psyykkiset vaikutukset.",
-"consequences": {
-"1year": "Välitön suoja vaaroilta, mutta mahdollinen trauma ja sopeutumisvaikeudet.",
-"5years": "Korkeammat mielenterveysongelmat, kuten masennus ja PTSD, sekä kasvavat kustannukset veronmaksajille.",
-"10years": "Lisääntynyt institutionalisoituminen, rikollisuus ja itsemurhariski.",
-"25years": "Syrjäytyminen, kodittomuus ja köyhyys, mikä johtaa yhteiskunnallisiin kustannuksiin.",
-"50years": "Sukupolvien välinen kierto, jossa entiset sijoitetut lapset kohtaavat samanlaisia ongelmia, edistäen sosiaalista epävakautta."
-}
-},
-    // Sodan mekanismit
-    {
-      "title": "Ensimmäinen maailmansota: Liittoumat ja security dilemma",
-      "decision": "Euroopan suurvallat lukittautuivat sotilasliittoumiin ja reagoivat kriiseihin mobilisaatiolla.",
-      "assumptions": "Liittoumat estäisivät sodan ja nationalismi vahvistaisi yhtenäisyyttä.",
-      "risks": "Ketjureaktiot ja ennaltaehkäisevät iskut.",
-      "consequences": {
-        "1year": "Laaja sota, miljoonia kuolleita.",
-        "5years": "Sota päättyi, mutta taloudellinen romahdus.",
-        "10years": "Revanssihalu ja fasismin nousu.",
-        "25years": "Toinen maailmansota.",
-        "50years": "Kylmä sota ja YK:n perustaminen."
-      }
-    },
-    {
-      "title": "Yksityiset sotilasyritykset (PMC) modernissa sodankäynnissä",
-      "decision": "Valtiot ulkoistivat sotatoimia yksityisille yrityksille (esim. Wagner, Blackwater).",
-      "assumptions": "PMC:t mahdollistaisivat toimet ilman virallista sodanjulistusta.",
-      "risks": "Vastuu kiistettävissä, eskalaatio ja normien mureneminen.",
-      "consequences": {
-        "1year": "Toiminta kasvoi konflikteissa.",
-        "5years": "Wagnerin rooli Afrikassa ja Ukrainassa.",
-        "10years": "PMC:t vakiintuivat hybridisodassa.",
-        "25years": "Sodankäynnin privatisoituminen.",
-        "50years": "Mahdollinen globaali sääntelyn puute."
-      }
-    },
+export const CASE_LIFECYCLE = {
+  1: "Päätös",
+  2: "Vaikutus",
+  3: "Seuraukset",
+  4: "Sopeutuminen",
+  5: "Kertautuminen",
+  6: "Muutos normiksi",
+};
 
-    // Kybersota
-    {
-      "title": "Stuxnet-hyökkäys Iranin ydinohjelmaan 2010",
-      "decision": "Yhdysvallat ja Israel kehittivät kyberaseen tuhoamaan Iranin sentrifugit.",
-      "assumptions": "Hyökkäys viivästyttäisi ohjelmaa ilman fyysistä sotaa.",
-      "risks": "Leviäminen ja vastahyökkäykset.",
-      "consequences": {
-        "1year": "Ohjelma viivästyi merkittävästi.",
-        "5years": "Kyberaseiden olemassaolo paljastui.",
-        "10years": "Valtiot kehittivät omia kyberaseita.",
-        "25years": "Kybersota normalisoitui.",
-        "50years": "Jatkuva eskalaation riski kriiseissä."
-      }
+export const cases = [
+  {
+    id: "energy-fossil-expansion-1950",
+    title: "Fossiilisen energian laajamittainen käyttöönotto",
+    domain: ["energia", "talous", "ympäristö"],
+    timeframe: {
+      decisionYear: 1950,
+      horizon: "1950–2100+",
     },
-    {
-      "title": "NotPetya-kyberhyökkäys 2017",
-      "decision": "Venäjältä lähtöisin oleva tuhoisa haittaohjelma naamioitiin ransomwareksi.",
-      "assumptions": "Hyökkäys pysyisi rajallisena Ukrainassa.",
-      "risks": "Globaali leviäminen toimitusketjuissa.",
-      "consequences": {
-        "1year": "Miljardien vahingot maailmanlaajuisesti.",
-        "5years": "Yritykset investoivat kyberturvaan.",
-        "10years": "Toimitusketjuhyökkäykset yleistyivät.",
-        "25years": "Kriittinen infrastruktuuri haavoittuvampi.",
-        "50years": "Kyberrikollisuus ja valtiot sekoittuvat."
-      }
-    }
-  ]
+    description:
+      "Teollistuneiden valtioiden päätös rakentaa talouskasvu fossiilisen energian varaan.",
+    lifecycle: {
+      1: {
+        summary: "Energiantuotannon skaalaaminen fossiilisilla polttoaineilla.",
+      },
+      2: {
+        summary: "Nopea talouskasvu, teollinen vaurastuminen, halpa energia.",
+      },
+      3: {
+        summary:
+          "Kasvavat päästöt, ekosysteemien kuormitus, geopoliittinen riippuvuus.",
+      },
+      4: {
+        summary:
+          "Yhteiskunnat sopeutuvat korkeaan energiankulutukseen ja liikkuvuuteen.",
+      },
+      5: {
+        summary:
+          "Infrastruktuuri, elämäntapa ja politiikka lukittuvat fossiiliseen malliin.",
+      },
+      6: {
+        summary:
+          "Korkea energiankulutus nähdään normaalina ja välttämättömänä.",
+      },
+    },
+    notes: [
+      "Alkuperäinen päätös ei sisältänyt ilmastokäsitettä.",
+      "Viive seurauksissa oli vuosikymmeniä.",
+    ],
+  },
+
+  {
+    id: "social-media-algorithms-2010",
+    title: "Algoritminen sisällön optimointi sosiaalisessa mediassa",
+    domain: ["teknologia", "kulttuuri", "politiikka"],
+    timeframe: {
+      decisionYear: 2010,
+      horizon: "2010–2050+",
+    },
+    description:
+      "Päätös optimoida näkyvyys ja sisältö käyttäjien sitoutumisen perusteella.",
+    lifecycle: {
+      1: {
+        summary:
+          "Algoritmit priorisoivat sisällön, joka lisää katseluaikaa ja reaktioita.",
+      },
+      2: {
+        summary:
+          "Käyttäjäaktiivisuus kasvaa, alustat skaalautuvat nopeasti.",
+      },
+      3: {
+        summary:
+          "Polarisaatio, disinformaatio, huomion sirpaloituminen.",
+      },
+      4: {
+        summary:
+          "Käyttäjät ja media mukautuvat algoritmien logiikkaan.",
+      },
+      5: {
+        summary:
+          "Algoritminen näkyvyys ohjaa julkista keskustelua laajasti.",
+      },
+      6: {
+        summary:
+          "Algoritmien vaikutus mielipiteisiin koetaan normaaliksi osaksi arkea.",
+      },
+    },
+    notes: [
+      "Taloudellinen kannustin ohjasi teknistä ratkaisua.",
+      "Sosiaaliset seuraukset havaittiin jälkikäteen.",
+    ],
+  },
+
+  {
+    id: "urban-car-dependence-1960",
+    title: "Autokeskeinen kaupunkisuunnittelu",
+    domain: ["kaupungit", "liikenne", "terveys"],
+    timeframe: {
+      decisionYear: 1960,
+      horizon: "1960–2080+",
+    },
+    description:
+      "Kaupunkien suunnittelu henkilöautoliikenteen ehdoilla.",
+    lifecycle: {
+      1: {
+        summary:
+          "Tieverkkojen ja lähiöiden rakentaminen autoilun ympärille.",
+      },
+      2: {
+        summary:
+          "Liikkuminen helpottuu, asuminen laajenee kaupunkien ulkopuolelle.",
+      },
+      3: {
+        summary:
+          "Ruuhkat, päästöt, liikkumisen pakollisuus.",
+      },
+      4: {
+        summary:
+          "Arki ja palvelut rakentuvat auton varaan.",
+      },
+      5: {
+        summary:
+          "Kaupunkirakenne lukitsee vaihtoehtojen puutteen.",
+      },
+      6: {
+        summary:
+          "Autoriippuvuus nähdään normaalina infrastruktuurina.",
+      },
+    },
+    notes: [
+      "Päätökset tehtiin eri kaupungeissa erikseen, mutta malli toistui.",
+    ],
+  },
+];
+
+/**
+ * Tämä tiedosto ei sisällä johtopäätöksiä.
+ * Se tarjoaa rakenteen, jonka avulla seuraukset pysyvät näkyvissä ajassa.
+ */
+Sinä lähetit
+export const IMPACT_LAYERS = [
+  "fyysinen_terveys",
+  "henkinen_terveys",
+  "lapsuus_ja_kehitys",
+  "informaatioymparisto",
+  "sosiaalinen_luottamus",
+  "hallinto_ja_valta",
+  "turvallisuus_ja_sota"
+];
+
+export const CONFLICT_MODES = [
+  "rakenteellinen",
+  "kilpailullinen",
+  "kumouksellinen",
+  "kyber",
+  "hybridi",
+  "aseellinen"
+];
+
+{
+  id: "child-protection-overload-1990",
+  title: "Lastensuojelun riskienhallintamalli",
+  domain: ["hallinto", "sosiaalipolitiikka"],
+  impactLayers: [
+    "lapsuus_ja_kehitys",
+    "henkinen_terveys",
+    "sosiaalinen_luottamus"
+  ],
+  populationExposure: ["lapset", "perheet", "viranomaiset"],
+  conflictMode: "rakenteellinen",
+  lifecycle: {
+    1: { summary: "Riskien minimointi hallinnollisilla prosesseilla." },
+    2: { summary: "Yhtenäinen valvontamalli ja dokumentointi." },
+    3: { summary: "Ylireagointi, etääntyminen, epäluottamus." },
+    4: { summary: "Perheet oppivat välttelemään järjestelmää." },
+    5: { summary: "Hallinnollinen suoja syrjäyttää inhimillisen tuen." },
+    6: { summary: "Lastensuojelu koetaan uhkana eikä turvana." }
+  }
+}
+{
+  id: "mental-health-medicalization-2000",
+  title: "Mielenterveyden yksilöllinen hoitomalli",
+  domain: ["terveys", "lääketiede"],
+  impactLayers: [
+    "henkinen_terveys",
+    "fyysinen_terveys",
+    "sosiaalinen_luottamus"
+  ],
+  populationExposure: ["nuoret", "työikäiset"],
+  conflictMode: "rakenteellinen",
+  lifecycle: {
+    1: { summary: "Oireiden hoito yksilötasolla." },
+    2: { summary: "Diagnoosit ja lääkitys lisääntyvät." },
+    3: { summary: "Juuri syyt jäävät käsittelemättä." },
+    4: { summary: "Ihmiset mukautuvat alhaisempiin odotuksiin." },
+    5: { summary: "Koko järjestelmä normalisoi kroonisuuden." },
+    6: { summary: "Pysyvä pahoinvointi nähdään normaalina." }
+  }
+}
+{
+  id: "information-warfare-normalization-2014",
+  title: "Algoritminen mielipidevaikuttaminen",
+  domain: ["media", "turvallisuus"],
+  impactLayers: [
+    "informaatioymparisto",
+    "henkinen_terveys",
+    "sosiaalinen_luottamus",
+    "hallinto_ja_valta"
+  ],
+  populationExposure: ["koko_väestö"],
+  conflictMode: "hybridi",
+  lifecycle: {
+    1: { summary: "Huomion ja reaktioiden manipulointi." },
+    2: { summary: "Narratiivien nopea leviäminen." },
+    3: { summary: "Todellisuuskäsitysten eriytyminen." },
+    4: { summary: "Yleisö turtuu ristiriitoihin." },
+    5: { summary: "Informaatioaseista tulee pysyviä." },
+    6: { summary: "Jatkuva informaatiosota koetaan normaalina." }
+  }
+}
+{
+  id: "cyber-subversion-doctrine-2005",
+  title: "Kynnyksettömän vaikuttamisen doktriini",
+  domain: ["turvallisuus", "puolustus"],
+  impactLayers: [
+    "informaatioymparisto",
+    "hallinto_ja_valta",
+    "sosiaalinen_luottamus",
+    "turvallisuus_ja_sota"
+  ],
+  populationExposure: ["instituutiot", "koko_väestö"],
+  conflictMode: "kumouksellinen",
+  lifecycle: {
+    1: { summary: "Epäsuora vaikuttaminen ilman sodanjulistusta." },
+    2: { summary: "Häiriöt, epävarmuus, epäluottamus." },
+    3: { summary: "Instituutioiden heikkeneminen." },
+    4: { summary: "Yhteiskunta mukautuu jatkuvaan häiriöön." },
+    5: { summary: "Poikkeustila pitkittyy." },
+    6: { summary: "Pysyvä hybridiympäristö normalisoituu." }
+  }
+}
 };
 
 // Varmistetaan, että data on saatavilla globaalisti ympyra-virtaus.html:ssä
