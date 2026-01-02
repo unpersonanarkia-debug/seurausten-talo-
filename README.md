@@ -120,6 +120,9 @@ Tulevat kehityssuunnat:
 Sisältö on tarkoitettu avoimeen tarkasteluun ja jatkokehitykseen.
 Tarkemmat käyttöehdot täsmennetään projektin kypsyessä.
 
+"Avoin prototyyppi instituutiosta, joka tekee päätösten pitkäaikaiset seuraukset näkyviksi."
+[Käy Seurausten talossa](https://unpersonanarkia-debug.github.io/seurausten-talo/)
+
 
 Seurausten talo ei kysy, oliko päätös oikea.
  
