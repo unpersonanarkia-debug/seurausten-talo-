@@ -1,0 +1,43 @@
+{
+  "casebooks": {
+    "opioidikriisi": {
+      "nodes": [
+        {"data": {"id": "0", "label": "Päätös: Opioidit turvallisia"}},
+        {"data": {"id": "1", "label": "Vaikutus: Riippuvuusriski"}},
+        {"data": {"id": "2", "label": "Seuraukset: 1.5M haittaa/vuosi"}},
+        {"data": {"id": "3", "label": "Sopeutuminen: Hoito-ohjelmat"}},
+        {"data": {"id": "4", "label": "Kertautuminen: Perheiden hajoaminen"}},
+        {"data": {"id": "5", "label": "Normiksi: Riippuvuus kipuhoitoa"}}
+      ],
+      "edges": [
+        {"data": {"source": "0", "target": "1", "label": "fyysinen", "weight": 0.9}},
+        {"data": {"source": "1", "target": "2", "label": "sosiaalinen", "weight": 1.0}},
+        {"data": {"source": "4", "target": "5", "label": "hallinto", "weight": 0.8}}
+      ],
+      "impacts": {
+        "2": {"fyysinen": "Kuolemat", "sosiaalinen": "Luottamus romahti"}
+      }
+    },
+    "antibiootit": {
+      "nodes": [
+        {"data": {"id": "0", "label": "Päätös: Antibiootit virusinfektioihin"}},
+        {"data": {"id": "1", "label": "Vaikutus: Resistenssi kehittyy"}},
+        {"data": {"id": "2", "label": "Seuraukset: 1M kuolemaa/vuosi"}},
+        {"data": {"id": "3", "label": "Sopeutuminen: Potilaat vaativat"}},
+        {"data": {"id": "4", "label": "Kertautuminen: Sairaalainfektiot"}},
+        {"data": {"id": "5", "label": "Normiksi: Resistenssi väistämätön"}}
+      ],
+      "edges": [
+        {"data": {"source": "0", "target": "1", "label": "fyysinen", "weight": 0.95}},
+        {"data": {"source": "4", "target": "5", "label": "hallinto", "weight": 1.0}}
+      ]
+    },
+    "syovaviiveet": {
+      "nodes": [
+        {"data": {"id": "0", "label": "Päätös: Syöpäseulonnat keskeytetty"}},
+        {"data": {"id": "5", "label": "Normiksi: Viiveet kriiseissä"}}
+      ],
+      "edges": [{"data": {"source": "0", "target": "5", "weight": 0.85}}]
+    }
+  }
+}
