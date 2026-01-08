@@ -96,9 +96,47 @@
   <title>Seurausten talo</title>
   <script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 </head>
+<script>
+  const cy = cytoscape({
+    container: document.getElementById('cy'),
 
+    elements: [
+      { data: { id: 'A', label: 'Syy' } },
+      { data: { id: 'B', label: 'Seuraus' } },
+      { data: { id: 'C', label: 'Lisäseuraus' } },
+
+      { data: { source: 'A', target: 'B' } },
+      { data: { source: 'B', target: 'C' } }
+    ],
+
+    style: [
+      {
+        selector: 'node',
+        style: {
+          'label': 'data(label)',
+          'background-color': '#0074D9',
+          'color': '#fff',
+          'text-valign': 'center'
+        }
+      },
+      {
+        selector: 'edge',
+        style: {
+          'width': 2,
+          'line-color': '#555',
+          'target-arrow-color': '#555',
+          'target-arrow-shape': 'triangle'
+        }
+      }
+    ],
+
+    layout: {
+      name: 'breadthfirst'
+    }
+  });
+</script>
 <body>
-
+<div id="cy" style="width: 100%; height: 600px; border: 1px solid #ccc;"></div>
   <h1>Seurausten talo</h1>
   <h2>Se instituutio, jota ei ollut olemassa</h2>
 
