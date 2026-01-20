@@ -1,0 +1,78 @@
+{
+  "kirjasto": "Geopolitiikka.casebook – Suomen geopoliittisten kriisien ja normalisoituneiden haittojen kokoelma 2000–2025",
+  "versio": "1.0",
+  "paivitetty": "2026-01-20",
+  "kuvaus": "Case-esimerkit geopolitiikasta: NATO-jäsenyys, Venäjän kriisi ja Suomen geopoliittinen asema 2000–2025. Jokainen case mallintaa päätöksen elinkaaren Seurausten talon mukaisesti: päätös → vaikutus → seuraukset → sopeutuminen → kertautuminen → normalisoituminen.",
+  "cases": [
+    {
+      "id": "geopolitiikka-nato-jasenyyden-vaikutukset",
+      "title": "Suomen NATO-jäsenyys ja sen geopoliittiset vaikutukset (2022–2025)",
+      "aihe": "Päätös hakea ja toteuttaa NATO-jäsenyys Venäjän hyökkäyksen jälkeen, liittyminen 4.4.2023",
+      "elinkaarivaiheet": {
+        "paatos": "Turvallisuusympäristön muutos Venäjän hyökkäyksen myötä → NATO-hakemus toukokuussa 2022, jäsenyys toteutui huhtikuussa 2023 ilman dramaattisia muutoksia peruslinjaan",
+        "vaikutus": "Suomen puolustus integroitui NATO:n yhteiseen suunnitteluun, Artikla 5 -turvatakuut astuivat voimaan, Itämeren alueen vakautta vahvistui (Suomi + Ruotsi NATO:ssa)",
+        "seuraukset": "Hybridiuhat ja Venäjän vastatoimet kasvoivat (esim. rajahäirintä, disinformaatio), puolustusmenot nousivat (2 % BKT:sta ylitetty), taloudelliset kustannukset ~70–100 M€/vuosi liittymisestä",
+        "sopeutuminen": "Suomi sopeutui liittouman rakenteisiin (komentokeskukset, harjoitukset), kansallinen puolustus pysyi vahvana, mutta NATO-riippuvuus kasvoi strategisissa päätöksissä",
+        "kertautuminen": "Geopoliittinen polarisaatio syveni: Suomi entistä tiiviimmin länsiblokissa, Venäjän uhka pysyvä, mutta eskalaatioriski hallittu (ei suoraa konfliktia rajalla)",
+        "normalisoituminen": "NATO-jäsenyys koetaan 'uuden normaalina' – 'turvallisuus vahvistui ilman dramaattisia muutoksia' -narratiivi peittää mahdolliset pitkän aikavälin riippuvuudet ja kustannukset"
+      },
+      "normiriski": 4,
+      "normitila": "Päätös on vaarassa normalisoitua – ellei yhdistetä kriisinkestävyyttä ja itsenäisyyttä",
+      "hyodyt_optimistinen": "Pakollinen elinkaarimalli olisi pakottanut 10–30 vuoden simulointiin → parempi varautuminen hybridiuhkiin ja taloudellisiin vaikutuksiin.",
+      "riskit_realistinen": "Raportit hyväksytään, mutta 'geopoliittiset realiteetit' (Venäjän uhka) estävät radikaalit muutokset.",
+      "yhteenveto": "NATO-jäsenyys vahvisti Suomen turvallisuutta muuttuneessa ympäristössä, mutta normalisoituminen voi peittää pitkän aikavälin kustannukset ja riippuvuudet. Ilman pakollista mallintamista geopoliittiset riskit kroonistuvat.",
+      "kysymys_lukijalle": "Pitäisikö NATO-päätösten ja geopoliittisten valintojen elinkaarimalli tehdä pakolliseksi ulko- ja turvallisuuspoliittisissa prosesseissa?",
+      "lahteet": [
+        {"viite": "[65]", "nimi": "Uusi Suomi – Suomi 1995–2025 (2025-01-01)", "linkki": "https://puheenvuoro.uusisuomi.fi/ville-paivansalo/suomi-1995-2025-kohti-natoa-ja-yhtenaisyytta/", "huomio": "NATO ja yhtenäisyys, jäsenyyden vaikutukset"},
+        {"viite": "[69]", "nimi": "OuluRepo – NATO-vaikutukset (2025-12-08)", "linkki": "https://oulurepo.oulu.fi/bitstream/handle/10024/59645/nbnfioulu-202512087166.pdf", "huomio": "NATO-jäsenyyden vaikutukset Suomessa"}
+      ]
+    },
+    {
+      "id": "geopolitiikka-venajan-kriisi",
+      "title": "Venäjän kriisi ja sen vaikutukset Suomen geopoliittiseen asemaan (2022–2025)",
+      "aihe": "Venäjän hyökkäyssota Ukrainaan, pakotteet, hybridiuhat ja Suomen turvallisuusympäristön muutos",
+      "elinkaarivaiheet": {
+        "paatos": "Venäjän päätös hyökätä Ukrainaan helmikuussa 2022 → Suomen reaktiot (pakotteet, tuki Ukrainalle, NATO-hakemus)",
+        "vaikutus": "Energia- ja talouspakotteet kiristyivät, hybridiuhat kasvoivat (rajahäirintä, disinformaatio), puolustusmenot nousivat, Suomi NATO:hon",
+        "seuraukset": "Taloudelliset menetykset (kauppa romahti), turvallisuusympäristö polarisoitui, Itämeren alueen jännitteet kasvoivat, mutta suora konflikti vältettiin",
+        "sopeutuminen": "Suomi sopeutui pakotteisiin ja NATO-rakenteisiin, energia monipuolistui, kriisinkestävyys vahvistui (varautuminen)",
+        "kertautuminen": "Kriisi jatkuu, geopoliittinen polarisaatio syvenee: Suomi entistä länsiblokissa, Venäjän uhka pysyvä, mutta eskalaatioriski hallittu",
+        "normalisoituminen": "Pitkäaikainen kriisi koetaan 'uuden normaalina' – 'Venäjä on uhka, mutta Suomi pärjää' -narratiivi peittää taloudelliset ja hybridiriskit"
+      },
+      "normiriski": 5,
+      "normitila": "MUUTOS ON MUUTTUMASSA NORMIKSI – ja on jo lukkiutumassa (pitkäaikainen konflikti ja polarisaatio)",
+      "hyodyt_optimistinen": "Elinkaarimalli pakottaisi ennakoimaan hybridiuhkia ja talousvaikutuksia → parempi varautuminen ja resilienssi.",
+      "riskit_realistinen": "Raportit hyväksytään, mutta 'geopoliittiset realiteetit' hidastavat muutosta.",
+      "yhteenveto": "Venäjän kriisi muutti Suomen geopoliittista asemaa pysyvästi, mutta normalisoituminen voi peittää pitkän aikavälin kustannukset ja riskit. Ilman pakollista mallintamista kriisi kroonistuu.",
+      "kysymys_lukijalle": "Pitäisikö Venäjä-kriisin ja hybridiuhkien elinkaarimalli tehdä pakolliseksi turvallisuuspolitiikassa?",
+      "lahteet": [
+        {"viite": "[64]", "nimi": "Suomen Pankki – Euroopan talous voimapolitiikassa (2025-03-11)", "linkki": "https://www.suomenpankki.fi/fi/ajankohtaista/puheet-ja-haastattelut/2025/euroopan-ja-suomen-talouden-nakymat-voimapolitiikan-puristuksessa/", "huomio": "Venäjän sota ja Suomi, taloudelliset vaikutukset"},
+        {"viite": "[66]", "nimi": "Helda – Kuinka monen pitää kuolla (2025)", "linkki": "https://helda.helsinki.fi/bitstreams/ec5035e5-2acb-4f39-84d7-df9a899b222d/download", "huomio": "Venäjän kriisi ja Suomi"}
+      ]
+    },
+    {
+      "id": "geopolitiikka-2000-2025",
+      "title": "Geopolitiikka Suomessa 2000–2025 – kriisien aikakausi ja Suomen asema",
+      "aihe": "Geopoliittisten muutosten vaikutukset: terrorismin aikakausi, Venäjän aggressio, EU/NATO-dynamiikka ja kriisinkestävyys",
+      "elinkaarivaiheet": {
+        "paatos": "Suomen integraatio länsirakenteisiin (EU 1995, NATO 2023) ilman riittävää kriisivarautumista Venäjän muutokseen",
+        "vaikutus": "Kriisit (eurokriisi, pakolaiskriisi 2015, COVID, Ukrainan sota 2022) lisäsivät epävarmuutta, pakotteet ja hybridiuhat kasvoivat",
+        "seuraukset": "Taloudelliset menetykset, turvallisuusympäristön polarisaatio, resilienssin tarve kasvoi, mutta institutionaalinen sopeutuminen hidasta",
+        "sopeutuminen": "Suomi sopeutui kriiseihin vahvistamalla varautumista (kriisinkestävyysraportit), mutta geopoliittinen riippuvuus länsiliittoumista kasvoi",
+        "kertautuminen": "Kriisit kroonistuvat: Venäjän uhka pysyvä, globaali kilpailu (USA-Kiina) vaikuttaa, Suomi entistä tiiviimmin länsiblokissa",
+        "normalisoituminen": "Kriisien aikakausi koetaan 'uuden normaalina' – 'geopolitiikka on aina epävakaata' -narratiivi peittää rakenteelliset haavoittuvuudet"
+      },
+      "normiriski": 4,
+      "normitila": "Päätös on vaarassa normalisoitua – ellei yhdistetä ennakointia ja kriisinkestävyyttä",
+      "hyodyt_optimistinen": "Elinkaarimalli pakottaisi 20–30 vuoden geopoliittiseen simulointiin → parempi varautuminen ja strateginen autonomia.",
+      "riskit_realistinen": "Raportit hyväksytään, mutta 'geopoliittiset realiteetit' estävät radikaalit muutokset.",
+      "yhteenveto": "Geopolitiikka 2000–2025 on normalisoitumassa kriisien aikakaudeksi ilman riittävää ennakointia. Ilman pakollista mallintamista Suomen asema heikkenee kroonistuvissa riskeissä.",
+      "kysymys_lukijalle": "Pitäisikö geopoliittisten kriisien elinkaarimalli tehdä pakolliseksi ulko- ja turvallisuuspoliittisissa prosesseissa?",
+      "lahteet": [
+        {"viite": "[55]", "nimi": "VNTEAS – Geopolitiikka muuttaa ympäristöä (2025)", "linkki": "https://julkaisut.valtioneuvosto.fi/bitstream/handle/10024/166330/VNTEAS_2025_4.pdf", "huomio": "Geotalous ja kriisit"},
+        {"viite": "[56]", "nimi": "Sitra – EU kriisien aikakaudella (päiv. 2025)", "linkki": "https://www.sitra.fi/julkaisut/eu-kriisien-aikakaudella/", "huomio": "Geopolitiikka ja Suomi, Venäjän sota, NATO/EU-dynamiikka"},
+        {"viite": "[61]", "nimi": "EVA – Maailmanpolitiikan muutos ja Suomi (päiv. 2025)", "linkki": "https://www.eva.fi/wp-content/uploads/files/83_maailmanpolitiikan%2520muutos%2520ja%2520suomi.pdf", "huomio": "Geopolitiikka 2000-luvulla, Suomen asema"}
+      ]
+    }
+  ]
+}
