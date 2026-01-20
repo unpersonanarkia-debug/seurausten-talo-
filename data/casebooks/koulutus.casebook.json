@@ -1,0 +1,77 @@
+{
+  "kirjasto": "Koulutus.casebook – Suomen koulutusjärjestelmän kriisien ja normalisoituneiden haittojen kokoelma",
+  "versio": "1.0",
+  "paivitetty": "2026-01-20",
+  "kuvaus": "Case-esimerkit koulutuksesta: PISA-lasku, koulukriisi ja rahoituspuutteet. Jokainen case mallintaa päätöksen elinkaaren Seurausten talon mukaisesti: päätös → vaikutus → seuraukset → sopeutuminen → kertautuminen → normalisoituminen.",
+  "cases": [
+    {
+      "id": "koulutus-pisa-lasku",
+      "title": "PISA-tulosten jatkuva lasku Suomessa (2000–2025)",
+      "aihe": "Oppimistulosten heikkeneminen matematiikassa, lukutaidossa ja luonnontieteissä vuodesta 2000 lähtien",
+      "elinkaarivaiheet": {
+        "paatos": "Koulutusleikkaukset 2010-luvulta lähtien, oppituntien vähentäminen, resurssipula ja muutokset opetussuunnitelmissa ilman riittävää tukea",
+        "vaikutus": "Oppimistulokset laskeneet dramaattisesti (esim. matematiikka -64 pistettä 2006–2022, lukutaito -58 pistettä tytöillä 2000–2022), polarisoituminen kasvanut",
+        "seuraukset": "Heikentynyt osaaminen → heikompi työelämävalmius → tuottavuuden lasku, nuorten syrjäytymisriski kasvaa, taloudellinen kestävyys uhattuna",
+        "sopeutuminen": "Opettajat sopeutuvat resurssipulaan priorisoimalla, oppilaat pinnalliseen oppimiseen, kodin tuki korvaa puutteita",
+        "kertautuminen": "Ongelma siirtyy sukupolvelta toiselle: heikentynyt osaaminen → heikompi koulutuspolku → yhteiskunnan tuottavuus heikkenee pitkällä aikavälillä",
+        "normalisoituminen": "Lasku koetaan 'uuden normaalina' – 'kaikki maat laskevat' tai 'digiaika muuttaa oppimista' -narratiivi peittää rakenteelliset puutteet"
+      },
+      "normiriski": 5,
+      "normitila": "MUUTOS ON MUUTTUMASSA NORMIKSI – ja on jo lukkiutumassa (tavoitteet 530–550 pistettä eivät toteudu)",
+      "hyodyt_optimistinen": "Pakollinen elinkaarimalli pakottaisi ennakoimaan 10–20 vuoden vaikutuksia → resurssien kohdentaminen ja tasa-arvon vahvistaminen.",
+      "riskit_realistinen": "Raportit hyväksytään, mutta 'taloudelliset realiteetit' estävät korjaukset.",
+      "yhteenveto": "PISA-lasku on esimerkki koulutusjärjestelmän normalisoitumisesta rakenteelliseksi haitaksi ilman riittävää ennakointia. Ilman pakollista mallintamista osaaminen rapautuu sukupolvien mittaan.",
+      "kysymys_lukijalle": "Pitäisikö oppimistulosten elinkaarimalli ja PISA-seuranta tehdä pakolliseksi koulutuspoliittisissa päätöksissä?",
+      "lahteet": [
+        {"viite": "[42]", "nimi": "HS – Nykykoulu liian helppo (2025-01-13)", "linkki": "https://www.hs.fi/tiede/art-2000010732867.html", "huomio": "Kriisi peruskoulussa, oppimistulosten lasku"},
+        {"viite": "[45]", "nimi": "OKM – Sivistyskatsaus (2023-01-12)", "linkki": "https://okm.fi/-/sivistyskatsaus-kuvaa-suomen-koulutus-ja-kulttuurisektorin-kehitysta-viime-vuosikymmenien-ajalta-nykypaivaan", "huomio": "Oppimistulosten lasku 2000-luvulla"}
+      ]
+    },
+    {
+      "id": "koulutus-koulukriisi",
+      "title": "Koulukriisi Suomessa – resurssipula ja oppimisympäristön heikkeneminen (2010–2025)",
+      "aihe": "Koulujärjestelmän kokonaiskriisi: ryhmäkokojen kasvu, opettajapula, oppimisen tuen riittämättömyys ja nuorten pahoinvointi",
+      "elinkaarivaiheet": {
+        "paatos": "Leikkaukset ja rakenteelliset muutokset 2010-luvulta lähtien ilman riittävää sopeutumista (esim. oppivelvollisuuden laajennus ilman resursseja)",
+        "vaikutus": "Ryhmäkoot kasvaneet, opettajien työtaakka lisääntynyt, oppimisen tuki riittämätön, nuorten uupumus ja mielenterveysongelmat yleistyneet",
+        "seuraukset": "Oppimistulosten lasku, syrjäytymisriski kasvaa, opettajien alanvaihto kiihtyy, koulutustason nousu pysähtyy",
+        "sopeutuminen": "Opettajat ja oppilaat sopeutuvat kiireeseen ja puutteisiin kehittämällä kiertokeinoja, mutta laatu heikkenee",
+        "kertautuminen": "Ongelma siirtyy sukupolvelta toiselle: heikentynyt koulu → heikompi osaaminen → yhteiskunnan tuottavuus heikkenee",
+        "normalisoituminen": "Koulukriisi koetaan 'tavanomaisena' – 'näin on nyt koulu' -narratiivi peittää rakenteelliset viat"
+      },
+      "normiriski": 5,
+      "normitila": "MUUTOS ON MUUTTUMASSA NORMIKSI – ja on jo lukkiutunut (resurssipula ja kriisi koetaan normaalina)",
+      "hyodyt_optimistinen": "Elinkaarimalli pakottaisi simulointiin → resurssien kohdentaminen ja kriisin katkaisu ajoissa.",
+      "riskit_realistinen": "Raportit hyväksytään, mutta 'taloudelliset realiteetit' estävät korjaukset.",
+      "yhteenveto": "Koulukriisi on normalisoitumassa rakenteelliseksi haitaksi ilman riittävää ennakointia. Ilman pakollista mallintamista nuorten tulevaisuus rapautuu.",
+      "kysymys_lukijalle": "Pitäisikö koulukriisin elinkaarimalli tehdä pakolliseksi koulutuspoliittisissa päätöksissä?",
+      "lahteet": [
+        {"viite": "[41]", "nimi": "IS – Koulu ei kriisissä (2021-09-01)", "linkki": "https://www.is.fi/kotimaa/art-2000008232655.html", "huomio": "Koulujärjestelmän ongelmat 2000–2025"},
+        {"viite": "[43]", "nimi": "Oma Lahio – Peruskoulu haasteissa (2023-03-24)", "linkki": "https://www.omalahio.fi/kolumnit/kykeneeko-suomalainen-peruskoulu-enaa-vastaamaan-2000-luvun-haasteisiin/", "huomio": "Haasteet 2000-luvulla"}
+      ]
+    },
+    {
+      "id": "koulutus-rahoituspuutteet",
+      "title": "Koulutuksen rahoituspuutteet Suomessa (2015–2025)",
+      "aihe": "Rahoituksen heikkeneminen OECD-verrokkimaihin verrattuna, leikkaukset ja opiskelijakohtaisten menojen lasku",
+      "elinkaarivaiheet": {
+        "paatos": "Koulutusleikkaukset 2010-luvulta lähtien, rahoituksen reaaliarvon pieneneminen ilman toipumista",
+        "vaikutus": "Opiskelijakohtaiset menot laskeneet (korkeakouluissa -14 % 2015–2022), verrokkimaihin verrattuna jälkeenjääneisyys kasvanut",
+        "seuraukset": "Laatu heikkenee, opettajien työhyvinvointi kärsii, syrjäytyminen kasvaa, koulutustason nousu pysähtyy (25–34-vuotiaiden korkeakoulutetut 39 %)",
+        "sopeutuminen": "Opettajat ja koulut sopeutuvat puutteisiin priorisoimalla, mutta innovaatiot ja tuki kärsivät",
+        "kertautuminen": "Rahoitusvaje siirtyy vuosikymmenille: heikko koulutus → heikompi talous → lisää leikkauksia",
+        "normalisoituminen": "Rahoituspuutteet koetaan 'hallittaviksi' – 'koulutus on menoerä' -narratiivi peittää pitkän aikavälin haitat"
+      },
+      "normiriski": 5,
+      "normitila": "MUUTOS ON MUUTTUMASSA NORMIKSI – ja on jo lukkiutunut (verrokkimaihin verrattuna jälkeenjääneisyys)",
+      "hyodyt_optimistinen": "Elinkaarimalli pakottaisi simulointiin → rahoituksen kohdentaminen ja laadun turvaaminen.",
+      "riskit_realistinen": "Raportit hyväksytään, mutta 'taloudelliset realiteetit' estävät lisäpanostukset.",
+      "yhteenveto": "Rahoituspuutteet ovat normalisoitumassa rakenteelliseksi kriisiksi ilman riittävää ennakointia. Ilman pakollista mallintamista koulutustaso rapautuu ja taloudellinen kestävyys heikkenee.",
+      "kysymys_lukijalle": "Pitäisikö koulutuksen rahoituksen elinkaarimalli tehdä pakolliseksi budjettipäätöksissä?",
+      "lahteet": [
+        {"viite": "[47]", "nimi": "OAJ – OECD-raportti (2025-09-09)", "linkki": "https://www.oaj.fi/ajankohtaista/uutiset-ja-tiedotteet/2025/oecd-raportti-suomi-on-jaanyt-koulutuksen-rahoituksessa-verrokkimaistaan-jalkeen/", "huomio": "Rahoituspuutteet, Suomi jäljessä Pohjoismaista, korkeakouluissa -14 % reaalisesti"},
+        {"viite": "[48]", "nimi": "OKM – Sivistyskatsaus 2024 (2024-05-03)", "linkki": "https://okm.fi/documents/1410845/201929860/OKM_2024_25.pdf", "huomio": "Kehitys 2000–2024, koulutustason pysähtyminen"}
+      ]
+    }
+  ]
+}
