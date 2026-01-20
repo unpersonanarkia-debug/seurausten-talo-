@@ -10,6 +10,9 @@
       --orange: #D2691E;
       --beige: #F5F0E6;
       --light-bg: #FAF9F6;
+      --success: #4CAF50;
+      --warning: #FF9800;
+      --danger: #f44336;
     }
     body { 
       font-family: system-ui, -apple-system, sans-serif; 
@@ -17,18 +20,18 @@
       padding: 0; 
       background: var(--light-bg); 
       color: #222; 
-      line-height: 1.6; 
+      line-height: 1.7; 
     }
     
-    /* Headerin tekstit header-tyylillä bodyyn */
     h1 { 
       background: linear-gradient(to bottom, var(--navy), #003366);
       color: white;
       text-align: center;
       padding: 3rem 1rem 2rem;
       margin: 0;
-      font-size: 2.2rem;
+      font-size: 2.4rem;
       position: relative;
+      box-shadow: 0 4px 20px rgba(0,31,63,0.3);
     }
     .subtitle { 
       background: linear-gradient(to bottom, var(--navy), #003366);
@@ -36,94 +39,171 @@
       text-align: center;
       padding: 0 1rem 3rem;
       margin: 0;
-      font-size: 1.1rem; 
-      opacity: 0.9; 
+      font-size: 1.2rem; 
+      opacity: 0.95; 
       font-style: italic;
     }
     
     main {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 0 auto 2rem;
-      padding: 2rem;
+      padding: 2.5rem;
       background: white;
-      border-radius: 12px;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+      border-radius: 16px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.15);
       box-sizing: border-box;
     }
+    
+    .instructions {
+      background: var(--beige);
+      padding: 1.5rem;
+      border-radius: 12px;
+      border-left: 5px solid var(--orange);
+      margin-bottom: 2rem;
+    }
+    
     textarea { 
       width: 100%; 
-      min-height: 110px; 
-      padding: 14px; 
+      min-height: 140px; 
+      padding: 18px; 
       font-size: 16px; 
-      border: 2px solid #ccc; 
-      border-radius: 8px; 
-      margin-bottom: 1.2rem; 
+      border: 2px solid #ddd; 
+      border-radius: 12px; 
+      margin-bottom: 1.5rem; 
       resize: vertical; 
       box-sizing: border-box;
+      font-family: inherit;
+      transition: border-color 0.3s, box-shadow 0.3s;
     }
+    textarea:focus {
+      outline: none;
+      border-color: var(--navy);
+      box-shadow: 0 0 0 3px rgba(0,31,63,0.1);
+    }
+    
     button { 
-      padding: 14px 32px; 
-      background: var(--navy); 
+      padding: 16px 40px; 
+      background: linear-gradient(135deg, var(--navy), #003366);
       color: white; 
       border: none; 
-      border-radius: 8px; 
-      font-size: 17px; 
+      border-radius: 12px; 
+      font-size: 18px; 
+      font-weight: 500;
       cursor: pointer; 
-      transition: background 0.3s;
+      transition: all 0.3s;
+      box-shadow: 0 4px 15px rgba(0,31,63,0.3);
     }
-    button:hover { background: #003366; }
+    button:hover { 
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,31,63,0.4);
+    }
+    
     #tulos { 
-      margin-top: 2.5rem; 
-      padding: 1.8rem; 
-      background: #f8fbff; 
-      border-left: 6px solid var(--orange); 
-      border-radius: 8px; 
+      margin-top: 3rem; 
+      padding: 0;
     }
+    
+    .analyysi-header {
+      background: linear-gradient(135deg, #f8fbff, #e3f2fd);
+      padding: 2rem 2.5rem;
+      border-radius: 12px 12px 0 0;
+      border-bottom: 4px solid var(--orange);
+      text-align: center;
+    }
+    
+    .aihe {
+      font-size: 1.3rem;
+      color: var(--navy);
+      margin: 0 0 1rem 0;
+    }
+    
     .vaihe { 
-      margin: 1.4rem 0; 
-      padding: 1.2rem; 
+      margin: 0;
+      padding: 2rem 2.5rem;
       background: white; 
-      border: 1px solid #e0e0e0; 
-      border-radius: 8px; 
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      border-bottom: 1px solid #f0f0f0;
+      position: relative;
+      transition: all 0.3s;
     }
+    .vaihe:last-child {
+      border-radius: 0 0 12px 12px;
+      border-bottom: none;
+    }
+    .vaihe:hover {
+      background: #fafcff;
+      transform: translateX(5px);
+    }
+    
     .vaihe strong { 
       color: var(--navy); 
-      font-size: 1.15rem; 
+      font-size: 1.4rem; 
+      display: block;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    
+    .vaihe-content {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: #333;
+    }
+    
+    .normiriski {
+      background: linear-gradient(135deg, #e8f5e8, #f1f8e9);
+      padding: 2rem 2.5rem;
+      border-radius: 0 0 12px 12px;
+      border-top: 4px solid var(--success);
+      text-align: center;
+      margin-top: 2rem;
+    }
+    
+    .normiriski strong {
+      font-size: 1.3rem;
+      color: var(--success);
       display: block;
       margin-bottom: 0.5rem;
     }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      color: #555;
-      font-size: 0.95rem;
-      border-top: 1px solid #ddd;
-      max-width: 900px;
-      margin: 0 auto;
-    }
+    
     .loading { 
-      color: #555; 
-      font-style: italic; 
+      text-align: center;
+      color: var(--navy);
+      font-size: 1.2rem;
+      font-style: italic;
+      padding: 3rem;
     }
     .error { 
-      color: #d32f2f; 
-      font-weight: bold; 
+      color: var(--danger); 
+      font-weight: 600; 
+      text-align: center;
+      padding: 2rem;
     }
+    
+    footer {
+      text-align: center;
+      padding: 3rem 2rem;
+      color: #666;
+      font-size: 0.95rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
     @media (max-width: 768px) {
-      h1 { font-size: 1.8rem; padding: 2rem 1rem; }
-      .subtitle { font-size: 1rem; padding: 0 1rem 2rem; }
-      main { margin: 0 1rem 2rem; padding: 1.5rem; }
+      h1 { font-size: 1.9rem; padding: 2rem 1rem; }
+      .subtitle { font-size: 1.1rem; padding: 0 1rem 2rem; }
+      main { margin: 0 1rem 2rem; padding: 1.8rem; }
+      .vaihe, .analyysi-header, .normiriski { padding-left: 1.8rem; padding-right: 1.8rem; }
     }
   </style>
 </head>
 <body>
-  <h1>Seurausten Talon Elinkaari-Generaattori</h1>
+  <h1>Seurausten Talon Elinkaari Generaattori</h1>
   <p class="subtitle">Se instituutio, jota ei ollut olemassa</p>
 
   <main>
-    <p>Kirjoita analysoitava aihe tai kysymys <strong>aina näin alkavaksi</strong>:</p>
-    <blockquote><strong>Miten päätöksen elinkaari näkee tämän kysymyksen</strong> [aihe tai kysymys]</blockquote>
+    <div class="instructions">
+      <p>Kirjoita analysoitava aihe tai kysymys <strong>aina näin alkavaksi</strong>:</p>
+      <blockquote><strong>Miten päätöksen elinkaari näkee tämän kysymyksen</strong> [aihe tai kysymys]</blockquote>
+    </div>
     
     <textarea id="syote" placeholder="Esimerkki: Miten päätöksen elinkaari näkee tämän kysymyksen: opetusryhmien suurentaminen 24 → 32 oppilaaseen peruskoulussa?"></textarea>
     
@@ -149,49 +229,87 @@
     
     let aihe = input.replace(/^miten päätöksen elinkaari näkee tämän kysymyksen\s*/i, '').trim() || "[aihe puuttuu]";
     
-    tulosDiv.innerHTML = '<p class="loading">Generoidaan elinkaari-analyysi...</p>';
+    tulosDiv.innerHTML = '<div class="loading">🔄 Generoidaan kattava elinkaari-analyysi aiheesta "<strong>' + aihe + '</strong>"...</div>';
 
-    // MOCK-DATA – TOIMII HETI ILMAN API:TA
+    // PARANNETTU MOCK – 6 vaihetta, pidemmät realistiset analyysit
     setTimeout(() => {
       const html = `
-        <h2>Seurausten talon elinkaari-analyysi</h2>
-        <p><strong>Aihe:</strong> ${aihe}</p>
-        <hr style="margin: 1.5rem 0; border: none; border-top: 1px solid #ddd;">
-        
-        <div class="vaihe">
-          <strong>1. Plan (Suunnittelu):</strong>
-          Päätös "${aihe}" aloitetaan akuuttina ratkaisuna lyhyen aikavälin ongelmaan. 
-          Organisaatio keskittyy nopeaan hyötyyn, mutta pitkän aikavälin seurauksia ei tunnisteta.
+        <div class="analyysi-header">
+          <h2 style="margin: 0; color: var(--navy);">Seurausten talon kattava elinkaari-analyysi</h2>
+          <p class="aihe"><strong>Tarkasteltu päätös:</strong> ${aihe}</p>
         </div>
         
         <div class="vaihe">
-          <strong>2. Do (Toteutus):</strong>
-          Päätös normalisoituu organisaation toimintatapoihin. Se muuttuu "tavalliseksi" 
-          ilman kriittistä tarkastelua. Lukkiutuminen alkaa.
+          <strong>1. Plan – Suunnitteluvaihe</strong>
+          <div class="vaihe-content">
+            Päätös "${aihe}" syntyy akuutin ongelman ratkaisuksi. Organisaatio keskittyy 
+            lyhyen aikavälin operatiivisiin hyötyihin (kustannussäästöt, tehokkuus). 
+            Pitkän aikavälin institutionaalisia seurauksia ei systemaattisesti kartoiteta, 
+            minkä vuoksi normiriskin arviointi jää puutteelliseksi.
+          </div>
         </div>
         
         <div class="vaihe">
-          <strong>3. Check (Tarkistus):</strong>
-          Seuraukset paljastuvat: "${aihe}" luo institutionaalisia lukkiutumisia, 
-          heikentää resilienssiä ja muuttaa organisaation kulttuuria pysyvästi.
+          <strong>2. Do – Toteutusvaihe</strong>
+          <div class="vaihe-content">
+            Päätös otetaan käyttöön ja normalisoituu organisaation toimintatapoihin. 
+            "${aihe}" muuttuu asteittain "tavalliseksi" ilman kriittistä tarkastelua. 
+            Henkilöstö sopeutuu uusiin rutiineihin, vastustus hiipuu ja lukkiutuminen 
+            organisaation kulttuuriin alkaa vahvistua.
+          </div>
         </div>
         
         <div class="vaihe">
-          <strong>4. Act (Toiminta):</strong>
-          Järjestelmä vaatii korjaavia toimenpiteitä tai paljastaa normiriskin 
-          julkisessa auditissa. Ilman interventiota normalisoituminen jatkuu.
+          <strong>3. Check – Seurausten tarkistus</strong>
+          <div class="vaihe-content">
+            Ensimmäiset konkreettiset seuraukset ilmenevät: "${aihe}" luo institutionaalisia 
+            lukkiutumisia, heikentää organisaation resilienssiä ja muuttaa pysyvästi 
+            toimintakulttuuria. Piilotetut kustannukset (luottamuksen menetys, motivaatio, 
+            innovatiivisuus) alkavat kumuloitua systemaattisesti.
+          </div>
         </div>
         
-        <div style="margin-top: 2rem; padding: 1rem; background: #e8f5e8; border-radius: 8px; border-left: 4px solid var(--orange);">
-          <strong>Normiriski:</strong> KESKIMINEN (PDCA-loop vaatii toistuvan tarkastelun)
+        <div class="vaihe">
+          <strong>4. Act – Korjaustoimenpiteet</strong>
+          <div class="vaihe-content">
+            Järjestelmä tunnistaa normiriskin ja vaatii interventioita. Mahdollisia toimia: 
+            auditointi, päätöksen purkaminen tai kompensointi. Ilman toimenpiteitä 
+            normalisoituminen jatkuu eksponentiaalisesti vahvistaen institutionaalista 
+            haurautta.
+          </div>
+        </div>
+        
+        <div class="vaihe">
+          <strong>5. Audit – Julkinen tarkastus</strong>
+          <div class="vaihe-content">
+            Päätöksen elinkaari dokumentoidaan audit-trailiin blockchain-hashattuna. 
+            "${aihe}" jää pysyväksi merkinnäksi Seurausten talon muistiin, josta kansalaiset, 
+            tutkijat ja journalistit voivat tarkastella normalisoitumisen mallia.
+          </div>
+        </div>
+        
+        <div class="vaihe">
+          <strong>6. Foresight – Tulevaisuudennuste</strong>
+          <div class="vaihe-content">
+            Ennuste: "${aihe}" -tyyppiset päätökset toistuvat 80% todennäköisyydellä 
+            samanlaisina muissa organisaatioissa. Ilman systemaattista PDCA-silmukkaa 
+            normiriski kasvaa 3-5 vuoden kuluessa kriittiseksi.
+          </div>
+        </div>
+        
+        <div class="normiriski">
+          <strong>Normiriski: HARVINAINEN</strong>
+          <p style="margin: 0.5rem 0 0 0; color: #2e7d32; font-size: 1.1rem;">
+            PDCA-loop vaatii toistuvan tarkastelun. Suositeltu auditointitiheys: 6kk.
+          </p>
         </div>
       `;
       
       tulosDiv.innerHTML = html;
-    }, 800); // 0.8s viive realismia varten
+    }, 1200); // 1.2s viive realismia varten
   }
 
-  // Enter-näppäin textareaan
+  // Enter-näppäin shortcut
   document.getElementById('syote').addEventListener('keypress', function(e) {
     if (e.key === 'Enter' && e.ctrlKey) {
       analysoi();
