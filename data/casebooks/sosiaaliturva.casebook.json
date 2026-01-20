@@ -1,0 +1,103 @@
+{
+  "kirjasto": "Sosiaaliturva.casebook – Suomen sosiaaliturvan ja hyvinvointivaltion kriisien kokoelma",
+  "versio": "1.0",
+  "paivitetty": "2026-01-21",
+  "kuvaus": "Case-esimerkit sosiaaliturvasta: eläkejärjestelmän kestävyys, toimeentulotuen leikkaukset, perustulokokeilut, asumistuki ja työttömyysturvan porrastus. Jokainen case mallintaa päätöksen elinkaaren Seurausten talon mukaisesti: päätös → vaikutus → seuraukset → sopeutuminen → kertautuminen → normalisoituminen.",
+  "cases": [
+    {
+      "id": "sosiaaliturva-elakejärjestelmän-kestävyys",
+      "title": "Eläkejärjestelmän kestävyysongelmat ja ikääntyvä väestö (2000–2030+)",
+      "aihe": "Päätökset ylläpitää nykyistä eläkejärjestelmää ilman riittäviä sopeutustoimia ikääntyvän väestön kasvaessa",
+      "elinkaarivaiheet": {
+        "paatos": "Päätös pitää eläkeikä suhteellisen matalana ja eläkkeitä korottavana ilman riittävää rahoituspohjaa (syntyvyyslaskun ja työikäisten vähenemisen aikana)",
+        "vaikutus": "Välitön eläkkeiden maksukyky, mutta kasvava eläkemeno vs. työikäisten määrä",
+        "seuraukset": "Eläkemeno nousee 2030-luvulla yli 30 % BKT:sta ilman korjauksia, mikä johtaa joko leikkauksiin tai veronkorotuksiin; vuoteen 2026 mennessä eläkejärjestelmän kestävyysvaje on arvioitu 5–10 miljardia euroa vuodessa",
+        "sopeutuminen": "Kansalaiset sopeutuvat myöhempään eläkkeelle siirtymiseen ja yksityisiin säästöihin",
+        "kertautuminen": "Ikääntyvä väestö lisää painetta järjestelmään, mikä johtaa jatkuviin leikkauspaineisiin",
+        "normalisoituminen": "Eläkeuudistusten lykkääminen koetaan 'normaalina' poliittisena riskinä, mikä vaikuttaa tuleviin eläkeikäpäätöksiin"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["fyysinen_terveys", "henkinen_terveys", "hallinto_ja_valta", "sosiaalinen_luottamus"],
+      "populationExposure": ["eläkeläiset", "työikäiset", "nuoret sukupolvet"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2000, "horizon": "2000–2040+" },
+      "notes": ["Ajallinen viive: 10–20 vuotta ennen maksukyvyttömyyden akuuttia ilmenemistä."]
+    },
+    {
+      "id": "sosiaaliturva-toimeentulotuen-leikkaukset",
+      "title": "Toimeentulotuen leikkaukset ja byrokratia (2010–2025)",
+      "aihe": "Päätökset tiukentaa toimeentulotuen ehtoja ja korottaa byrokratiaa",
+      "elinkaarivaiheet": {
+        "paatos": "Päätös leikata toimeentulotukea ja lisätä ehtoja (esim. aktiivimalli, omaehtoisuusvaatimukset) kustannussäästöjen nimissä",
+        "vaikutus": "Välitön säästö valtion menoissa, mutta kasvava köyhyys ja syrjäytymisriski",
+        "seuraukset": "Toimeentulotuen saajien määrä kasvoi 2025 yli 200 000:een, ja vuoteen 2026 mennessä leikkaukset ovat pahentaneet lapsiperheköyhyyttä ja mielenterveysongelmia",
+        "sopeutuminen": "Saajat sopeutuvat byrokratiaan ja lisätöihin, mutta syrjäytyminen kasvaa",
+        "kertautuminen": "Leikkaukset johtavat suurempaan kuormitukseen sosiaalipalveluissa ja terveydenhuollossa",
+        "normalisoituminen": "Toimeentulotuen tiukennus koetaan 'normaalina' säästötoimena, mikä vaikuttaa tuleviin tukipäätöksiin"
+      },
+      "normiriski": 4,
+      "vaikutuskerrokset": ["fyysinen_terveys", "henkinen_terveys", "sosiaalinen_luottamus", "hallinto_ja_valta"],
+      "populationExposure": ["köyhyydessä elävät", "lapsiperheet", "työttömät"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2010, "horizon": "2010–2030+" },
+      "notes": ["Ajallinen viive: 2–5 vuotta ennen köyhyyden ja syrjäytymisen täyden vaikutuksen näkymistä."]
+    },
+    {
+      "id": "sosiaaliturva-perustulokokeilu",
+      "title": "Perustulokokeilun normalisoituminen (2017–2025)",
+      "aihe": "Perustulokokeilun käynnistäminen ja sen jälkeinen keskustelu",
+      "elinkaarivaiheet": {
+        "paatos": "Päätös käynnistää perustulokokeilu 2017–2018 ilman laajaa jatkoa tai laajentamista",
+        "vaikutus": "Välitön kokeilu 2000 henkilöllä, mutta rajallinen skaalaus",
+        "seuraukset": "Kokeilu osoitti positiivisia vaikutuksia hyvinvointiin, mutta vuoteen 2026 mennessä perustulo ei edennyt lainsäädäntöön, mikä jätti järjestelmän vanhentuneeksi",
+        "sopeutuminen": "Kansalaiset ja poliitikot sopeutuvat keskusteluun ilman konkreettisia muutoksia",
+        "kertautuminen": "Keskustelu toistuu vaalikausittain ilman ratkaisua",
+        "normalisoituminen": "Perustulo koetaan 'utopisena' eikä realistisena, mikä vaikuttaa tuleviin sosiaaliturvapäätöksiin"
+      },
+      "normiriski": 3,
+      "vaikutuskerrokset": ["henkinen_terveys", "sosiaalinen_luottamus", "hallinto_ja_valta"],
+      "populationExposure": ["työttömät", "pienituloiset", "poliittiset päättäjät"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2017, "horizon": "2017–2030+" },
+      "notes": ["Ajallinen viive: 5–10 vuotta ennen kokeilun vaikutusten täyden arvioinnin."]
+    },
+    {
+      "id": "sosiaaliturva-asumistuki-riittämättömyys",
+      "title": "Asumistuen riittämättömyys asumiskriisissä (2015–2025)",
+      "aihe": "Päätös pitää asumistuki suhteellisen matalana vuokrien noustessa",
+      "elinkaarivaiheet": {
+        "paatos": "Päätös pitää asumistuki indeksikorotuksista huolimatta alhaisena vuokrien nousun rinnalla",
+        "vaikutus": "Välitön tuen saanti pienituloisille, mutta kasvava vuokrakustannusten osuus tuloista",
+        "seuraukset": "Vuonna 2025 yli 100 000 kotitaloutta asumisköyhyydessä, vuokrien osuus tuloista yli 40 % monilla, mikä pahentaa mielenterveysongelmia ja syrjäytymistä",
+        "sopeutuminen": "Asukkaat sopeutuvat pienempiin asuntoihin tai muuttoliikkeeseen",
+        "kertautuminen": "Asumiskustannukset kasvavat, mikä lisää köyhyyttä ja terveysongelmia",
+        "normalisoituminen": "Korkeat vuokrat ja asumistuen riittämättömyys koetaan 'normaalina' kaupunkiasumisena"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["fyysinen_terveys", "henkinen_terveys", "sosiaalinen_luottamus"],
+      "populationExposure": ["pienituloiset", "vuokralaiset", "perheet"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2015, "horizon": "2015–2030+" },
+      "notes": ["Ajallinen viive: 3–7 vuotta ennen asumisköyhyyden akuutin vaikutuksen näkymistä."]
+    },
+    {
+      "id": "sosiaaliturva-työttömyysturvan-porrastus",
+      "title": "Työttömyysturvan porrastus ja aktiivimalli (2018–2025)",
+      "aihe": "Päätös porrastaa työttömyysturvaa ja lisätä aktiivimallia",
+      "elinkaarivaiheet": {
+        "paatos": "Päätös porrastaa työttömyysturva ja lisätä aktiivimalli 2018–2025, priorisoiden työllistymistä",
+        "vaikutus": "Välitön säästö valtion menoissa, mutta kasvava byrokratia ja epävarmuus",
+        "seuraukset": "Vuonna 2025 työttömyysturvan porrastus on johtanut pienempiin korvauksiin pitkäaikaistyöttömille, mikä pahentaa köyhyyttä ja mielenterveysongelmia",
+        "sopeutuminen": "Työttömät sopeutuvat aktiivimalliin ja lisätöihin",
+        "kertautuminen": "Epävarmuus lisää syrjäytymistä ja terveysongelmia",
+        "normalisoituminen": "Porrastus ja aktiivimalli koetaan 'normaalina' työllistymisen edistämisenä"
+      },
+      "normiriski": 4,
+      "vaikutuskerrokset": ["henkinen_terveys", "sosiaalinen_luottamus", "hallinto_ja_valta"],
+      "populationExposure": ["työttömät", "pitkäaikaistyöttömät"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2018, "horizon": "2018–2030+" },
+      "notes": ["Ajallinen viive: 2–5 vuotta ennen köyhyyden ja syrjäytymisen täyden vaikutuksen."]
+    }
+  ]
+}
