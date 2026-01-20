@@ -1,0 +1,76 @@
+{
+  "kirjasto": "Ympäristö.casebook – Suomen ympäristökriisien ja normalisoituneiden haittojen kokoelma",
+  "versio": "1.0",
+  "paivitetty": "2026-01-20",
+  "kuvaus": "Case-esimerkit ympäristöstä: Talvivaara-kaivos, ilmastonmuutos ja ympäristökriisien varautumattomuus. Jokainen case mallintaa päätöksen elinkaaren Seurausten talon mukaisesti: päätös → vaikutus → seuraukset → sopeutuminen → kertautuminen → normalisoituminen.",
+  "cases": [
+    {
+      "id": "ymparisto-talvivaara-kaivos",
+      "title": "Talvivaara-kaivoksen ympäristöskandaali ja sen pitkäaikaiset vaikutukset (2004–2025)",
+      "aihe": "Bioliuotusmenetelmän käyttöön liittyvät vuodot, saasteet ja kaivostoiminnan ympäristöriskit",
+      "elinkaarivaiheet": {
+        "paatos": "Talvivaara-projektin käynnistäminen bioliuotustekniikalla ilman riittävää riskiarviota ja varautumista vuotoihin 2000-luvun alussa",
+        "vaikutus": "Useat vuodot (esim. 2012–2013) happamien metalli- ja sulfaattipitoisten vesien ympäristöön, vesistöjen saastuminen",
+        "seuraukset": "Kalakuolemat, terveysriskit paikallisväestölle, Natura-alueiden pilaantuminen, luontokadon kiihtyminen alueella",
+        "sopeutuminen": "Viranomaiset ja yhtiö sopeutuivat tiukentamalla valvontaa ja sulkemalla altaita, mutta riskit jatkuvat vanhoissa saasteissa",
+        "kertautuminen": "Kaivostoiminnan ympäristöriskit siirtyvät uusille hankkeille ilman systemaattista muutosta – 'vuotoja tapahtuu'",
+        "normalisoituminen": "Vuodot ja saasteet koetaan 'kaivosteollisuuden normaaleina riskeinä' – 'taloudellinen hyöty painaa vaakaa'"
+      },
+      "normiriski": 5,
+      "normitila": "MUUTOS ON MUUTTUMASSA NORMIKSI – ja on jo pitkälti normalisoitunut (pitkäaikaiset saasteet jäävät maaperään)",
+      "hyodyt_optimistinen": "Pakollinen elinkaarimalli olisi pakottanut ennakkosimulointiin ja parempaan varautumiseen → vähemmän vuotoja ja saasteita.",
+      "riskit_realistinen": "Raportit hyväksytään muodollisesti, mutta 'taloudelliset realiteetit' ja luvat jatkavat vanhaa linjaa.",
+      "yhteenveto": "Talvivaara on klassinen esimerkki ympäristöhaittojen normalisoitumisesta ilman riittävää vastuuta ja ennakointia. Ilman institutionaalista muistia ja pakollista seurausten näkyväksi tekemistä riskit siirtyvät uusille kaivoksille.",
+      "kysymys_lukijalle": "Pitäisikö kaivoshankkeiden elinkaarimalli ja ympäristöriskien simulointi tehdä pakolliseksi laissa?",
+      "lahteet": [
+        {"viite": "[26]", "nimi": "Wikipedia – Talvivaara mine (päiv. 2025)", "linkki": "https://en.wikipedia.org/wiki/Talvivaara_mine", "huomio": "Ympäristöskandaali 2010-luvulla, vuodot ja saasteet"},
+        {"viite": "[27]", "nimi": "Yle – Talvivaara: Kriisi ja seuraukset (päiv. 2025)", "linkki": "https://yle.fi/aihe/artikkeli/2014/11/06/talvivaara-kronologia", "huomio": "Kronologia 2004–2014, ympäristövaikutukset"}
+      ]
+    },
+    {
+      "id": "ymparisto-ilmastonmuutos",
+      "title": "Ilmastonmuutos Suomessa – päästöt, sopeutuminen ja kriisivaikutukset (2000–2025)",
+      "aihe": "Kasvihuonekaasupäästöjen kehitys, sopeutumisen haasteet ja kroonistuvat ilmastovaikutukset",
+      "elinkaarivaiheet": {
+        "paatos": "Hidas siirtymä fossiilisista polttoaineista ja riittämättömät päästövähennykset 2000–2020-luvuilla",
+        "vaikutus": "Päästöt laskeneet mutta eivät tarpeeksi; 2024 ylitykset EU-kiintiöissä, LULUCF-sektori haasteena",
+        "seuraukset": "Sään ääri-ilmiöt yleistyvät (myrskyt, tulvat, kuivuus), metsien hiilinielujen heikkeneminen, biodiversiteetin lasku",
+        "sopeutuminen": "Viranomaiset ja yhteiskunta sopeutuvat hitaasti (esim. tulvasuojelut, metsänhoito), mutta resurssit riittämättömät",
+        "kertautuminen": "Kroonistuvat kriisit siirtyvät vuosikymmenille: heikentynyt luonto → heikompi sopeutuminen → suuremmat kustannukset",
+        "normalisoituminen": "Ääri-säät ja päästöylitykset koetaan 'uuden normaalina' – 'ilmasto muuttuu, mutta Suomi pärjää'"
+      },
+      "normiriski": 5,
+      "normitila": "MUUTOS ON MUUTTUMASSA NORMIKSI – ja on jo lukkiutumassa (2030/2040-tavoitteet uhkaavat jäädä saavuttamatta)",
+      "hyodyt_optimistinen": "Pakollinen elinkaarimalli pakottaisi 10–30 vuoden simulointeihin → vahvempi paine päästöleikkauksiin ja sopeutumiseen.",
+      "riskit_realistinen": "Raportit hyväksytään, mutta 'taloudelliset realiteetit' hidastavat muutosta.",
+      "yhteenveto": "Ilmastonmuutos on normalisoitumassa rakenteelliseksi kriisiksi ilman riittävää ennakointia. Ilman pakollista seurausten mallintamista Suomi jää jälkeen sopeutumisessa.",
+      "kysymys_lukijalle": "Pitäisikö ilmastopäätösten elinkaarimalli ja sopeutumissimulointi tehdä pakolliseksi kansallisessa lainsäädännössä?",
+      "lahteet": [
+        {"viite": "[24]", "nimi": "YM – Ilmastovuosikertomus 2025 (päiv. 2025)", "linkki": "https://ym.fi/ilmastovuosikertomus-2025", "huomio": "Päästöt ja kriisit 2000–2025, 2024 ylitykset EU-kiintiöissä"},
+        {"viite": "[28]", "nimi": "Sitra – Ympäristökriisit Suomessa (päiv. 2025)", "linkki": "https://www.sitra.fi/julkaisut/ymparistokriisit-suomessa/", "huomio": "Muutokset ja kriisit 2000–2025"}
+      ]
+    },
+    {
+      "id": "ymparisto-ymparistokriisien-varautuminen",
+      "title": "Ympäristökriisien varautumattomuus Suomessa (2025 tilanne)",
+      "aihe": "Julkisten organisaatioiden kyvyttömyys varautua kroonisiin ja epävarmoihin ympäristökriiseihin",
+      "elinkaarivaiheet": {
+        "paatos": "Varautumisen suunnittelu keskittyy akuutteihin kriiseihin ilman kroonisten ympäristöriskien integrointia",
+        "vaikutus": "Epävarmuus (pitkät aikavälit, monimutkaisuus) ei juurru suunnitteluun ja päätöksentekoon",
+        "seuraukset": "Resilienssin rakentaminen epäonnistuu: käytännön toiminta, ennaltaehkäisy ja uhkien hahmottaminen eivät toimi yhdessä",
+        "sopeutuminen": "Organisaatiot sopeutuvat 'varauduttava kaikkeen vähän' -tasolla, mutta institutionaaliset käytännöt sulkevat ulos kriisien piirteet",
+        "kertautuminen": "Kroonistuvat kriisit (ilmasto, luontokato) pahenevat ilman systemaattista sopeutumista",
+        "normalisoituminen": "Varautumattomuus koetaan 'realistisena' – 'emme voi varautua kaikkeen'"
+      },
+      "normiriski": 4,
+      "normitila": "Päätös on vaarassa normalisoitua – ellei yhdistetä epävarmuus suunnitteluun",
+      "hyodyt_optimistinen": "Elinkaarimalli pakottaisi yhdistämään krooniset riskit vakiintuneeseen suunnitteluun → parempi resilienssi.",
+      "riskit_realistinen": "Uudet menetelmät jäävät kokeiluiksi, institutionaaliset käytännöt estävät muutoksen.",
+      "yhteenveto": "Suomi ei kykene varautumaan ympäristökriisien epävarmuuteen institutionaalisesti. Ilman pakollista mallintamista kriisit kroonistuvat ilman korjausta.",
+      "kysymys_lukijalle": "Pitäisikö ympäristökriisien varautumisen elinkaarimalli tehdä pakolliseksi julkisessa hallinnossa?",
+      "lahteet": [
+        {"viite": "[25]", "nimi": "TUNI – Suomi ei varaudu ympäristökriiseihin (2025-08-13)", "linkki": "https://www.tuni.fi/fi/ajankohtaista/suomi-ei-nykyisellaan-pysty-varautumaan-ymparistokriisien-epavarmuuteen", "huomio": "Epävarmuuden omaksumatta jättäminen, resilienssin rakentamisen katkokset"}
+      ]
+    }
+  ]
+}
