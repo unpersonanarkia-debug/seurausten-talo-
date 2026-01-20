@@ -1,0 +1,103 @@
+{
+  "kirjasto": "Asuminen.casebook – Suomen asumiskriisin ja asuntopolitiikan kriisien kokoelma",
+  "versio": "1.0",
+  "paivitetty": "2026-01-21",
+  "kuvaus": "Case-esimerkit asumisesta: vuokrien nousu, asuntopula, ARA-tuotannon riittämättömyys, asumistuen leikkaukset ja omistusasumisen velkakierre. Jokainen case mallintaa päätöksen elinkaaren Seurausten talon mukaisesti: päätös → vaikutus → seuraukset → sopeutuminen → kertautuminen → normalisoituminen.",
+  "cases": [
+    {
+      "id": "asuminen-vuokrien-nousu",
+      "title": "Vuokrien nousu ja asumiskustannusten kasvu (2015–2025)",
+      "aihe": "Päätökset jättää vuokrasääntely löysäksi ja asumistuki indeksikorotuksista huolimatta alhaisena vuokrien noustessa",
+      "elinkaarivaiheet": {
+        "paatos": "Päätös pitää vuokrasääntely löysänä ja asumistuki suhteellisen matalana vuokrien nousun rinnalla (esim. markkinavuokrien vapauttaminen 2015)",
+        "vaikutus": "Välitön vuokrien nousu suurissa kaupungeissa, mutta kasvava asumiskustannusten osuus tuloista",
+        "seuraukset": "Vuonna 2025 vuokrien osuus tuloista yli 40 % monilla pienituloisilla kotitalouksilla, mikä pahentaa asumisköyhyyttä ja mielenterveysongelmia; yli 100 000 kotitaloutta asumisköyhyydessä",
+        "sopeutuminen": "Asukkaat sopeutuvat pienempiin asuntoihin, kimppakämppiin tai muuttoliikkeeseen kehyskuntiin",
+        "kertautuminen": "Korkeat vuokrat lisäävät köyhyyttä ja syrjäytymistä, mikä kuormittaa sosiaaliturvaa ja terveydenhuoltoa",
+        "normalisoituminen": "Korkeat vuokrat ja asumistuen riittämättömyys koetaan 'normaalina' kaupunkiasumisena"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["fyysinen_terveys", "henkinen_terveys", "sosiaalinen_luottamus"],
+      "populationExposure": ["pienituloiset", "vuokralaiset", "perheet", "nuoret"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2015, "horizon": "2015–2030+" },
+      "notes": ["Ajallinen viive: 3–7 vuotta ennen asumisköyhyyden akuutin vaikutuksen näkymistä."]
+    },
+    {
+      "id": "asuminen-asuntopula-paa-kaupunkiseudulla",
+      "title": "Asuntopula pääkaupunkiseudulla ja nuorten syrjäytyminen (2010–2025)",
+      "aihe": "Päätös rajoittaa kaavoitusta ja ARA-tuotantoa pääkaupunkiseudulla",
+      "elinkaarivaiheet": {
+        "paatos": "Päätös rajoittaa kaavoitusta ja ARA-tuotantoa pääkaupunkiseudulla, priorisoiden omistusasumista ja alueiden arvonnousua",
+        "vaikutus": "Välitön asuntopula ja vuokrien nousu, mutta kasvava syrjäytymisriski nuorilla",
+        "seuraukset": "Vuonna 2025 yli 50 000 nuorta aikuista (18–34 v) ei pääse omistusasuntoon tai kohtuuhintaiseen vuokra-asuntoon, mikä pahentaa mielenterveysongelmia ja muuttoliikettä pois pääkaupunkiseudulta",
+        "sopeutuminen": "Nuoret sopeutuvat kimppakämppiin, etätyöhön ja muuttoliikkeeseen kehyskuntiin",
+        "kertautuminen": "Asuntopula lisää syrjäytymistä ja terveysongelmia, mikä kuormittaa sosiaaliturvaa",
+        "normalisoituminen": "Asuntopula koetaan 'normaalina' suurissa kaupungeissa, mikä vaikuttaa tuleviin kaavoituspäätöksiin"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["henkinen_terveys", "sosiaalinen_luottamus", "hallinto_ja_valta"],
+      "populationExposure": ["nuoret aikuiset", "perheet", "pienituloiset"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2010, "horizon": "2010–2030+" },
+      "notes": ["Ajallinen viive: 5–10 vuotta ennen syrjäytymisen täyden vaikutuksen näkymistä."]
+    },
+    {
+      "id": "asuminen-ara-tuotannon-riittamattomyys",
+      "title": "ARA-tuotannon riittämättömyys (2015–2025)",
+      "aihe": "Päätös rajoittaa valtion tukemaa ARA-tuotantoa ja jättää markkinavoimien ratkaista kohtuuhintaiset asunnot",
+      "elinkaarivaiheet": {
+        "paatos": "Päätös vähentää ARA-tuotannon tukea ja priorisoida omistusasumista",
+        "vaikutus": "Välitön säästö valtion menoissa, mutta kasvava kohtuuhintaisten asuntojen puute",
+        "seuraukset": "Vuonna 2025 ARA-tuotanto jää alle 10 000 asunnon vuodessa, mikä pahentaa vuokrien nousua ja asumisköyhyyttä erityisesti pääkaupunkiseudulla",
+        "sopeutuminen": "Asukkaat sopeutuvat pienempiin asuntoihin tai muuttoliikkeeseen",
+        "kertautuminen": "Kohtuuhintaisten asuntojen puute lisää köyhyyttä ja terveysongelmia",
+        "normalisoituminen": "ARA-tuotannon riittämättömyys koetaan 'normaalina' markkinatilanteena"
+      },
+      "normiriski": 4,
+      "vaikutuskerrokset": ["fyysinen_terveys", "sosiaalinen_luottamus", "hallinto_ja_valta"],
+      "populationExposure": ["pienituloiset", "vuokralaiset", "perheet"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2015, "horizon": "2015–2030+" },
+      "notes": ["Ajallinen viive: 3–7 vuotta ennen asumisköyhyyden akuutin vaikutuksen näkymistä."]
+    },
+    {
+      "id": "asuminen-asumistuen-leikkaukset",
+      "title": "Asumistuen leikkaukset ja porrastus (2018–2025)",
+      "aihe": "Päätös leikata asumistukea ja porrastaa sitä tulojen mukaan",
+      "elinkaarivaiheet": {
+        "paatos": "Päätös leikata asumistukea ja porrastaa se tulojen mukaan kustannussäästöjen nimissä",
+        "vaikutus": "Välitön säästö valtion menoissa, mutta kasvava asumiskustannusten osuus pienituloisilla",
+        "seuraukset": "Vuonna 2025 asumistuen leikkaukset ovat johtaneet yli 50 000 kotitalouden asumisköyhyyteen, mikä pahentaa mielenterveysongelmia ja syrjäytymistä",
+        "sopeutuminen": "Saajat sopeutuvat pienempiin asuntoihin tai lisätöihin",
+        "kertautuminen": "Leikkaukset lisäävät köyhyyttä ja terveysongelmia",
+        "normalisoituminen": "Asumistuen leikkaukset koetaan 'normaalina' säästötoimena"
+      },
+      "normiriski": 4,
+      "vaikutuskerrokset": ["fyysinen_terveys", "henkinen_terveys", "sosiaalinen_luottamus"],
+      "populationExposure": ["pienituloiset", "vuokralaiset", "perheet"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2018, "horizon": "2018–2030+" },
+      "notes": ["Ajallinen viive: 2–5 vuotta ennen köyhyyden ja syrjäytymisen täyden vaikutuksen."]
+    },
+    {
+      "id": "asuminen-omistusasumisen-velkakierre",
+      "title": "Omistusasumisen velkakierre ja korkojen nousu (2020–2025)",
+      "aihe": "Päätös tukea omistusasumista matalilla koroilla ja tuilla, mikä johtaa velkakierteeseen korkojen noustessa",
+      "elinkaarivaiheet": {
+        "paatos": "Päätös tukea omistusasumista matalilla koroilla ja asuntolainavähennyksillä, priorisoiden omistusasumista vuokra-asumisen yli",
+        "vaikutus": "Välitön asunnonostajien määrä kasvaa, mutta kasvava velkataakka",
+        "seuraukset": "Vuonna 2025 korkojen nousu on johtanut yli 100 000 kotitalouden maksuvaikeuksiin asuntolainoissa, mikä pahentaa mielenterveysongelmia ja asumisvakuutuksen tarvetta",
+        "sopeutuminen": "Asukkaat sopeutuvat lisätöihin ja säästöihin",
+        "kertautuminen": "Velkakierre lisää taloudellista epävarmuutta ja terveysongelmia",
+        "normalisoituminen": "Omistusasumisen velkakierre koetaan 'normaalina' asumismuotona"
+      },
+      "normiriski": 4,
+      "vaikutuskerrokset": ["fyysinen_terveys", "henkinen_terveys", "hallinto_ja_valta"],
+      "populationExposure": ["asunnonomistajat", "ensiasunnonostajat"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2020, "horizon": "2020–2030+" },
+      "notes": ["Ajallinen viive: 2–5 vuotta ennen korkojen nousun täyden vaikutuksen."]
+    }
+  ]
+}
