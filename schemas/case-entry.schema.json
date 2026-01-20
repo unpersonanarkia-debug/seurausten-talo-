@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://seurausten-talo/schemas/case-entry.schema.json",
+  "title": "Seurausten talon case-entry",
+  "description": "Yksittäinen case-objekti casebook-tiedostoissa. Pakottaa elinkaaren, vaikutuskerrokset ja muut pakolliset kentät.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Uniikki tunniste (slug-muotoinen, esim. sektori-aihe-vuosi)",
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "minLength": 5,
+      "maxLength": 100,
+      "examples": ["maahanmuutto-pakolaiskriisi-2015", "canonical-emergency-permanence"]
+    },
+    "title": {
+      "description": "Selkeä, kuvaava otsikko",
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 120
+    },
+    "aihe": {
+      "description": "Lyhyt kuvaus päätöksestä / ilmiöstä",
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 300
+    },
+    "elinkaarivaiheet": {
+      "description": "Päätöksen elinkaaren vaiheet (CASE_LIFECYCLE mukaisesti)",
+      "type": "object",
+      "properties": {
+        "paatos": { "type": "object", "properties": { "summary": { "type": "string" } }, "required": ["summary"] },
+        "vaikutus": { "type": "object", "properties": { "summary": { "type": "string" } }, "required": ["summary"] },
+        "seuraukset": { "type": "object", "properties": { "summary": { "type": "string" } }, "required": ["summary"] },
+        "sopeutuminen": { "type": "object", "properties": { "summary": { "type": "string" } }, "required": ["summary"] },
+        "kertautuminen": { "type": "object", "properties": { "summary": { "type": "string" } }, "required": ["summary"] },
+        "normalisoituminen": { "type": "object", "properties": { "summary": { "type": "string" } }, "required": ["summary"] }
+      },
+      "required": ["paatos", "vaikutus", "seuraukset", "sopeutuminen", "kertautuminen", "normalisoituminen"],
+      "additionalProperties": false
+    },
+    "normiriski": {
+      "description": "Normiriski asteikolla 1–5 (5 = suurin todennäköisyys normalisoitumiseen)",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "vaikutuskerrokset": {
+      "description": "Vaikutuskerrokset IMPACT_LAYERS-listasta",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["fyysinen_terveys", "henkinen_terveys", "lapsuus_ja_kehitys", "informaatioymparisto", "sosiaalinen_luottamus", "hallinto_ja_valta", "turvallisuus_ja_sota"]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "populationExposure": {
+      "description": "Ketkä altistuvat eniten (ryhmät)",
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "conflictMode": {
+      "description": "Konfliktin tyyppi CONFLICT_MODES-listasta",
+      "type": "string",
+      "enum": ["rakenteellinen", "kilpailullinen", "kumouksellinen", "kyber", "hybridi", "aseellinen"]
+    },
+    "timeframe": {
+      "type": "object",
+      "properties": {
+        "decisionYear": { "type": ["integer", "string"], "description": "Päätösvuosi tai 'kriisihetki' canonical-caseissa" },
+        "horizon": { "type": "string", "description": "Aikahorisontti, esim. '2015–2040+'" }
+      },
+      "required": ["decisionYear", "horizon"]
+    },
+    "notes": {
+      "description": "Lisätiedot, mm. ajallinen viive ja testihuomiot",
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "aihe",
+    "elinkaarivaiheet",
+    "normiriski",
+    "vaikutuskerrokset",
+    "populationExposure",
+    "conflictMode",
+    "timeframe"
+  ],
+  "additionalProperties": false
+}
