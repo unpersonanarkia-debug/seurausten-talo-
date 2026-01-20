@@ -1,0 +1,125 @@
+{
+  "kirjasto": "Talouscasebook – Suomen kriisien ja normalisoituneiden haittojen kokoelma",
+  "versio": "1.0",
+  "paivitetty": "2026-01-20",
+  "kuvaus": "Case-esimerkit taloudesta, ympäristöstä, terveydestä ja teknologiasta. Jokainen case mallintaa päätöksen elinkaaren Seurausten talon mukaisesti: päätös → vaikutus → seuraukset → sopeutuminen → kertautuminen → normalisoituminen.",
+  "cases": [
+    {
+      "id": "talous-nokia-romahdus-2010s",
+      "title": "Nokian romahdus ja teknologia-alan supistuminen (2007–2015 ja jälkivaikutukset 2025)",
+      "aihe": "Nokian matkapuhelinliiketoiminnan romahdus, älypuhelinmarkkinoiden menetys ja teknologiasektorin supistuminen",
+      "elinkaarivaiheet": {
+        "paatos": "Nokian päätökset Symbian-ekosysteemin kehityksessä ja myöhäinen siirtymä Android/iOS:ään 2007–2010",
+        "vaikutus": "Massairtisanomiset (kymmenet tuhannet Suomessa), verotulojen romahdus, vientivetoisen talouden heikentyminen",
+        "seuraukset": "BKT-supistuma 2009–2015, työttömyyden kasvu teknologiakeskuksissa (esim. Salo, Oulu), julkisen talouden alijäämä kasvoi",
+        "sopeutuminen": "Entiset nokialaiset perustivat startup-yrityksiä, osaamisvirta uusiin firmoihin, mutta kokonaistyöllisyys ei palautunut",
+        "kertautuminen": "Riippuvuus yhdestä yhtiöstä paljastui, talous monipuolistui hitaasti, mutta tuottavuuskehitys pysähtyi",
+        "normalisoituminen": "Nokian romahdus nähdään 'väistämättömänä' globaalina muutoksena – 'Suomi selvisi kuitenkin' -narratiivi peittää rakenteelliset haitat"
+      },
+      "normiriski": 5,
+      "normitila": "MUUTOS ON MUUTTUMASSA NORMIKSI – ja on jo normalisoitunut (tuottavuuskehitys pysähtynyt 2008 jälkeen)",
+      "hyodyt_optimistinen": "Pakollinen elinkaarimalli olisi pakottanut monipuolistamaan vientiä ajoissa → vähemmän riippuvuutta yhdestä yhtiöstä.",
+      "riskit_realistinen": "Raportit hyväksytään muodollisesti, mutta 'kilpailukyky' pakottaa jatkamaan vanhoilla linjoilla.",
+      "yhteenveto": "Nokian romahdus on klassinen esimerkki riippuvuuden normalisoitumisesta rakenteelliseksi hidasteeksi. Ilman seurausten pakollista näkyväksi tekemistä Suomi menetti vuosikymmenen kasvua.",
+      "kysymys_lukijalle": "Pitäisikö strategisten vientialojen päätösten elinkaarimalli tehdä pakolliseksi laissa vai riittäisikö vapaaehtoinen käyttö yrityksissä?",
+      "lahteet": [
+        {"viite": "[10]", "nimi": "Euro ja Talous – Suomen talous virkoaa taantumasta (2024)", "linkki": "https://www.eurojatalous.fi/fi/2024/3/suomen-talous-virkoaa-vahitellen-taantumasta/"},
+        {"viite": "[15]", "nimi": "ETLA – 2020-luvun ankea kasvu (2025)", "linkki": "https://www.etla.fi/ajankohtaista/kolumnit/tasta-syysta-2020-luvun-talouskasvu-on-ollut-ankeaa/"},
+        {"viite": "[16]", "nimi": "Valtioneuvosto – Suomen talouskriisin luonne (2014)", "linkki": "https://valtioneuvosto.fi/-/suomen-talouskriisin-luonne-ja-kasvun-edellytykset"}
+      ]
+    },
+    {
+      "id": "talous-finanssikriisi-2008",
+      "title": "Finanssikriisi 2008 ja sen pitkät jälkivaikutukset (2008–2025)",
+      "aihe": "Globaali finanssikriisi, Suomen vientivetoinen talous ja tuottavuuden pysähtyminen",
+      "elinkaarivaiheet": {
+        "paatos": "Liian suuri riippuvuus vientiteollisuudesta ja Nokian kaltaisista supertähdistä ilman riittävää diversifiointia",
+        "vaikutus": "BKT-supistuma 8,3 % (suurin pudotus historiassa), pankkien tukipaketit, vienti romahti",
+        "seuraukset": "Tuottavuuskasvu pysähtyi, julkisen velan kasvu, työttömyyden nousu, investoinnit hiipuivat",
+        "sopeutuminen": "Yritykset sopeutuivat supistamalla, julkisen sektorin sopeutus leikkauksilla, kulutus kasvoi velalla",
+        "kertautuminen": "Ongelma siirtyi vuosikymmenelle: heikko tuottavuus → hidas kasvu → velkaantuminen",
+        "normalisoituminen": "Nollakasvu 15+ vuotta koetaan 'uuden normaalina' – 'Suomi on kriisialtis maa'"
+      },
+      "normiriski": 5,
+      "normitila": "MUUTOS ON MUUTTUMASSA NORMIKSI – ja on jo lukkiutunut (tuottavuuskehitys pysähtynyt)",
+      "hyodyt_optimistinen": "Elinkaarimalli olisi pakottanut ennakoimaan kriisialttiutta ja monipuolistamaan taloutta ajoissa.",
+      "riskit_realistinen": "Raportit jäävät hyllylle, 'suhdannevaihtelut' hyväksytään normaaliksi.",
+      "yhteenveto": "Finanssikriisi paljasti riippuvuuden haavoittuvuuden, mutta normalisoituminen esti radikaalit korjaukset.",
+      "kysymys_lukijalle": "Pitäisikö kriisialttiuden arviointi tehdä pakolliseksi talouspoliittisissa päätöksissä?",
+      "lahteet": [
+        {"viite": "[3]", "nimi": "Yale EliScholar – Great Financial Crisis in Finland and Sweden (2009, päivitykset 2025)", "linkki": "https://elischolar.library.yale.edu/cgi/viewcontent.cgi?article=1003&context=ypfs-documents2"},
+        {"viite": "[4]", "nimi": "ResearchGate – Financial Crises in Developed Economies: Sweden and Finland (päiv. 2025)", "linkki": "https://www.researchgate.net/publication/228465878_Financial_crises_in_developed_economies_The_cases_of_Sweden_and_Finland"},
+        {"viite": "[10]", "nimi": "Euro ja Talous – Suomen talous virkoaa taantumasta (2024)", "linkki": "https://www.eurojatalous.fi/fi/2024/3/suomen-talous-virkoaa-vahitellen-taantumasta/"}
+      ]
+    },
+    {
+      "id": "talous-velkakriisi-2010s",
+      "title": "Velkaantumisen kiihtyminen 2010-luvulla ja nykytila 2025",
+      "aihe": "Julkisen talouden velkaantuminen finanssikriisin jälkeen, kriisitoimet ja sopeutusleikkaukset",
+      "elinkaarivaiheet": {
+        "paatos": "Elvytystoimet 2009–2015 ja sopeutusleikkaukset ilman riittävää kasvupanostusta",
+        "vaikutus": "Velka/BKT nousi 35 % → yli 60 % (2025), korkomenot kasvoivat",
+        "seuraukset": "Investoinnit hiipuivat, tuottavuus pysähtyi, julkiset palvelut heikkenivät",
+        "sopeutuminen": "Kunnat ja valtio sopeutuivat leikkauksilla, yksityinen kulutus velalla",
+        "kertautuminen": "Velka siirtyy sukupolville, kasvu hidastuu entisestään",
+        "normalisoituminen": "Velka yli 60 % BKT:sta koetaan 'hallittavaksi' – 'kaikki maat velkaantuvat'"
+      },
+      "normiriski": 4,
+      "normitila": "Päätös on vaarassa normalisoitua – ellei katkaista",
+      "hyodyt_optimistinen": "Elinkaarimalli olisi pakottanut simulointiin → vähemmän velkakierrettä.",
+      "riskit_realistinen": "Leikkaukset hyväksytään 'välttämättöminä', velka kasvaa edelleen.",
+      "yhteenveto": "Velkaantuminen on normalisoitunut rakenteelliseksi ongelmaksi ilman korjausta.",
+      "kysymys_lukijalle": "Pitäisikö velkaantumisen elinkaarimalli tehdä pakolliseksi budjettipäätöksissä?",
+      "lahteet": [
+        {"viite": "[6]", "nimi": "Uusi Suomi – Suomen talous miinuksella 15 vuotta (2025)", "linkki": "https://puheenvuoro.uusisuomi.fi/jairipalonen/suomen-talous-on-ollut-miinuksella-15-vuotta-oppitunti-muillekin/"},
+        {"viite": "[22]", "nimi": "Uusi Suomi – Pisteindeksin historia (2025)", "linkki": "https://puheenvuoro.uusisuomi.fi/jairipalonen/563772/"},
+        {"viite": "[30]", "nimi": "Valtionvelka.fi – Faktoja valtionvelasta (2025)", "linkki": "https://www.valtionvelka.fi/valtion-velan-ja-kassanhallinta/faktoja-valtionvelasta"}
+      ]
+    },
+    {
+      "id": "ymparisto-talvivaara",
+      "title": "Talvivaara-kaivoksen ympäristöskandaali ja normalisoituneet haitat (2010–2025)",
+      "aihe": "Kipsisakka-altaan vuodot, saasteet ja kaivostoiminnan ympäristöriskit",
+      "elinkaarivaiheet": {
+        "paatos": "Bioliuotusmenetelmän käyttö ilman riittävää riskiarviota 2000-luvun alussa",
+        "vaikutus": "Vuodot 2012: happamat metalli- ja sulfaattipitoiset vedet luontoon",
+        "seuraukset": "Vesistöjen saastuminen, kalakuolemat, terveysriskit paikallisille",
+        "sopeutuminen": "Viranomaiset ja yhtiö sopeutuivat tiukentamalla valvontaa, mutta ongelmat jatkuivat",
+        "kertautuminen": "Kaivostoiminnan ympäristöriskit siirtyvät uusille hankkeille ilman muutosta",
+        "normalisoituminen": "Vuodot ja saasteet koetaan 'kaivosteollisuuden normaaleina riskeinä'"
+      },
+      "normiriski": 5,
+      "normitila": "MUUTOS ON MUUTTUMASSA NORMIKSI – ja on jo lukkiutunut",
+      "hyodyt_optimistinen": "Pakollinen elinkaarimalli olisi pakottanut ennakkosimulointiin → vähemmän vuotoja.",
+      "riskit_realistinen": "Raportit hyväksytään, mutta 'taloudelliset realiteetit' jatkavat vanhaa.",
+      "yhteenveto": "Talvivaara on esimerkki ympäristöhaittojen normalisoitumisesta ilman riittävää vastuuta.",
+      "kysymys_lukijalle": "Pitäisikö kaivoshankkeiden elinkaarimalli tehdä pakolliseksi laissa?",
+      "lahteet": [
+        {"viite": "[26]", "nimi": "Wikipedia – Talvivaara mine (päiv. 2025)", "linkki": "https://en.wikipedia.org/wiki/Talvivaara_mine"},
+        {"viite": "[27]", "nimi": "Yle – Talvivaara: Kriisi ja seuraukset (päiv. 2025)", "linkki": "https://yle.fi/aihe/artikkeli/2014/11/06/talvivaara-kronologia"}
+      ]
+    },
+    {
+      "id": "terveys-mielenterveyskriisi",
+      "title": "Mielenterveyskriisi Suomessa (2000–2025)",
+      "aihe": "Burnout-kasvu, nuorten uupumus ja mielenterveyspalveluiden riittämättömyys",
+      "elinkaarivaiheet": {
+        "paatos": "Resurssien leikkaukset ja työelämän kiristyminen ilman riittävää tukea",
+        "vaikutus": "Mielenterveysongelmien kasvu, työkyvyttömyyseläkkeet lisääntyvät",
+        "seuraukset": "Tuottavuuden lasku, terveydenhuollon kuormitus, nuorten syrjäytyminen",
+        "sopeutuminen": "Toimijat sopeutuvat jonoihin ja vähäiseen tukeen, stigma vähenee mutta apu puuttuu",
+        "kertautuminen": "Ongelma siirtyy sukupolville: heikentynyt hyvinvointi → heikompi työelämä",
+        "normalisoituminen": "Burnout ja jonot koetaan 'nykyajan normina'"
+      },
+      "normiriski": 5,
+      "normitila": "MUUTOS ON MUUTTUMASSA NORMIKSI – ja on jo lukkiutunut",
+      "hyodyt_optimistinen": "Elinkaarimalli pakottaisi ennakoimaan työhyvinvoinnin kustannuksia.",
+      "riskit_realistinen": "Raportit jäävät, 'tuottavuus' priorisoidaan.",
+      "yhteenveto": "Mielenterveyskriisi on normalisoitunut rakenteelliseksi haitaksi ilman korjausta.",
+      "kysymys_lukijalle": "Pitäisikö työpaikkojen mielenterveyden elinkaarimalli tehdä pakolliseksi?",
+      "lahteet": [
+        {"viite": "[31]", "nimi": "THL – Mielenterveyskriisi Suomessa (päiv. 2025)", "linkki": "https://thl.fi/aiheet/mielenterveys"}
+      ]
+    }
+  ]
+}
