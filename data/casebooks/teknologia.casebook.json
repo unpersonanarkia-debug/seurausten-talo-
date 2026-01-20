@@ -1,0 +1,57 @@
+{
+  "kirjasto": "Teknologia.casebook – Suomen teknologiateollisuuden kriisien ja normalisoituneiden haittojen kokoelma",
+  "versio": "1.0",
+  "paivitetty": "2026-01-20",
+  "kuvaus": "Case-esimerkit teknologiasta: Nokian romahdus ja teknologiateollisuuden rakenteelliset haasteet 2000–2025. Jokainen case mallintaa päätöksen elinkaaren Seurausten talon mukaisesti: päätös → vaikutus → seuraukset → sopeutuminen → kertautuminen → normalisoituminen.",
+  "cases": [
+    {
+      "id": "teknologia-nokia-romahdus",
+      "title": "Nokian mobiililiiketoiminnan romahdus ja sen pitkäaikaiset jälkivaikutukset (2007–2025)",
+      "aihe": "Nokian päätökset Symbian-ekosysteemissä ja myöhäinen siirtymä älypuhelimiin, johtanut massiiviseen supistumiseen",
+      "elinkaarivaiheet": {
+        "paatos": "Riippuvuus Symbian-alustasta ja hidas reaktio iPhoneen/Androidiin 2007–2010, ulkoistaminen ja supistukset ilman riittävää diversifiointia",
+        "vaikutus": "Massairtisanomiset (kymmenet tuhannet Suomessa), vientitulojen romahdus, verotulojen menetys",
+        "seuraukset": "Tuottavuuskasvu pysähtyi 2008 jälkeen, BKT-supistuma paheni, teknologiakeskusten (Salo, Oulu) työttömyys nousi, julkisen talouden alijäämä kasvoi",
+        "sopeutuminen": "Entiset nokialaiset siirtyivät startuppeihin ja uusiin firmoihin, osaamisvirta auttoi, mutta kokonaistyöllisyys ja vienti eivät palautuneet entiselleen",
+        "kertautuminen": "Riippuvuus yhdestä yhtiöstä paljastui rakenteelliseksi heikkoudeksi; tuottavuuskehitys pysähtyi vuosikymmeneksi, vaikuttaa edelleen vientiin ja verotuloihin",
+        "normalisoituminen": "Nollakasvu 15+ vuotta koetaan 'uuden normaalina' – 'Suomi selvisi Nokian romahduksesta' -narratiivi peittää pysyvän tuottavuusvajeen"
+      },
+      "normiriski": 5,
+      "normitila": "MUUTOS ON MUUTTUMASSA NORMIKSI – ja on jo lukkiutunut (tuottavuuskehitys pysähtynyt 2008 jälkeen)",
+      "hyodyt_optimistinen": "Pakollinen elinkaarimalli olisi pakottanut diversifiointiin ja riskiarviointiin ajoissa → vähemmän riippuvuutta yhdestä yhtiöstä ja parempi tuottavuus.",
+      "riskit_realistinen": "Raportit hyväksytään muodollisesti, mutta 'globaalit markkinat' ja kilpailu estävät radikaalit muutokset.",
+      "yhteenveto": "Nokian romahdus on klassinen esimerkki supertähden riippuvuuden normalisoitumisesta rakenteelliseksi hidasteeksi. Ilman pakollista seurausten mallintamista Suomi menetti vuosikymmenen kasvua ja tuottavuutta.",
+      "kysymys_lukijalle": "Pitäisikö strategisten vientiyritysten ja teknologiapäätösten elinkaarimalli tehdä pakolliseksi laissa vai riittäisikö vapaaehtoinen käyttö yrityksissä?",
+      "lahteet": [
+        {"viite": "[32]", "nimi": "Teknologiateollisuus – Talousnäkymät 3/2025 (2025-08-07)", "linkki": "https://teknologiateollisuus.fi/talous-ja-tilastot/talousnakymien-arkisto/teknologiateollisuuden-talousnakymat-3-2025/", "huomio": "Kriisit ja kasvu 2000–2025, tariffit ja epävarmuus vaikuttavat edelleen"},
+        {"viite": "[35]", "nimi": "Teknologiateollisuus – Tietoa toimialasta (päiv. 2025)", "linkki": "https://teknologiateollisuus.fi/talous-ja-tilastot/tietoa-toimialasta/", "huomio": "Haasteet 2000–2025, vienti yli 50 % Suomen kokonaisviennistä, henkilöstö ~331 000"},
+        {"viite": "[36]", "nimi": "Teknologiateollisuus – Henkilöstömäärä (2025-05-04)", "linkki": "https://teknologiateollisuus.fi/graafit/teknologiateollisuuden-henkilostomaaran-kehitys-suomessa-ja-rekrytointien-maarat-talousnakymat-toukokuu-2025/", "huomio": "Työllisyyskehitys, kriisit henkilöstössä"}
+      ]
+    },
+    {
+      "id": "teknologia-teknologiateollisuuden-haasteet",
+      "title": "Teknologiateollisuuden rakenteelliset haasteet Suomessa (2000–2025 ja 2025 tilanne)",
+      "aihe": "Kaupan epävarmuus, tariffit, heikko kysyntä, osaajapula, vientimarkkinoiden kriisit ja neuvotteluhäiriöt",
+      "elinkaarivaiheet": {
+        "paatos": "Riittämätön sopeutuminen globaaleihin muutoksiin (kauppasodat, tariffit, digitaalinen murros), osaajapulan aliarviointi ja investointien viivästyminen",
+        "vaikutus": "Uudet tilaukset ja tilauskanta kasvaneet 2025 mutta epävarmuus hidastaa investointeja, tariffit (esim. US-EU 15 %) vähentävät liikevaihtoa 3–5 %",
+        "seuraukset": "Tuotanto hidastuu, rekrytointi matalalla tasolla, henkilöstö ~330 800 (vakaa mutta ei kasva), vienti kärsii heikosta kysynnästä",
+        "sopeutuminen": "Yritykset sopeutuvat lykkäämällä investointeja ja korvaamalla eläköityviä, mutta osaajapula ja tariffit estävät kasvua",
+        "kertautuminen": "Ongelmat siirtyvät vuosikymmenille: heikko tuottavuus → hidas kasvu → kilpailukyvyn menetys",
+        "normalisoituminen": "Heikko kysyntä ja epävarmuus koetaan 'uuden normaalina' – 'vienti kärsii aina ulkoisista tekijöistä'"
+      },
+      "normiriski": 4,
+      "normitila": "Päätös on vaarassa normalisoitua – ellei yhdistetä osaamispolitiikkaa ja riskiarviointia",
+      "hyodyt_optimistinen": "Elinkaarimalli pakottaisi ennakoimaan tariffiriskejä ja osaajatarvetta → parempi investointien ajoitus ja tuottavuus.",
+      "riskit_realistinen": "Raportit jäävät, 'maailmantalouden realiteetit' hidastavat muutosta.",
+      "yhteenveto": "Teknologiateollisuuden haasteet ovat normalisoitumassa rakenteelliseksi hidasteeksi ilman riittävää ennakointia. Ilman pakollista mallintamista vienti ja työllisyys kärsivät jatkuvasti.",
+      "kysymys_lukijalle": "Pitäisikö teknologiateollisuuden riskien ja osaamistarpeiden elinkaarimalli tehdä pakolliseksi toimialan päätöksenteossa?",
+      "lahteet": [
+        {"viite": "[32]", "nimi": "Teknologiateollisuus – Talousnäkymät 3/2025 (2025-08-07)", "linkki": "https://teknologiateollisuus.fi/talous-ja-tilastot/talousnakymien-arkisto/teknologiateollisuuden-talousnakymat-3-2025/", "huomio": "Kriisit ja kasvu 2000–2025, tariffit vaikuttavat liikevaihtoon"},
+        {"viite": "[34]", "nimi": "YTN – Neuvottelutulos hylätty (2025-03-26)", "linkki": "https://ytn.fi/ajankohtaista/ytnn-hallitus-hylkasi-teknologiateollisuuden-neuvottelutuloksen/", "huomio": "Epäonnistumiset neuvotteluissa"},
+        {"viite": "[35]", "nimi": "Teknologiateollisuus – Tietoa toimialasta (päiv. 2025)", "linkki": "https://teknologiateollisuus.fi/talous-ja-tilastot/tietoa-toimialasta/", "huomio": "Haasteet 2000–2025, vienti yli 50 % kokonaisviennistä"},
+        {"viite": "[37]", "nimi": "Teknologiateollisuus – Talousnäkymät 1/2025 (2025-02-12)", "linkki": "https://teknologiateollisuus.fi/talous-ja-tilastot/talousnakymien-arkisto/teknologiateollisuuden-talousnakymat-1-2025/", "huomio": "Vientimarkkinoiden kriisit"}
+      ]
+    }
+  ]
+}
