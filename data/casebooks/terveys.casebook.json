@@ -1,0 +1,75 @@
+{
+  "kirjasto": "Terveys.casebook – Suomen terveydenhuollon kriisien ja normalisoituneiden haittojen kokoelma",
+  "versio": "1.0",
+  "paivitetty": "2026-01-20",
+  "kuvaus": "Case-esimerkit terveydestä: Mielenterveyskriisi, koronahallinta ja terveydenhuollon rakenteelliset kriisit. Jokainen case mallintaa päätöksen elinkaaren Seurausten talon mukaisesti: päätös → vaikutus → seuraukset → sopeutuminen → kertautuminen → normalisoituminen.",
+  "cases": [
+    {
+      "id": "terveys-mielenterveyskriisi",
+      "title": "Mielenterveyskriisi Suomessa – nuorten oireilu ja palveluiden riittämättömyys (2000–2025)",
+      "aihe": "Burnout-kasvu, nuorten ahdistus/masennus ja psykiatristen palveluiden jonot sekä riittämätön tuki",
+      "elinkaarivaiheet": {
+        "paatos": "Resurssien leikkaukset ja työelämän/studion kiristyminen ilman riittävää mielenterveyden tukea 2010-luvulta lähtien",
+        "vaikutus": "Nuorten psyykkinen kuormitus räjähtänyt (2023: joka kolmas tyttö ja joka viides poika ahdistunut/masentunut), burnout ennen opintoja, itsetuhoisuus yleistynyt",
+        "seuraukset": "Psykiatriset käynnit yli 1,5 miljardia vuodessa 7–22-vuotiailla (2023), hoitojonot pitkät (yli 90 pv odotus yli 400 nuorella maaliskuussa 2025), syrjäytymisriski kasvaa",
+        "sopeutuminen": "Nuoret sopeutuvat vähäiseen tukeen ja jonoille, stigma vähenee mutta apu puuttuu, perhe/koulu korvaa puutteita",
+        "kertautuminen": "Ongelma siirtyy sukupolvelta toiselle: heikentynyt hyvinvointi → heikompi työelämä → yhteiskunnan tuottavuus heikkenee",
+        "normalisoituminen": "Burnout ja jonot koetaan 'nykyajan normina' – 'nuoret ovat aina ahdistuneita' -narratiivi peittää rakenteelliset puutteet"
+      },
+      "normiriski": 5,
+      "normitila": "MUUTOS ON MUUTTUMASSA NORMIKSI – ja on jo lukkiutunut (vakavat häiriöt eivät yleistyneet, mutta oireilu räjähtänyt)",
+      "hyodyt_optimistinen": "Pakollinen elinkaarimalli pakottaisi ennakoimaan työ/studio-kuormituksen kustannuksia → resurssien kohdentaminen ja jonojen purku ajoissa.",
+      "riskit_realistinen": "Raportit hyväksytään, mutta 'taloudelliset realiteetit' estävät lisäpanostukset.",
+      "yhteenveto": "Mielenterveyskriisi on normalisoitumassa rakenteelliseksi haitaksi ilman riittävää ennakointia. Ilman pakollista mallintamista nuorten tulevaisuus rapautuu sukupolvien mittaan.",
+      "kysymys_lukijalle": "Pitäisikö mielenterveyspalveluiden elinkaarimalli ja jonojen seuranta tehdä pakolliseksi terveyspoliittisissa päätöksissä?",
+      "lahteet": [
+        {"viite": "[31]", "nimi": "THL – Mielenterveyskriisi Suomessa (päiv. 2025)", "linkki": "https://thl.fi/aiheet/mielenterveys", "huomio": "Kriisit ja tilastot 2000–2025, burnout kasvu, nuorten oireilu räjähtänyt, yli 1,5 milj. käyntiä vuodessa"},
+        {"viite": "[29]", "nimi": "Julkari – Seksuaaliväkivaltatyön perusteet (päiv. 2025)", "linkki": "https://www.julkari.fi/bitstream/handle/10024/147779/URN_ISBN_978-952-408-143-6.pdf", "huomio": "Seksuaaliväkivalta kriisit 2000–2025, osa mielenterveyskriisiä"}
+      ]
+    },
+    {
+      "id": "terveys-koronahallinta",
+      "title": "Koronahallinta ja sen jälkivaikutukset Suomessa (2020–2025)",
+      "aihe": "Pandemian hoito, rajoitukset, tukitoimet ja pitkäaikaiset terveydelliset/taloudelliset seuraukset",
+      "elinkaarivaiheet": {
+        "paatos": "Tiukat rajoitukset ja elvytystoimet 2020–2022 ilman riittävää jälkiarviointia ja oppimista",
+        "vaikutus": "Tartuntojen hallinta onnistui suhteellisen hyvin, mutta palveluiden viiveet (esim. hoitojonot kasvoivat), mielenterveys heikkeni, taloudellinen elvytys lisäsi velkaa",
+        "seuraukset": "Hoitojonot pitkittyivät, mielenterveysoireilu kasvoi, taloudelliset menetykset (BKT-supistuma), ylikuolleisuus iäkkäillä korostui",
+        "sopeutuminen": "Yhteiskunta sopeutui hybridimalliin (etätyö, rokotteet), mutta palveluvelka jäi, varautuminen parani osittain",
+        "kertautuminen": "Jälkivaikutukset siirtyvät vuosikymmenille: heikentynyt terveys → suuremmat kustannukset → julkisen talouden paineet",
+        "normalisoituminen": "Pandemia koetaan 'ohitetuksi' – 'selvisimme hyvin' -narratiivi peittää hoitojonot ja mielenterveyden rapautumisen"
+      },
+      "normiriski": 4,
+      "normitila": "Päätös on vaarassa normalisoitua – ellei yhdistetä oppimista ja varautumista",
+      "hyodyt_optimistinen": "Elinkaarimalli pakottaisi 5–10 vuoden jälkivaikutusten simulointiin → parempi varautuminen ja palveluiden palauttaminen.",
+      "riskit_realistinen": "Raportit hyväksytään, mutta 'seuraava kriisi' priorisoidaan.",
+      "yhteenveto": "Koronahallinta onnistui akuutissa vaiheessa, mutta normalisoituminen peittää pitkäaikaiset terveydenhuollon ja talouden haitat. Ilman pakollista mallintamista jälkivaikutukset kroonistuvat.",
+      "kysymys_lukijalle": "Pitäisikö pandemioiden hallinnan elinkaarimalli tehdä pakolliseksi kansallisessa varautumisessa?",
+      "lahteet": [
+        {"viite": "[30]", "nimi": "Yhdistysavain – Sosiaali- ja terveydenhuollon valmiussuunnittelu (2024-05-29)", "linkki": "https://bin.yhdistysavain.fi/1607178/Zo1RNURoO1eSVOMHFIhD0_tTcq/TT%25201%25202024.pdf", "huomio": "Toimialan kriisit ja varautuminen 2000–2025, koronan jälkivaikutukset"}
+      ]
+    },
+    {
+      "id": "terveys-terveydenhuollon-kriisit",
+      "title": "Terveydenhuollon rakenteelliset kriisit Suomessa (2010–2025)",
+      "aihe": "Rahoituspuutteet, hoitojonot, hoitajapula ja palveluiden saatavuusongelmat",
+      "elinkaarivaiheet": {
+        "paatos": "Hyvinvointialueuudistus ja leikkaukset ilman riittävää rahoitusta ja henkilöstöresursseja",
+        "vaikutus": "Hoitojonot venyvät (erikoissairaanhoidossa kuukausia–vuosia), perusterveydenhuollon saatavuus heikkenee, hoitajapula pahenee",
+        "seuraukset": "Potilaiden kärsimys kasvaa, terveyserot syvenevät, ylikuormitus johtaa virheisiin ja burnout-kierteeseen",
+        "sopeutuminen": "Henkilöstö sopeutuu priorisointiin ja ylitöihin, potilaat turvautuvat yksityiseen tai ensihoitoon",
+        "kertautuminen": "Kriisi siirtyy vuosikymmenille: heikentynyt hoito → suuremmat kustannukset → lisää leikkauksia",
+        "normalisoituminen": "Jonot ja puutteet koetaan 'tavanomaisina' – 'terveydenhuolto on aina kriisissä' -narratiivi peittää rakenteelliset viat"
+      },
+      "normiriski": 5,
+      "normitila": "MUUTOS ON MUUTTUMASSA NORMIKSI – ja on jo lukkiutunut (jonot ja puutteet 'normaaleja')",
+      "hyodyt_optimistinen": "Elinkaarimalli pakottaisi simulointiin → resurssien kohdentaminen ja jonojen purku ajoissa.",
+      "riskit_realistinen": "Raportit hyväksytään, mutta 'taloudelliset realiteetit' estävät korjaukset.",
+      "yhteenveto": "Terveydenhuollon kriisi on normalisoitumassa rakenteelliseksi haitaksi ilman riittävää ennakointia. Ilman pakollista mallintamista potilaiden kärsimys ja terveyserot kasvavat sukupolvien mittaan.",
+      "kysymys_lukijalle": "Pitäisikö terveydenhuollon rahoituksen ja palveluiden elinkaarimalli tehdä pakolliseksi hyvinvointialueilla?",
+      "lahteet": [
+        {"viite": "[30]", "nimi": "Yhdistysavain – Sosiaali- ja terveydenhuollon valmiussuunnittelu (2024-05-29)", "linkki": "https://bin.yhdistysavain.fi/1607178/Zo1RNURoO1eSVOMHFIhD0_tTcq/TT%25201%25202024.pdf", "huomio": "Toimialan kriisit ja varautuminen 2000–2025, rahoituspuutteet ja jonot"}
+      ]
+    }
+  ]
+}
