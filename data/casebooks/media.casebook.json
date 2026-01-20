@@ -1,0 +1,103 @@
+{
+  "kirjasto": "Media.casebook – Median, journalismin ja informaatiomaiseman kriisien kokoelma",
+  "versio": "1.0",
+  "paivitetty": "2026-01-21",
+  "kuvaus": "Case-esimerkit mediasta: uutismedian luottamuspula, valeuutisten normalisoituminen, julkisen palvelun median rahoitusleikkaukset, some-algoritmien polarisaatio ja journalismin etiikan heikkeneminen. Jokainen case mallintaa päätöksen elinkaaren Seurausten talon mukaisesti: päätös → vaikutus → seuraukset → sopeutuminen → kertautuminen → normalisoituminen.",
+  "cases": [
+    {
+      "id": "media-uutismedian-luottamuspula",
+      "title": "Uutismedian luottamuspula ja klikkihype (2010–2025)",
+      "aihe": "Päätös siirtyä klikkihypeen ja sensaatiohakuisuuteen taloudellisten paineiden vuoksi",
+      "elinkaarivaiheet": {
+        "paatos": "Mediatalot päättävät priorisoida klikkihypeä ja sensaatiouutisia mainostulojen turvaamiseksi, vähentäen faktantarkistusta ja syväjournalismia",
+        "vaikutus": "Välitön lukijamäärän kasvu ja mainostulot, mutta kasvava epäluottamus journalismiin",
+        "seuraukset": "Vuonna 2025 uutismedian luottamus Suomessa on alle 40 % (Reilun median kysely), mikä pahentaa polarisaatiota ja valeuutisten leviämistä; some leviää disinformaatio nopeammin kuin faktat",
+        "sopeutuminen": "Lukijat sopeutuvat vahvistamaan omia näkemyksiään echo-kuplissa",
+        "kertautuminen": "Epäluottamus vahvistaa polarisaatiota ja heikentää demokraattista keskustelua",
+        "normalisoituminen": "Klikkihype ja sensaatiouutiset koetaan 'normaalina' journalismissa"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["informaatioymparisto", "sosiaalinen_luottamus", "henkinen_terveys"],
+      "populationExposure": ["koko_väestö", "nuoret", "poliittiset ryhmät"],
+      "conflictMode": "hybridi",
+      "timeframe": { "decisionYear": 2010, "horizon": "2010–2040+" },
+      "notes": ["Ajallinen viive: 5–10 vuotta ennen luottamuspulan täyden yhteiskunnallisen vaikutuksen."]
+    },
+    {
+      "id": "media-valeuutisten-normalisoituminen",
+      "title": "Valeuutisten ja disinformaatio leviämisen normalisoituminen (2014–2025)",
+      "aihe": "Päätös jättää some-alustat ilman riittävää moderointia ja faktantarkistusta",
+      "elinkaarivaiheet": {
+        "paatos": "Some-alustat päättävät priorisoida kasvua ja sitoutumista moderointikustannusten sijaan",
+        "vaikutus": "Välitön sisällön nopea leviäminen, mutta kasvava valeuutisten ja propagandahaittojen määrä",
+        "seuraukset": "Vuonna 2025 valeuutisia jaetaan miljardeja kertoja vuodessa, mikä pahentaa vaaleja, terveyskriisejä (esim. rokotevastaisuus) ja polarisaatiota; luottamus instituutioihin laskee alle 50 % monissa maissa",
+        "sopeutuminen": "Käyttäjät sopeutuvat tarkistamaan lähteitä itse tai vahvistamaan omia näkemyksiään",
+        "kertautuminen": "Disinformaatio vahvistuu vaaleissa ja kriiseissä, heikentäen yhteiskunnallista koheesiota",
+        "normalisoituminen": "Valeuutiset koetaan 'normaalina osana somea'"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["informaatioymparisto", "sosiaalinen_luottamus", "hallinto_ja_valta"],
+      "populationExposure": ["koko_väestö", "nuoret", "poliittiset ryhmät"],
+      "conflictMode": "hybridi",
+      "timeframe": { "decisionYear": 2014, "horizon": "2014–2040+" },
+      "notes": ["Ajallinen viive: 2–5 vuotta ennen disinformaatio-epidemian akuutin vaikutuksen."]
+    },
+    {
+      "id": "media-yle-rahoitusleikkaukset",
+      "title": "Julkisen palvelun median (YLE) rahoitusleikkaukset (2010–2025)",
+      "aihe": "Päätös leikata YLE-veroa ja rahoitusta taloussyistä",
+      "elinkaarivaiheet": {
+        "paatos": "Päätös leikata YLE:n rahoitusta (esim. YLE-veron alennus 2010-luvulla) taloussyistä",
+        "vaikutus": "Välitön säästö valtion menoissa, mutta kasvava resurssipula journalistisessa työssä",
+        "seuraukset": "Vuonna 2025 YLE:n rahoitus on reaalisesti laskenut 20–30 %, mikä johtaa henkilöstövähennyksiin, ohjelmatarjonnan supistumiseen ja riippumattomuuden heikentymiseen",
+        "sopeutuminen": "YLE sopeutuu leikkauksiin priorisoimalla, mutta laatu heikkenee",
+        "kertautuminen": "Riippumattoman journalismin heikkeneminen pahentaa luottamuspulaa",
+        "normalisoituminen": "Julkisen median leikkaukset koetaan 'normaalina' talouspäätöksenä"
+      },
+      "normiriski": 4,
+      "vaikutuskerrokset": ["informaatioymparisto", "sosiaalinen_luottamus", "hallinto_ja_valta"],
+      "populationExposure": ["koko_väestö", "journalistit"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2010, "horizon": "2010–2030+" },
+      "notes": ["Ajallinen viive: 5–10 vuotta ennen riippumattomuuden ja laadun täyden heikkenemisen."]
+    },
+    {
+      "id": "media-some-algoritmien-polarisaatio",
+      "title": "Some-alustojen algoritmien polarisoiva vaikutus (2010–2025)",
+      "aihe": "Päätös optimoida algoritmit maksimoimaan sitoutumista, mikä vahvistaa kuplautumista",
+      "elinkaarivaiheet": {
+        "paatos": "Some-alustat päättävät optimoida algoritmit maksimoimaan katseluaikaa ja reaktioita, priorisoiden polarisoivaa sisältöä",
+        "vaikutus": "Välitön käyttäjäsitoutumisen kasvu, mutta kasvava kuplautuminen ja polarisaatio",
+        "seuraukset": "Vuonna 2025 algoritmit vahvistavat vastakkainasettelua, mikä pahentaa yhteiskunnallista jakautumista ja väkivaltaa (esim. vaaleihin vaikuttaminen, mielenosoitukset)",
+        "sopeutuminen": "Käyttäjät sopeutuvat vahvistamaan omia näkemyksiään echo-kuplissa",
+        "kertautuminen": "Polarisaatio vahvistuu vaaleissa ja kriiseissä",
+        "normalisoituminen": "Algoritmien polarisaatio koetaan 'normaalina' some-kokemuksena"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["informaatioymparisto", "henkinen_terveys", "sosiaalinen_luottamus"],
+      "populationExposure": ["koko_väestö", "nuoret", "poliittiset ryhmät"],
+      "conflictMode": "hybridi",
+      "timeframe": { "decisionYear": 2010, "horizon": "2010–2040+" },
+      "notes": ["Ajallinen viive: 5–10 vuotta ennen polarisaation täyden yhteiskunnallisen vaikutuksen."]
+    },
+    {
+      "id": "media-journalismin-etiikan-heikkeneminen",
+      "title": "Journalismin ammattietiikan heikkeneminen (sensaatiohakuisuus) (2015–2025)",
+      "aihe": "Päätös priorisoida klikkauksia ja nopeutta faktantarkistuksen sijaan",
+      "elinkaarivaiheet": {
+        "paatos": "Mediatalot päättävät priorisoida nopeutta ja klikkauksia faktantarkistuksen ja eettisen harkinnan sijaan taloudellisten paineiden vuoksi",
+        "vaikutus": "Välitön lukijamäärän kasvu, mutta kasvava virheiden ja puolueellisuuden määrä",
+        "seuraukset": "Vuonna 2025 journalismissa on havaittu kasvava sensaatiohakuisuus ja virheiden määrä, mikä pahentaa luottamuspulaa ja polarisaatiota",
+        "sopeutuminen": "Journalistit sopeutuvat paineeseen, mutta laatu heikkenee",
+        "kertautuminen": "Virheet ja puolueellisuus vahvistavat epäluottamusta mediaan",
+        "normalisoituminen": "Sensaatiohakuisuus koetaan 'normaalina' journalismissa"
+      },
+      "normiriski": 4,
+      "vaikutuskerrokset": ["informaatioymparisto", "sosiaalinen_luottamus", "henkinen_terveys"],
+      "populationExposure": ["koko_väestö", "journalistit"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2015, "horizon": "2015–2030+" },
+      "notes": ["Ajallinen viive: 3–8 vuotta ennen luottamuspulan täyden vaikutuksen."]
+    }
+  ]
+}
