@@ -1,0 +1,103 @@
+{
+  "kirjasto": "Korruptio.casebook – Korruption ja läpinäkyvyyden kriisien kokoelma Suomessa ja globaalisti",
+  "versio": "1.0",
+  "paivitetty": "2026-01-21",
+  "kuvaus": "Case-esimerkit korruptiosta: poliittinen lahjonta hankinnoissa, eturistiriidat päätöksenteossa, aggressiivinen veronkierto, sisäinen väärinkäyttö ja korruption normalisoituminen. Jokainen case mallintaa päätöksen elinkaaren Seurausten talon mukaisesti: päätös → vaikutus → seuraukset → sopeutuminen → kertautuminen → normalisoituminen.",
+  "cases": [
+    {
+      "id": "korruptio-poliittinen-hankintakorruptio",
+      "title": "Poliittinen korruptio julkisten hankintojen yhteydessä (2000–2025)",
+      "aihe": "Päätös myöntää julkisia hankintoja poliittisten siteiden tai lahjonnan perusteella ilman riittävää läpinäkyvyyttä",
+      "elinkaarivaiheet": {
+        "paatos": "Päättäjät päättävät myöntää suuria julkisia hankintoja (esim. infra, IT, terveydenhuolto) poliittisten siteiden tai lahjonnan perusteella ilman avointa kilpailutusta",
+        "vaikutus": "Välitön hankkeen eteneminen, mutta kasvava kustannusten paisuminen ja laatuongelmat",
+        "seuraukset": "Vuosina 2000–2025 Suomessa useita tapauksia (esim. terveydenhuollon IT-hankinnat, infra), joissa kustannukset nousivat 20–100 % ja laatu jäi heikoksi; Transparency Internationalin mukaan korruptio aiheuttaa Suomessa vuosittain yli 1 miljardin euron menetykset",
+        "sopeutuminen": "Yritykset ja päättäjät sopeutuvat epävirallisiin verkostoihin ja lahjontaan",
+        "kertautuminen": "Korruptio vahvistuu, mikä heikentää julkista taloutta ja luottamusta",
+        "normalisoituminen": "Epäviralliset verkostot ja lahjonta koetaan 'normaalina' hankintakulttuurina"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["hallinto_ja_valta", "sosiaalinen_luottamus", "talous"],
+      "populationExposure": ["veronmaksajat", "päättäjät", "yritykset"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2000, "horizon": "2000–2040+" },
+      "notes": ["Ajallinen viive: 2–10 vuotta ennen kustannusten ja luottamuspulan täyden vaikutuksen."]
+    },
+    {
+      "id": "korruptio-etulistiriidat-paatoksenteossa",
+      "title": "Eturistiriidat poliittisessa päätöksenteossa (2010–2025)",
+      "aihe": "Päätös sallia poliitikoille yritysyhteydet ja eturistiriidat ilman riittävää valvontaa",
+      "elinkaarivaiheet": {
+        "paatos": "Päättäjät päättävät sallia itselleen yritysyhteydet ja sivutoimet ilman tiukkaa eturistiriitojen ilmoitusvelvollisuutta",
+        "vaikutus": "Välitön päätöksenteon 'joustavuus', mutta kasvava eturistiriitojen riski",
+        "seuraukset": "Vuonna 2025 useita tapauksia (esim. ministerien yritysyhteydet, kunnalliset päätökset), joissa julkisia varoja ohjattu läheisyrityksille; Transparency Internationalin mukaan eturistiriidat heikentävät luottamusta instituutioihin merkittävästi",
+        "sopeutuminen": "Poliitikot sopeutuvat verkostoihin ja epävirallisiin hyötyihin",
+        "kertautuminen": "Eturistiriidat vahvistavat korruptiokulttuuria ja heikentävät päätöksenteon laatua",
+        "normalisoituminen": "Eturistiriidat koetaan 'normaalina' poliittisena toimintana"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["hallinto_ja_valta", "sosiaalinen_luottamus"],
+      "populationExposure": ["päättäjät", "veronmaksajat", "kansalaiset"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2010, "horizon": "2010–2030+" },
+      "notes": ["Ajallinen viive: 2–7 vuotta ennen luottamuspulan ja väärinkäytösten täyden vaikutuksen."]
+    },
+    {
+      "id": "korruptio-aggressiivinen-veronkierto",
+      "title": "Aggressiivinen veronkierto ja verosuunnittelu yrityksissä (2000–2025)",
+      "aihe": "Päätös sallia monikansallisten yritysten aggressiivinen verosuunnittelu ilman riittävää valvontaa",
+      "elinkaarivaiheet": {
+        "paatos": "Päättäjät ja verohallinto päättävät sallia verosuunnittelun (esim. siirtohinnoittelu, veroparatiisit) ilman tiukkaa valvontaa",
+        "vaikutus": "Välitön yritysten kilpailukyky ja investoinnit, mutta kasvava verotulojen menetys",
+        "seuraukset": "Vuonna 2025 Suomi menettää vuosittain 1–2 miljardia euroa verotuloja aggressiivisen verosuunnittelun vuoksi; EU:n veroparatiisilistat ja Panama Papers paljastivat laajuuden",
+        "sopeutuminen": "Yritykset sopeutuvat verosuunnitteluun, valtio leikkaa palveluita",
+        "kertautuminen": "Verotulojen menetys pahentaa julkisen talouden alijäämää",
+        "normalisoituminen": "Aggressiivinen verosuunnittelu koetaan 'normaalina' liiketoimintakäytäntönä"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["hallinto_ja_valta", "sosiaalinen_luottamus", "talous"],
+      "populationExposure": ["yritykset", "veronmaksajat", "julkinen sektori"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2000, "horizon": "2000–2040+" },
+      "notes": ["Ajallinen viive: 5–15 vuotta ennen verotulojen menetysten ja palveluleikkausten täyden vaikutuksen."]
+    },
+    {
+      "id": "korruptio-sisainen-väärinkaytto",
+      "title": "Julkisen sektorin sisäinen korruptio (nepotismi ja väärinkäyttö) (2000–2025)",
+      "aihe": "Päätös sallia nepotismi ja sisäinen väärinkäyttö ilman riittävää valvontaa",
+      "elinkaarivaiheet": {
+        "paatos": "Päättäjät ja virkamiehet päättävät käyttää asemaansa henkilökohtaiseen hyötyyn (esim. sukulaisten palkkaaminen, hankintojen ohjaus)",
+        "vaikutus": "Välitön hyöty päättäjille, mutta kasvava epäluottamus järjestelmään",
+        "seuraukset": "Vuonna 2025 useita tapauksia (esim. kuntapäättäjien sukulaisten palkkaaminen, hankintojen ohjaus), joissa julkisia varoja ohjattu läheisille; Transparency Internationalin mukaan sisäinen korruptio heikentää julkisen sektorin tehokkuutta",
+        "sopeutuminen": "Viraston sisällä sopeututaan epävirallisiin käytäntöihin",
+        "kertautuminen": "Nepotismi vahvistaa epäluottamusta ja heikentää palveluiden laatua",
+        "normalisoituminen": "Sisäinen väärinkäyttö koetaan 'normaalina' verkostoitumisena"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["sosiaalinen_luottamus", "hallinto_ja_valta"],
+      "populationExposure": ["virkamiehet", "kansalaiset", "julkinen sektori"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2000, "horizon": "2000–2030+" },
+      "notes": ["Ajallinen viive: 2–7 vuotta ennen epäluottamuksen ja tehottomuuden täyden vaikutuksen."]
+    },
+    {
+      "id": "korruptio-normalisoituminen-lapinakyvyyden-puutteessa",
+      "title": "Korruption normalisoituminen läpinäkyvyyden puutteessa (2000–2025)",
+      "aihe": "Päätös pitää läpinäkyvyys ja valvonta heikkona korruption estämiseksi",
+      "elinkaarivaiheet": {
+        "paatos": "Päättäjät päättävät pitää julkisten varojen käytön ja päätöksenteon läpinäkyvyyden matalalla tasolla (esim. avoimuusrekisterin heikkous)",
+        "vaikutus": "Välitön päätöksenteon 'joustavuus', mutta kasvava korruption mahdollisuus",
+        "seuraukset": "Vuonna 2025 Suomi Transparency Internationalin CPI-listalla sijalla 2–5 (mutta läpinäkyvyyden heikkeneminen), mikä mahdollistaa korruption ja heikentää luottamusta instituutioihin",
+        "sopeutuminen": "Toimijat sopeutuvat epävirallisiin käytäntöihin ja verkostoihin",
+        "kertautuminen": "Korruptio vahvistuu, mikä heikentää julkisen talouden tehokkuutta",
+        "normalisoituminen": "Läpinäkyvyyden puute koetaan 'normaalina' hallinnon piirteenä"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["sosiaalinen_luottamus", "hallinto_ja_valta"],
+      "populationExposure": ["veronmaksajat", "päättäjät", "julkinen sektori"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2000, "horizon": "2000–2040+" },
+      "notes": ["Ajallinen viive: 5–15 vuotta ennen korruption normalisoitumisen täyden vaikutuksen."]
+    }
+  ]
+}
