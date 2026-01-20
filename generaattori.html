@@ -3,16 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Seurausten Talon Elinkaari Generaattori</title>
+  <title>Seurausten talon elinkaarigeneraattori</title>
   <style>
     :root {
-      --navy: #001F3F;
-      --orange: #D2691E;
+      --primary: #222;       
+      --accent: #222;          
       --beige: #F5F0E6;
       --light-bg: #FAF9F6;
       --success: #4CAF50;
       --warning: #FF9800;
       --danger: #f44336;
+      --high-risk: #d32f2f;
+      --medium-risk: #f57c00;
+      --low-risk: #388e3c;
     }
     body { 
       font-family: system-ui, -apple-system, sans-serif; 
@@ -24,17 +27,17 @@
     }
     
     h1 { 
-      background: linear-gradient(to bottom, var(--navy), #003366);
+      background: linear-gradient(to bottom, var(--primary), #3a6faf);
       color: white;
       text-align: center;
       padding: 3rem 1rem 2rem;
       margin: 0;
       font-size: 2.4rem;
       position: relative;
-      box-shadow: 0 4px 20px rgba(0,31,63,0.3);
+      box-shadow: 0 4px 20px rgba(46,91,145,0.3);
     }
     .subtitle { 
-      background: linear-gradient(to bottom, var(--navy), #003366);
+      background: linear-gradient(to bottom, var(--primary), #3a6faf);
       color: white;
       text-align: center;
       padding: 0 1rem 3rem;
@@ -51,14 +54,13 @@
       background: white;
       border-radius: 16px;
       box-shadow: 0 12px 40px rgba(0,0,0,0.15);
-      box-sizing: border-box;
     }
     
     .instructions {
       background: var(--beige);
       padding: 1.5rem;
       border-radius: 12px;
-      border-left: 5px solid var(--orange);
+      border-left: 5px solid var(--accent);
       margin-bottom: 2rem;
     }
     
@@ -73,17 +75,17 @@
       resize: vertical; 
       box-sizing: border-box;
       font-family: inherit;
-      transition: border-color 0.3s, box-shadow 0.3s;
+      transition: all 0.3s;
     }
     textarea:focus {
       outline: none;
-      border-color: var(--navy);
-      box-shadow: 0 0 0 3px rgba(0,31,63,0.1);
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(46,91,145,0.1);
     }
     
     button { 
       padding: 16px 40px; 
-      background: linear-gradient(135deg, var(--navy), #003366);
+      background: linear-gradient(135deg, var(--primary), #3a6faf);
       color: white; 
       border: none; 
       border-radius: 12px; 
@@ -91,29 +93,26 @@
       font-weight: 500;
       cursor: pointer; 
       transition: all 0.3s;
-      box-shadow: 0 4px 15px rgba(0,31,63,0.3);
+      box-shadow: 0 4px 15px rgba(46,91,145,0.3);
     }
     button:hover { 
       transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(0,31,63,0.4);
+      box-shadow: 0 6px 20px rgba(46,91,145,0.4);
     }
     
-    #tulos { 
-      margin-top: 3rem; 
-      padding: 0;
-    }
+    #tulos { margin-top: 3rem; padding: 0; }
     
     .analyysi-header {
-      background: linear-gradient(135deg, #f8fbff, #e3f2fd);
+      background: linear-gradient(135deg, #f0f7fc, #e8f2ff);
       padding: 2rem 2.5rem;
       border-radius: 12px 12px 0 0;
-      border-bottom: 4px solid var(--orange);
+      border-bottom: 4px solid var(--accent);
       text-align: center;
     }
     
     .aihe {
       font-size: 1.3rem;
-      color: var(--navy);
+      color: var(--primary);
       margin: 0 0 1rem 0;
     }
     
@@ -122,7 +121,6 @@
       padding: 2rem 2.5rem;
       background: white; 
       border-bottom: 1px solid #f0f0f0;
-      position: relative;
       transition: all 0.3s;
     }
     .vaihe:last-child {
@@ -130,12 +128,12 @@
       border-bottom: none;
     }
     .vaihe:hover {
-      background: #fafcff;
-      transform: translateX(5px);
+      background: #f8fbff;
+      transform: translateX(3px);
     }
     
     .vaihe strong { 
-      color: var(--navy); 
+      color: var(--primary); 
       font-size: 1.4rem; 
       display: block;
       margin-bottom: 1rem;
@@ -149,24 +147,44 @@
     }
     
     .normiriski {
-      background: linear-gradient(135deg, #e8f5e8, #f1f8e9);
-      padding: 2rem 2.5rem;
+      padding: 2.5rem;
       border-radius: 0 0 12px 12px;
-      border-top: 4px solid var(--success);
       text-align: center;
-      margin-top: 2rem;
+      margin-top: 0;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .normiriski.high {
+      background: linear-gradient(135deg, #ffebee, #ffcdd2);
+      border-top: 4px solid var(--high-risk);
+    }
+    .normiriski.medium {
+      background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+      border-top: 4px solid var(--medium-risk);
+    }
+    .normiriski.low {
+      background: linear-gradient(135deg, #e8f5e8, #c8e6c9);
+      border-top: 4px solid var(--low-risk);
     }
     
     .normiriski strong {
-      font-size: 1.3rem;
-      color: var(--success);
+      font-size: 1.5rem;
       display: block;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.8rem;
+      font-weight: 700;
+    }
+    
+    .normiriski .score {
+      font-size: 2.5rem;
+      font-weight: 300;
+      margin: 0.5rem 0;
+      opacity: 0.8;
     }
     
     .loading { 
       text-align: center;
-      color: var(--navy);
+      color: var(--primary);
       font-size: 1.2rem;
       font-style: italic;
       padding: 3rem;
@@ -196,7 +214,7 @@
   </style>
 </head>
 <body>
-  <h1>Seurausten Talon Elinkaari Generaattori</h1>
+  <h1>Seurausten talon elinkaarigeneraattori</h1>
   <p class="subtitle">Se instituutio, jota ei ollut olemassa</p>
 
   <main>
@@ -207,7 +225,7 @@
     
     <textarea id="syote" placeholder="Esimerkki: Miten päätöksen elinkaari näkee tämän kysymyksen: opetusryhmien suurentaminen 24 → 32 oppilaaseen peruskoulussa?"></textarea>
     
-    <button type="button" onclick="analysoi()">Generoi elinkaari-analyysi</button>
+    <button type="button" onclick="analysoi()">Generoi elinkaarianalyysi</button>
 
     <div id="tulos"></div>
   </main>
@@ -217,11 +235,37 @@
   </footer>
 
   <script>
+  function laskeNormiriski(aihe) {
+    const sanat = aihe.toLowerCase().split(/\s+/);
+    let riskipisteet = 0;
+    
+    // Seurausten talon analyyttinen malli
+    const korkeariskiset = ['leikkaus', 'säästö', 'yt', 'supistus', 'vähenny', 'rajoitus', 'pakko', 'velvoite'];
+    const keskiriskiset = ['muutos', 'uusi', 'toiminta', 'tehosta', 'keskitä', 'yksityistää'];
+    const matalariskiset = ['koulutus', 'kehitys', 'tuki', 'avustus'];
+    
+    // Laske riskikertoimet
+    for (let sana of sanat) {
+      if (korkeariskiset.some(riski => sana.includes(riski))) riskipisteet += 3;
+      else if (keskiriskiset.some(riski => sana.includes(riski))) riskipisteet += 2;
+      else if (matalariskiset.some(riski => sana.includes(riski))) riskipisteet -= 1;
+      
+      // Pituus vaikuttaa (pitkäaikaiset vaikutukset)
+      if (sana.length > 10) riskipisteet += 1;
+      // Numerot = konkreettiset muutokset
+      if (/\d+/.test(sana)) riskipisteet += 1;
+    }
+    
+    // Normiriski-luokitus
+    if (riskipisteet >= 6) return { taso: 'KORKEA', luokka: 'high', score: 85, selite: 'Vakava institutionaalinen lukkiutumisriski. Vaatii välitöntä auditointia.' };
+    if (riskipisteet >= 3) return { taso: 'KESKITASO', luokka: 'medium', score: 62, selite: 'Normiriski vaatii säännöllistä tarkastelua. Seuranta 6kk välein.' };
+    return { taso: 'MATALA', luokka: 'low', score: 28, selite: 'Pieni normalisoitumisriski. Vuosittainen tarkistus riittävä.' };
+  }
+
   async function analysoi() {
     const input = document.getElementById('syote').value.trim();
     const tulosDiv = document.getElementById('tulos');
     
-    // Validointi
     if (!input.toLowerCase().startsWith("miten päätöksen elinkaari näkee tämän kysymyksen")) {
       tulosDiv.innerHTML = '<p class="error">Virhe: Tekstin täytyy alkaa sanoilla "Miten päätöksen elinkaari näkee tämän kysymyksen ..."</p>';
       return;
@@ -229,92 +273,85 @@
     
     let aihe = input.replace(/^miten päätöksen elinkaari näkee tämän kysymyksen\s*/i, '').trim() || "[aihe puuttuu]";
     
-    tulosDiv.innerHTML = '<div class="loading">🔄 Generoidaan kattava elinkaari-analyysi aiheesta "<strong>' + aihe + '</strong>"...</div>';
+    // Laske analyyttinen normiriski
+    const normiriski = laskeNormiriski(aihe);
+    
+    tulosDiv.innerHTML = '<div class="loading">🔄 Analysoidaan "' + aihe + '" – Normiriski lasketaan...</div>';
 
-    // PARANNETTU MOCK – 6 vaihetta, pidemmät realistiset analyysit
     setTimeout(() => {
       const html = `
         <div class="analyysi-header">
-          <h2 style="margin: 0; color: var(--navy);">Seurausten talon kattava elinkaari-analyysi</h2>
+          <h2 style="margin: 0; color: var(--primary);">Seurausten talon kattava elinkaari-analyysi</h2>
           <p class="aihe"><strong>Tarkasteltu päätös:</strong> ${aihe}</p>
         </div>
         
         <div class="vaihe">
           <strong>1. Plan – Suunnitteluvaihe</strong>
           <div class="vaihe-content">
-            Päätös "${aihe}" syntyy akuutin ongelman ratkaisuksi. Organisaatio keskittyy 
-            lyhyen aikavälin operatiivisiin hyötyihin (kustannussäästöt, tehokkuus). 
-            Pitkän aikavälin institutionaalisia seurauksia ei systemaattisesti kartoiteta, 
-            minkä vuoksi normiriskin arviointi jää puutteelliseksi.
+            Päätös "${aihe}" syntyy akuutin ongelman ratkaisukeinona. Organisaatio priorisoi 
+            lyhyen aikavälin operatiiviset hyödyt (${normiriski.taso === 'KORKEA' ? 'korkean riskin' : 'tavalliset'}) 
+            kustannussäästöt tai tehokkuuden paranemisen. Pitkän aikavälin institutionaaliset 
+            seuraukset jäävät systemaattisen mallinnuksen ulkopuolelle.
           </div>
         </div>
         
         <div class="vaihe">
           <strong>2. Do – Toteutusvaihe</strong>
           <div class="vaihe-content">
-            Päätös otetaan käyttöön ja normalisoituu organisaation toimintatapoihin. 
-            "${aihe}" muuttuu asteittain "tavalliseksi" ilman kriittistä tarkastelua. 
-            Henkilöstö sopeutuu uusiin rutiineihin, vastustus hiipuu ja lukkiutuminen 
-            organisaation kulttuuriin alkaa vahvistua.
+            "${aihe}" implementoidaan ja normalisoituu organisaation toimintakulttuuriin. 
+            Muutos muuttuu asteittain "normaaliksi" ilman kriittistä refleksiota. 
+            ${normiriski.taso === 'KORKEA' ? 'Vastustus tukahdutetaan' : 'Henkilöstö sopeutuu'} uusiin rutiineihin.
           </div>
         </div>
         
         <div class="vaihe">
           <strong>3. Check – Seurausten tarkistus</strong>
           <div class="vaihe-content">
-            Ensimmäiset konkreettiset seuraukset ilmenevät: "${aihe}" luo institutionaalisia 
-            lukkiutumisia, heikentää organisaation resilienssiä ja muuttaa pysyvästi 
-            toimintakulttuuria. Piilotetut kustannukset (luottamuksen menetys, motivaatio, 
-            innovatiivisuus) alkavat kumuloitua systemaattisesti.
+            Konkreettiset seuraukset materialisoituvat: "${aihe}" luo ${normiriski.taso === 'KORKEA' ? 'vakavia' : 'institutionaalisia'} 
+            lukkiutumisia resilienssin heikentymisen myötä. Piilotetut kustannukset 
+            (luottamus, motivaatio, innovatiivisuus) alkavat kumuloitua.
           </div>
         </div>
         
         <div class="vaihe">
-          <strong>4. Act – Korjaustoimenpiteet</strong>
+          <strong>4. Act – Interventiovaihe</strong>
           <div class="vaihe-content">
-            Järjestelmä tunnistaa normiriskin ja vaatii interventioita. Mahdollisia toimia: 
-            auditointi, päätöksen purkaminen tai kompensointi. Ilman toimenpiteitä 
-            normalisoituminen jatkuu eksponentiaalisesti vahvistaen institutionaalista 
-            haurautta.
+            Seurausten talo tunnistaa ${normiriski.taso}-tason normiriskin. Vaatii ${normiriski.taso === 'KORKEA' ? 'välitöntä' : 'kohdennettuja'} 
+            korjaavia toimenpiteitä: auditointi, kompensaatio tai päätöksen purkaminen.
           </div>
         </div>
         
         <div class="vaihe">
-          <strong>5. Audit – Julkinen tarkastus</strong>
+          <strong>5. Audit – Julkinen dokumentointi</strong>
           <div class="vaihe-content">
-            Päätöksen elinkaari dokumentoidaan audit-trailiin blockchain-hashattuna. 
-            "${aihe}" jää pysyväksi merkinnäksi Seurausten talon muistiin, josta kansalaiset, 
-            tutkijat ja journalistit voivat tarkastella normalisoitumisen mallia.
+            Päätöksen elinkaari hashataan audit-trailiin. "${aihe}" jää pysyväksi merkinnäksi 
+            ${normiriski.taso === 'KORKEA' ? 'julkiseen rekisteriin' : 'tutkimusmuistiin'}.
           </div>
         </div>
         
         <div class="vaihe">
-          <strong>6. Foresight – Tulevaisuudennuste</strong>
+          <strong>6. Foresight – Ennustemalli</strong>
           <div class="vaihe-content">
-            Ennuste: "${aihe}" -tyyppiset päätökset toistuvat 80% todennäköisyydellä 
-            samanlaisina muissa organisaatioissa. Ilman systemaattista PDCA-silmukkaa 
-            normiriski kasvaa 3-5 vuoden kuluessa kriittiseksi.
+            Mallin mukaan "${aihe}" -tyyppiset päätökset toistuvat ${normiriski.score > 70 ? '90%' : normiriski.score > 50 ? '75%' : '55%'} 
+            todennäköisyydellä. ${normiriski.selite}
           </div>
         </div>
         
-        <div class="normiriski">
-          <strong>Normiriski: HARVINAINEN</strong>
-          <p style="margin: 0.5rem 0 0 0; color: #2e7d32; font-size: 1.1rem;">
-            PDCA-loop vaatii toistuvan tarkastelun. Suositeltu auditointitiheys: 6kk.
-          </p>
+        <div class="normiriski ${normiriski.luokka}">
+          <strong>${normiriski.taso}</strong>
+          <div class="score">${normiriski.score}/100</div>
+          <p style="margin: 1rem 0 0 0; font-size: 1.1rem; opacity: 0.9;">${normiriski.selite}</p>
         </div>
       `;
       
       tulosDiv.innerHTML = html;
-    }, 1200); // 1.2s viive realismia varten
+    }, 1500);
   }
 
-  // Enter-näppäin shortcut
   document.getElementById('syote').addEventListener('keypress', function(e) {
-    if (e.key === 'Enter' && e.ctrlKey) {
-      analysoi();
-    }
+    if (e.key === 'Enter' && e.ctrlKey) analysoi();
   });
   </script>
 </body>
 </html>
+
