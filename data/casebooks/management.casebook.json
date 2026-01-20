@@ -1,0 +1,140 @@
+{
+  "kirjasto": "Management.casebook – Johtajuus- ja management-kriisien kokoelma (2000–2025)",
+  "versio": "1.0",
+  "paivitetty": "2026-01-20",
+  "kuvaus": "Case-esimerkit johtajuudesta ja management-ongelmista: Boeingin turvallisuuskriisi, CrowdStriken päivitysvirhe, Teslan tuotanto- ja johtajuusongelmat, McDonald’sin ruokaturvakriisi ja Disneyn taloudelliset menetykset. Jokainen case mallintaa päätöksen elinkaaren Seurausten talon mukaisesti: päätös → vaikutus → seuraukset → sopeutuminen → kertautuminen → normalisoituminen.",
+  "cases": [
+    {
+      "id": "management-boeing-turvallisuuskriisi",
+      "title": "Boeingin turvallisuuskriisi ja massiiviset taloudelliset tappiot (2019–2025)",
+      "aihe": "737 MAX -koneiden turvallisuusongelmat, tuotantovirheet, lakot ja jatkuvat viiveet",
+      "elinkaarivaiheet": {
+        "paatos": "Turvallisuuskulttuurin heikentyminen, tuottavuuspaineet ja riittämätön laadunvalvonta 737 MAX -ohjelmassa 2010-luvulla",
+        "vaikutus": "Kaksi tuhoisaa onnettomuutta (2018–2019), koneiden maahansyöksyt, maailmanlaajuinen lentokielto 20 kuukautta",
+        "seuraukset": "Yli $33 miljardin operatiiviset tappiot vuodesta 2019, $11.8 miljardin nettotappio 2024, tuotantoviiveet jatkuvat 2026 asti, mainehaitta valtava",
+        "sopeutuminen": "FAA:n tiukempi valvonta, tuotanto rajoitettu (42/kuukausi 2025, tavoite 47/2026), lakot lisäsivät kustannuksia $1B/kk",
+        "kertautuminen": "Ongelma siirtyy vuosikymmenille: luottamus heikentynyt, kilpailijat (Airbus) vahvistuneet, toimitusketjut häiriintyneet",
+        "normalisoituminen": "Turvallisuusongelmat ja tappiot koetaan 'teollisuuden normaalina' – 'kaikki suuret valmistajat kohtaavat kriisejä' -narratiivi peittää rakenteelliset viat"
+      },
+      "normiriski": 5,
+      "normitila": "MUUTOS ON MUUTTUMASSA NORMIKSI – ja on jo lukkiutunut (tuotanto- ja turvallisuusongelmat jatkuvat)",
+      "hyodyt_optimistinen": "Pakollinen elinkaarimalli olisi pakottanut turvallisuusriskien simulointiin → vähemmän uhreja ja tappioita.",
+      "riskit_realistinen": "Raportit hyväksytään, mutta 'kilpailupaineet' estävät radikaalit muutokset.",
+      "yhteenveto": "Boeingin kriisi on klassinen esimerkki johtajuuden ja turvallisuuskulttuurin normalisoitumisesta rakenteelliseksi haitaksi. Ilman pakollista mallintamista tappiot ja mainehaitta jatkuvat vuosikymmenet.",
+      "kysymys_lukijalle": "Pitäisikö lentokoneteollisuuden turvallisuus- ja johtamispäätösten elinkaarimalli tehdä pakolliseksi?",
+      "lahteet": [
+        {"viite": "[27]", "nimi": "CNN Business – What Boeing’s massive financial crisis means for you (2024-10-16)", "linkki": "https://www.cnn.com/2024/10/16/business/boeing-losses-impact"},
+        {"viite": "[36]", "nimi": "Aero-Space.eu – Boeing’s 2024 Financial Struggles (2025-01-29)", "linkki": "https://aero-space.eu/2025/01/29/boeings-2024-financial-struggles-a-year-of-decline-and-strategic-challenges/"},
+        {"viite": "[40]", "nimi": "Simple Flying – Boeing To Increase Monthly 737 MAX Production To 47 Aircraft In 2026 (2025-12-22)", "linkki": "https://simpleflying.com/boeing-increase-monthly-737-max-production-47-aircraft-2026/"},
+        {"viite": "[41]", "nimi": "Simple Flying – Boeing Warns Customers Of 737 Delays Through 2026 (2024-07-12)", "linkki": "https://simpleflying.com/boeing-warns-737-delays-2026/"},
+        {"viite": "[42]", "nimi": "Business Insider – Boeing faces fresh delays to new versions of its wildly popular 737 Max (2025-07-30)", "linkki": "https://www.businessinsider.com/boeing-delays-new-737-model-max-launch-over-safety-concerns-2025-7"},
+        {"viite": "[43]", "nimi": "Flight Plan – Boeing 737 MAX Production: Signs Emerge of a Potential 63-Per-Month Rate (2025-12-17)", "linkki": "https://flightplan.forecastinternational.com/2025/12/17/boeing-737-max-production-signs-emerge-of-a-potential-63-per-month-rate/"},
+        {"viite": "[44]", "nimi": "PBS Frontline – What Has Happened to Boeing Since the 737 Max Crashes (2024-03-25)", "linkki": "https://www.pbs.org/wgbh/frontline/article/what-has-happened-to-boeing-since-the-737-max-crashes/"},
+        {"viite": "[45]", "nimi": "Wikipedia – Boeing 737 MAX groundings (päivitetty 2025-12-13)", "linkki": "https://en.wikipedia.org/wiki/Boeing_737_MAX_groundings"},
+        {"viite": "[46]", "nimi": "FAA – Updates on Boeing 737-9 MAX Aircraft (ongoing)", "linkki": "https://www.faa.gov/newsroom/updates-boeing-737-9-max-aircraft"}
+      ]
+    },
+    {
+      "id": "management-crowdstrike-paivitysvirhe",
+      "title": "CrowdStriken globaali päivitysvirhe ja IT-katkot (2024)",
+      "aihe": "Virheellinen ohjelmistopäivitys aiheutti maailmanlaajuisen IT-katkoksen heinäkuussa 2024",
+      "elinkaarivaiheet": {
+        "paatos": "Riittämätön testaus ja laadunvarmistus ennen kriittistä päivitystä, riippuvuus yksittäisestä toimittajasta",
+        "vaikutus": "Miljoonat Windows-koneet kaatuivat, lentokentät, pankit, sairaalat ja yritykset halvaantuivat",
+        "seuraukset": "Suorat tappiot yli $5.4 miljardia Fortune 500 -yrityksille, kokonaistappiot yli $10 miljardia, oikeudenkäynnit ja mainehaitta",
+        "sopeutuminen": "Yritykset siirtyivät manuaalisiin korjauksiin ja monitoimittajastrategiaan, mutta palautuminen kesti viikkoja",
+        "kertautuminen": "Riippuvuus kriittisistä ohjelmistotoimittajista kroonistuu, seuraavat vastaavat virheet todennäköisempiä",
+        "normalisoituminen": "Massiiviset IT-katkot koetaan 'väistämättöminä' – 'yksi päivitys voi kaataa maailman' -narratiivi peittää johtajuuden puutteet"
+      },
+      "normiriski": 5,
+      "normitila": "MUUTOS ON MUUTTUMASSA NORMIKSI – ja on jo lukkiutumassa (riippuvuus ja katkokset 'normaaleja')",
+      "hyodyt_optimistinen": "Elinkaarimalli pakottaisi riskiarviointiin ennen päivityksiä → vähemmän globaaleja katkoja.",
+      "riskit_realistinen": "Raportit hyväksytään, mutta 'nopeus ja kilpailu' estävät muutokset.",
+      "yhteenveto": "CrowdStriken virhe on esimerkki johtajuuden ja riskienhallinnan normalisoitumisesta rakenteelliseksi haavoittuvuudeksi. Ilman pakollista mallintamista kriittiset IT-katkot toistuvat.",
+      "kysymys_lukijalle": "Pitäisikö kriittisten ohjelmistopäivitysten elinkaarimalli tehdä pakolliseksi yritysten ja kriittisen infrastruktuurin osalta?",
+      "lahteet": [
+        {"viite": "[22]", "nimi": "Wikipedia – 2024 CrowdStrike-related IT outages (päivitetty 2026-01-01)", "linkki": "https://en.wikipedia.org/wiki/2024_CrowdStrike-related_IT_outages"},
+        {"viite": "[19]", "nimi": "Cloud Security Alliance – What We Can Learn from the 2024 CrowdStrike Outage (2025-07-03)", "linkki": "https://cloudsecurityalliance.org/blog/2025/07/03/what-we-can-learn-from-the-2024-crowdstrike-outage"},
+        {"viite": "[20]", "nimi": "Tufin – The Lasting Impact of the CrowdStrike Update Outage (2025-06-04)", "linkki": "https://www.tufin.com/blog/lasting-impact-of-crowdstrike-update-outage"},
+        {"viite": "[23]", "nimi": "Cybersecurity Dive – CrowdStrike disruption direct losses to reach $5.4B for Fortune 500 (2024-07-25)", "linkki": "https://www.cybersecuritydive.com/news/crowdstrike-cost-fortune-500-losses-cyber-insurance/722396/"},
+        {"viite": "[24]", "nimi": "Euronews – It’s been a year since the Crowdstrike global outage (2025-07-19)", "linkki": "https://www.euronews.com/next/2025/07/19/its-been-a-year-since-the-crowdstrike-global-outage-what-changes-did-the-company-make"}
+      ]
+    },
+    {
+      "id": "management-tesla-tuotanto-ja-johtajuusongelmat",
+      "title": "Teslan tuotanto- ja johtajuusongelmat (2024–2025)",
+      "aihe": "Tuotantoviiveet, myynnin romahdus, johdon strategiset virheet ja taloudelliset tappiot",
+      "elinkaarivaiheet": {
+        "paatos": "Liian aggressiivinen laajentuminen ja resurssien hajauttaminen ilman riittävää riskienhallintaa",
+        "vaikutus": "Tuotanto viivästyy, myynti romahtaa (terävin vuotuinen lasku historiassa), osakekurssi pudonnut yli 50 % joulukuusta 2024",
+        "seuraukset": "Tulot heikkenevät, käytettyjen autojen ylitarjonta, mainehaitta ja sijoittajien luottamus menetetty",
+        "sopeutuminen": "Yritys sopeutuu hinnoittelulla ja tuotannon supistamisella, mutta osaajapula ja kilpailu jatkuvat",
+        "kertautuminen": "Ongelmat siirtyvät vuosille: heikko myynti → investointien väheneminen → markkinaosuuden menetys",
+        "normalisoituminen": "Tuotanto- ja johtajuusongelmat koetaan 'kasvuyrityksen normaalina' – 'Tesla on aina kriisissä' -narratiivi peittää rakenteelliset viat"
+      },
+      "normiriski": 4,
+      "normitila": "Päätös on vaarassa normalisoitua – ellei yhdistetä riskienhallintaa ja strategiaa",
+      "hyodyt_optimistinen": "Elinkaarimalli pakottaisi ennakoimaan tuotanto- ja myyntiriskejä → parempi resurssien kohdentaminen.",
+      "riskit_realistinen": "Raportit hyväksytään, mutta 'innovaatiopaine' estää muutokset.",
+      "yhteenveto": "Teslan kriisi on esimerkki johtajuuden ja tuotantopäätösten normalisoitumisesta rakenteelliseksi haitaksi. Ilman pakollista mallintamista markkinaosuus ja taloudellinen kestävyys heikkenevät.",
+      "kysymys_lukijalle": "Pitäisikö kasvuyritysten johtajuus- ja tuotantopäätösten elinkaarimalli tehdä pakolliseksi?",
+      "lahteet": [
+        {"viite": "[27]", "nimi": "CNN Business – Tesla’s troubles are deeper than you think (2025-07-08)", "linkki": "https://www.cnn.com/2025/07/08/business/tesla-troubled-financial-outlook"},
+        {"viite": "[19]", "nimi": "The Motley Fool – Tesla Just Delivered Very Bad News for Investors (2026-01-06)", "linkki": "https://www.fool.com/investing/2026/01/06/tesla-just-delivered-very-bad-news-for-investors/"},
+        {"viite": "[10]", "nimi": "Reddit r/RealTesla – Tesla’s Financial Death Spiral in 10 Points (2025-03-20)", "linkki": "https://www.reddit.com/r/RealTesla/comments/1jfphxt/teslas_financial_death_spiral_in_10_points_my/"},
+        {"viite": "[16]", "nimi": "Finance Monthly – Why Is Tesla Stock Dropping in March 2025? (2025-03-11)", "linkki": "https://www.finance-monthly.com/2025/03/what-has-happened-to-teslas-stock-price/"},
+        {"viite": "[12]", "nimi": "CNN Business – Things at Tesla are worse than they appear (2025-04-28)", "linkki": "https://www.cnn.com/2025/04/28/business/things-at-tesla-are-worse-than-they-appear/"}
+      ]
+    },
+    {
+      "id": "management-mcdonalds-ruokaturvakriisi",
+      "title": "McDonald’sin E. coli -ruokaturvakriisi (2024)",
+      "aihe": "Sipulien aiheuttama E. coli -epidemia Quarter Pounder -hampurilaisissa, johtanut myynnin romahdukseen",
+      "elinkaarivaiheet": {
+        "paatos": "Riittämätön toimitusketjun laadunvalvonta ja riskienhallinta 2024",
+        "vaikutus": "104 sairastapausta, 1 kuolema, hampurilaisten myynti romahti, mainehaitta valtava",
+        "seuraukset": "Myynnin lasku, $100 miljoonan markkinointikustannukset, oikeudenkäynnit ja luottamushäviö",
+        "sopeutuminen": "Toimittajien vaihto ja prosessien tiukennus, mutta palautuminen kestää kuukausia",
+        "kertautuminen": "Ruokaturvariskit siirtyvät seuraaviin kriiseihin ilman systemaattista muutosta",
+        "normalisoituminen": "Ruokaturvakriisit koetaan 'satunnaisina' – 'yksittäinen toimittaja voi kaataa ketjun' -narratiivi peittää johtajuuden puutteet"
+      },
+      "normiriski": 4,
+      "normitila": "Päätös on vaarassa normalisoitua – ellei yhdistetä toimitusketjun riskiarviointia",
+      "hyodyt_optimistinen": "Elinkaarimalli pakottaisi ennakoimaan ruokaturvariskejä → vähemmän epidemioita ja tappioita.",
+      "riskit_realistinen": "Raportit hyväksytään, mutta 'nopeus ja kustannukset' estävät muutokset.",
+      "yhteenveto": "McDonald’sin kriisi on esimerkki ruokaturvan ja johtajuuden normalisoitumisesta rakenteelliseksi haavoittuvuudeksi. Ilman pakollista mallintamista epidemiat toistuvat.",
+      "kysymys_lukijalle": "Pitäisikö ruokaturvan ja toimitusketjun elinkaarimalli tehdä pakolliseksi suurissa ketjuissa?",
+      "lahteet": [
+        {"viite": "[36]", "nimi": "CNN Business – McDonald’s was having a rough 2024. An E. coli outbreak made it worse (2025-02-10)", "linkki": "https://www.cnn.com/2025/02/10/food/mcdonalds-fourth-quarter-earnings-2024"},
+        {"viite": "[30]", "nimi": "Wikipedia – 2024 McDonald’s E. coli outbreak (päivitetty 2025-09-19)", "linkki": "https://en.wikipedia.org/wiki/2024_McDonald%27s_E._coli_outbreak"},
+        {"viite": "[31]", "nimi": "CDC – Investigation Update: E. coli Outbreak, Onions Served at McDonald’s (2024-11-13)", "linkki": "https://www.cdc.gov/ecoli/outbreaks/investigation-update-e-coli-o157-2024.html"},
+        {"viite": "[32]", "nimi": "McDonald’s Corporate – Always putting food safety first (päivitetty 2024)", "linkki": "https://corporate.mcdonalds.com/corpmcd/our-stories/article/always-putting-food-safety-first.html"},
+        {"viite": "[38]", "nimi": "Contagion Live – E coli Outbreak Linked to McDonald’s Quarter Pounders (2024-10-25)", "linkki": "https://www.contagionlive.com/view/e-coli-outbreak-linked-to-mcdonald-s-quarter-pounders"}
+      ]
+    },
+    {
+      "id": "management-disney-taloudelliset-menetykset",
+      "title": "Disney+ -striimauksen massiiviset tappiot (2019–2025)",
+      "aihe": "Streaming-palvelun kumuloituneet tappiot ja strategiset virheet johtajuudessa",
+      "elinkaarivaiheet": {
+        "paatos": "Aggressiivinen striimausinvestointi ilman riittävää kannattavuussuunnitelmaa 2019–2023",
+        "vaikutus": "Disney+ -tappiot yli $10.7 miljardia lanseerauksesta lähtien (2025), useita vuosineljänneksiä tappiollisia",
+        "seuraukset": "Osakkeen arvo heikentynyt, leikkaukset sisällöntuotannossa, kilpailijat (Netflix) vahvistuneet",
+        "sopeutuminen": "Disney sopeutui kustannussäästöillä ja mainostuetuilla tasoilla, mutta kannattavuus viivästyy",
+        "kertautuminen": "Tappiot siirtyvät vuosikymmenille: heikko kannattavuus → investointien väheneminen → markkinaosuuden menetys",
+        "normalisoituminen": "Massiiviset striimaustappiot koetaan 'kasvustrategian normaalina' – 'striimaus on tulevaisuus' -narratiivi peittää johtajuuden virheet"
+      },
+      "normiriski": 4,
+      "normitila": "Päätös on vaarassa normalisoitua – ellei yhdistetä kannattavuusarviointia",
+      "hyodyt_optimistinen": "Elinkaarimalli pakottaisi 5–10 vuoden kannattavuussimulointiin → parempi resurssien kohdentaminen.",
+      "riskit_realistinen": "Raportit hyväksytään, mutta 'kasvupaine' estää muutokset.",
+      "yhteenveto": "Disney+ -tappiot ovat esimerkki johtajuuden ja strategisten investointien normalisoitumisesta rakenteelliseksi haitaksi. Ilman pakollista mallintamista taloudelliset menetykset jatkuvat.",
+      "kysymys_lukijalle": "Pitäisikö striimaus- ja digi-investointien elinkaarimalli tehdä pakolliseksi mediayhtiöissä?",
+      "lahteet": [
+        {"viite": "[50]", "nimi": "Forbes – Disney’s Streaming Unit Loses Three Times More Money Than Disneyland Paris (2025-02-08)", "linkki": "https://www.forbes.com/sites/carolinereid/2025/02/08/disneys-streaming-unit-loses-three-times-more-money-than-disneyland-paris/"},
+        {"viite": "[27]", "nimi": "MacroTrends – Disney Net Income/Loss 2012-2025 (päivitetty 2025)", "linkki": "https://www.macrotrends.net/stocks/charts/DIS/disney/net-income-loss"},
+        {"viite": "[52]", "nimi": "The Walt Disney Company – Q1 FY25 Earnings Report (2025-02-05)", "linkki": "https://thewaltdisneycompany.com/app/uploads/2025/02/q1-fy25-earnings.pdf"}
+      ]
+    }
+  ]
+}
