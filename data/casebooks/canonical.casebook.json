@@ -1,0 +1,103 @@
+{
+  "kirjasto": "Canonical.casebook – Viisi rakenteellista invarianttia (v0.1)",
+  "versio": "0.1",
+  "paivitetty": "2026-01-21",
+  "kuvaus": "Abstraktit perusmallit, jotka toistuvat kaikissa sektoreissa. Ei ideologiaa, ei salaliittoja – pelkkiä empiirisesti toistuvia rakenteellisia porsaanreikiä. Testattu cross-sector (terveys, talous, koulutus, geopolitiikka, teknologia, media jne.).",
+  "cases": [
+    {
+      "id": "canonical-emergency-permanence",
+      "title": "Hätätilan kautta pysyväksi (Emergency → Permanence)",
+      "aihe": "Poikkeusvalta, joka otetaan käyttöön kriisin aikana, ei koskaan palaudu täysin ennalleen",
+      "elinkaarivaiheet": {
+        "paatos": "Kriisin uhatessa normaalit menettelyt tulkitaan liian hitaiksi → poikkeusvaltuudet otetaan käyttöön",
+        "vaikutus": "Nopea reagointi, hetkellinen helpotus ja tehokkuuden tunne",
+        "seuraukset": "Poikkeusmenettelyt vakiintuvat, koska niiden purkaminen vaatii enemmän poliittista pääomaa kuin jatkaminen",
+        "sopeutuminen": "Järjestelmä ja toimijat tottuvat uuteen tehokkaampaan toimintatapaan",
+        "kertautuminen": "Seuraavissa kriiseissä sama malli toistuu automaattisesti",
+        "normalisoituminen": "Poikkeusvaltuuksista tulee uusi normaali – 'näin on pakko toimia kriiseissä'"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["hallinto_ja_valta", "sosiaalinen_luottamus", "turvallisuus_ja_sota"],
+      "populationExposure": ["koko_väestö", "instituutiot", "päättäjät"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": "kriisihetki", "horizon": "kriisi → ∞" },
+      "notes": ["Ajallinen viive: 6 kk – 5 vuotta ennen pysyvän muutoksen vakiintumista.", "Testattu: korona-tietosuojalaki, talouskriisi 2008 pankkituet, etäopetus → pysyvä rahoitusleikkaus."]
+    },
+    {
+      "id": "canonical-diffuse-responsibility",
+      "title": "Vastuu hajautetaan näkymättömiin (Diffuse Responsibility)",
+      "aihe": "Kun päätöksenteko pilkotaan riittävän moneen osaan, kukaan ei ole vastuussa kokonaisuudesta",
+      "elinkaarivaiheet": {
+        "paatos": "Monimutkainen ongelma → vastuu jaetaan komiteoille, virastoille, alihankkijoille",
+        "vaikutus": "Kukaan ei vastusta avoimesti, päätökset etenevät",
+        "seuraukset": "Virheitä ei voida jäljittää, oppiminen estyy, kustannukset kasvavat",
+        "sopeutuminen": "Toimijat opettelevat suojaamaan omaa selkäänsä",
+        "kertautuminen": "Sama malli toistuu seuraavissa projekteissa/hankkeissa",
+        "normalisoituminen": "Virheillä ei ole tekijää – 'kaikki toimivat ohjeiden mukaan'"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["hallinto_ja_valta", "sosiaalinen_luottamus"],
+      "populationExposure": ["instituutiot", "virkamiehet", "kansalaiset"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": "monimutkaisuus kasvaa", "horizon": "jatkuva" },
+      "notes": ["Ajallinen viive: 1–3 vuotta ennen oppimisen estymisen akuutin vaikutuksen.", "Testattu: HUS-järjestelmä, sosiaalitoimi → psykologit → hallinto-oikeus."]
+    },
+    {
+      "id": "canonical-necessity-overrides-values",
+      "title": "Taloudellinen pakko ohittaa arvot (Necessity Overrides Values)",
+      "aihe": "Kun päätös kehystetään taloudelliseksi välttämättömyydeksi, muut kriteerit lakkaavat olemasta relevantteja",
+      "elinkaarivaiheet": {
+        "paatos": "Taloudellinen paine → 'vaihtoehtoja ei ole' → leikkaukset / myynnit / ulkoistukset",
+        "vaikutus": "Budjetti tasapainottuu hetkellisesti",
+        "seuraukset": "Rakenteet heikkenevät, arvot (laatu, tasa-arvo, pitkäjänteisyys) katoavat keskustelusta",
+        "sopeutuminen": "Toimijat hyväksyvät 'realistisuuden' pakoksi",
+        "kertautuminen": "Seuraavat leikkaukset helpompia, arvokeskustelu delegitimoidaan",
+        "normalisoituminen": "Alijäämäinen mutta 'realistinen' järjestelmä"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["hallinto_ja_valta", "sosiaalinen_luottamus", "henkinen_terveys"],
+      "populationExposure": ["palveluiden käyttäjät", "työntekijät", "päättäjät"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": "talouskriisi / alijäämä", "horizon": "jatkuva" },
+      "notes": ["Ajallinen viive: 1–4 vuotta ennen arvojen katoamisen akuutin vaikutuksen.", "Testattu: hoitoviiveet, koulutusleikkaukset, sote-ulkoistukset."]
+    },
+    {
+      "id": "canonical-metrics-become-reality",
+      "title": "Mittaaminen ohjaa todellisuutta (Metrics Become Reality)",
+      "aihe": "Se, mitä mitataan, alkaa määritellä todellisuuden – riippumatta siitä, kuvaako mittari sitä oikein",
+      "elinkaarivaiheet": {
+        "paatos": "Tarve seurata / vertailla / tehostaa → KPI:t, indeksit, rankingit otetaan käyttöön",
+        "vaikutus": "Läpinäkyvyys ja ohjattavuus paranevat näennäisesti",
+        "seuraukset": "Toiminta mukautuu mittareihin – laatu, merkitys ja pitkä aikaväli katoavat",
+        "sopeutuminen": "Toimijat optimoivat mittareita, ei todellista päämäärää",
+        "kertautuminen": "Mittarit korvaavat päämäärän seuraavissa kierroksissa",
+        "normalisoituminen": "Mittari = tavoite"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["hallinto_ja_valta", "sosiaalinen_luottamus"],
+      "populationExposure": ["mittauksen kohteet", "päättäjät"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": "mittaamisen käyttöönotto", "horizon": "jatkuva" },
+      "notes": ["Ajallinen viive: 1–3 vuotta ennen laadun katoamisen akuutin vaikutuksen.", "Testattu: PISA > oppiminen, potilastyytyväisyys > hoitotulos."]
+    },
+    {
+      "id": "canonical-language-reframes-accountability",
+      "title": "Kieli muuttaa vastuun (Language Reframes Accountability)",
+      "aihe": "Sanavalinnat eivät vain kuvaa päätöksiä – ne siirtävät vastuuta",
+      "elinkaarivaiheet": {
+        "paatos": "Kielteinen seuraus tai vastustus → päätös kehystetään uudelleen eufemismeilla / teknisellä kielellä",
+        "vaikutus": "Vastustus laimenee hetkellisesti",
+        "seuraukset": "Kriittinen kieli marginalisoituu, päätöksiä ei voi enää arvostella rationaalisesti",
+        "sopeutuminen": "Toimijat omaksuvat uuden kielen suojakseen",
+        "kertautuminen": "Uudelleenkehystys toistuu seuraavissa ongelmissa",
+        "normalisoituminen": "Päätökset tapahtuvat kielen suojassa"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["informaatioymparisto", "sosiaalinen_luottamus", "hallinto_ja_valta"],
+      "populationExposure": ["päättäjät", "kansalaiset", "media"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": "kriittinen hetki", "horizon": "jatkuva" },
+      "notes": ["Ajallinen viive: 6 kk – 3 vuotta ennen kielen dominanssin vakiintumista.", "Testattu: 'lapsen etu' = huostaanotto, 'rakenteellinen uudistus' = leikkaus."]
+    }
+  ]
+}
