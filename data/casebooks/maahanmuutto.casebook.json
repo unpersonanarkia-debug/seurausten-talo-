@@ -1,0 +1,103 @@
+{
+  "kirjasto": "Maahanmuutto.casebook – Suomen maahanmuutto- ja kotouttamispolitiikan kriisien kokoelma",
+  "versio": "1.0",
+  "paivitetty": "2026-01-21",
+  "kuvaus": "Case-esimerkit maahanmuutosta: pakolaiskriisi 2015–2016, työperäisen maahanmuuton byrokratia, kotouttamisen resurssipula, syrjäytyminen ja polarisoituminen. Jokainen case mallintaa päätöksen elinkaaren Seurausten talon mukaisesti: päätös → vaikutus → seuraukset → sopeutuminen → kertautuminen → normalisoituminen.",
+  "cases": [
+    {
+      "id": "maahanmuutto-pakolaiskriisi-2015",
+      "title": "Pakolaiskriisi 2015–2016 ja sen pitkäaikaiset jälkivaikutukset",
+      "aihe": "Päätös ottaa vastaan suuri määrä turvapaikanhakijoita ilman riittävää valmistautumista ja kotouttamisresursseja",
+      "elinkaarivaiheet": {
+        "paatos": "Päätös avata rajat ja vastaanottaa yli 32 000 turvapaikanhakijaa vuonna 2015 ilman riittävää infrastruktuuria ja kotouttamisohjelmia",
+        "vaikutus": "Välitön humanitaarinen auttaminen, mutta kasvava kuormitus vastaanottokeskuksille ja kunnille",
+        "seuraukset": "Vuoteen 2026 mennessä kotouttaminen on onnistunut vain osittain: työllisyysaste maahanmuuttajilla jää alle 60 %, syrjäytymisriski kasvaa ja sosiaalinen luottamus heikkenee; polarisaatio lisääntyy",
+        "sopeutuminen": "Maahanmuuttajat sopeutuvat hitaasti työmarkkinoille ja yhteiskuntaan, kunnat kehittävät uusia palveluita",
+        "kertautuminen": "Kotoutumisen viiveet johtavat pitkäaikaiseen syrjäytymiseen ja kustannuksiin",
+        "normalisoituminen": "Pakolaiskriisin jälkivaikutukset koetaan 'normaalina' osana monikulttuurisuutta"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["sosiaalinen_luottamus", "henkinen_terveys", "hallinto_ja_valta"],
+      "populationExposure": ["turvapaikanhakijat", "kunnat", "kantaväestö"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2015, "horizon": "2015–2040+" },
+      "notes": ["Ajallinen viive: 5–15 vuotta ennen kotoutumisen ja syrjäytymisen täyden vaikutuksen."]
+    },
+    {
+      "id": "maahanmuutto-tyoperainen-byrokratia",
+      "title": "Työperäisen maahanmuuton byrokratia ja viiveet (2018–2025)",
+      "aihe": "Päätös pitää työperäisen oleskeluluvan prosessi hitaana ja byrokraattisena työvoimapulan aikana",
+      "elinkaarivaiheet": {
+        "paatos": "Päätös pitää työperäisen oleskeluluvan käsittelyajat pitkänä (useita kuukausia) ja vaatimukset tiukkoina työvoimapulan aikana",
+        "vaikutus": "Välitön työvoiman saatavuuden rajoittuminen, mutta kasvava byrokratia",
+        "seuraukset": "Vuonna 2025 työperäisen maahanmuuton käsittelyajat ovat edelleen yli 6 kk, mikä pahentaa työvoimapulaa hoitoalalla, rakennusalalla ja teknologiassa; yritykset siirtävät toimintoja ulkomaille",
+        "sopeutuminen": "Yritykset sopeutuvat ulkomaisiin rekrytointeihin ja etätyöhön",
+        "kertautuminen": "Byrokratia hidastaa talouskasvua ja lisää työvoimapulaa",
+        "normalisoituminen": "Pitkä käsittelyaika koetaan 'normaalina' hallinnollisena prosessina"
+      },
+      "normiriski": 4,
+      "vaikutuskerrokset": ["hallinto_ja_valta", "sosiaalinen_luottamus", "talous"],
+      "populationExposure": ["työnantajat", "maahanmuuttajat", "työvoimapulan alat"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2018, "horizon": "2018–2035+" },
+      "notes": ["Ajallinen viive: 2–5 vuotta ennen työvoimapulan akuutin vaikutuksen."]
+    },
+    {
+      "id": "maahanmuutto-kotouttamisen-resurssipula",
+      "title": "Kotouttamisen resurssipula ja kielikoulutuksen leikkaukset (2016–2025)",
+      "aihe": "Päätös leikata kotouttamisresursseja ja kielikoulutusta taloussyistä",
+      "elinkaarivaiheet": {
+        "paatos": "Päätös leikata kotouttamisohjelmien ja kielikoulutuksen resursseja (esim. kotoutumiskoulutus lyhennetty)",
+        "vaikutus": "Välitön säästö valtion menoissa, mutta kasvava kotoutumisen viive",
+        "seuraukset": "Vuonna 2025 maahanmuuttajien työllisyysaste jää alle 60 %, kielitaidon puute pahentaa syrjäytymistä ja mielenterveysongelmia; kotoutumiskoulutuksen leikkaukset ovat johtaneet pidempiin työttömyysjaksoihin",
+        "sopeutuminen": "Maahanmuuttajat sopeutuvat ilman riittävää kielitaitoa ja verkostoja",
+        "kertautuminen": "Resurssipula lisää syrjäytymistä ja kustannuksia pitkällä aikavälillä",
+        "normalisoituminen": "Kotouttamisen resurssipula koetaan 'taloudellisena realiteettina'"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["henkinen_terveys", "sosiaalinen_luottamus", "hallinto_ja_valta"],
+      "populationExposure": ["maahanmuuttajat", "kunnat", "työmarkkinat"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2016, "horizon": "2016–2040+" },
+      "notes": ["Ajallinen viive: 5–10 vuotta ennen syrjäytymisen ja kustannusten täyden vaikutuksen."]
+    },
+    {
+      "id": "maahanmuutto-maahanmuuttajien-syrjaytyminen",
+      "title": "Maahanmuuttajien syrjäytyminen ja sosiaalinen luottamus (2015–2025)",
+      "aihe": "Päätös jättää kotouttamisen ja työllistymisen tuen riittämättömäksi",
+      "elinkaarivaiheet": {
+        "paatos": "Päätös rajoittaa kotouttamisen tukea ja työllistymispalveluita maahanmuuttajille",
+        "vaikutus": "Välitön säästö, mutta kasvava syrjäytymisriski",
+        "seuraukset": "Vuonna 2025 maahanmuuttajien syrjäytymisriski on 2–3 kertaa suurempi kuin kantaväestöllä, mikä pahentaa sosiaalista luottamusvajetta ja mielenterveysongelmia",
+        "sopeutuminen": "Maahanmuuttajat sopeutuvat omiin yhteisöihinsä ja epävirallisiin verkostoihin",
+        "kertautuminen": "Syrjäytyminen vahvistaa eriarvoisuutta ja sosiaalisia jännitteitä",
+        "normalisoituminen": "Maahanmuuttajien syrjäytyminen koetaan 'normaalina' sopeutumisprosessina"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["henkinen_terveys", "sosiaalinen_luottamus", "lapsuus_ja_kehitys"],
+      "populationExposure": ["maahanmuuttajat", "toinen sukupolvi", "kantaväestö"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2015, "horizon": "2015–2040+" },
+      "notes": ["Ajallinen viive: 5–15 vuotta ennen toisen sukupolven syrjäytymisen täyden vaikutuksen."]
+    },
+    {
+      "id": "maahanmuutto-polarisoituminen-keskustelussa",
+      "title": "Maahanmuuttopolitiikan polarisoituminen ja keskustelun kärjistyminen (2015–2025)",
+      "aihe": "Päätös käydä maahanmuutosta polarisoitunutta keskustelua ilman yhteistä faktapohjaa",
+      "elinkaarivaiheet": {
+        "paatos": "Poliittiset toimijat ja media päättävät käydä maahanmuutosta voimakkaasti polarisoitunutta keskustelua ilman yhteistä faktapohjaa",
+        "vaikutus": "Välitön keskustelun kärjistyminen ja ääripäiden vahvistuminen",
+        "seuraukset": "Vuonna 2025 maahanmuutosta keskustelu on voimakkaasti polarisoitunutta, mikä heikentää sosiaalista luottamusta ja lisää vihapuhetta; luottamus instituutioihin laskee",
+        "sopeutuminen": "Väestö sopeutuu vahvistamaan omia näkemyksiään kuplissa",
+        "kertautuminen": "Polarisaatio vahvistaa ääripäitä ja heikentää yhteiskunnallista koheesiota",
+        "normalisoituminen": "Maahanmuuttokeskustelun kärjistyminen koetaan 'normaalina' politiikkana"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["sosiaalinen_luottamus", "informaatioymparisto", "henkinen_terveys"],
+      "populationExposure": ["koko_väestö", "maahanmuuttajat", "poliittiset ryhmät"],
+      "conflictMode": "hybridi",
+      "timeframe": { "decisionYear": 2015, "horizon": "2015–2040+" },
+      "notes": ["Ajallinen viive: 3–10 vuotta ennen polarisaation täyden yhteiskunnallisen vaikutuksen."]
+    }
+  ]
+}
