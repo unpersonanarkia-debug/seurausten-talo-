@@ -1,0 +1,103 @@
+{
+  "kirjasto": "Energia.casebook – Suomen energia- ja ilmastopolitiikan kriisien kokoelma",
+  "versio": "1.0",
+  "paivitetty": "2026-01-21",
+  "kuvaus": "Case-esimerkit energiasta: fossiilisten polttoaineiden tuet, ydinvoiman viiveet, tuulivoiman vastustus, energian hintakriisi ja kaivostoiminnan ympäristövaikutukset. Jokainen case mallintaa päätöksen elinkaaren Seurausten talon mukaisesti: päätös → vaikutus → seuraukset → sopeutuminen → kertautuminen → normalisoituminen.",
+  "cases": [
+    {
+      "id": "energia-fossiilisten-tuet",
+      "title": "Fossiilisten polttoaineiden tuet ja vihreän siirtymän hitaus (2000–2025)",
+      "aihe": "Päätös jatkaa fossiilisten polttoaineiden tukia (esim. verovähennykset, dieselpolttoaineen alhainen verotus) samalla kun vihreää siirtymää lykätään",
+      "elinkaarivaiheet": {
+        "paatos": "Päätös pitää fossiilisten polttoaineiden tuet korkeina (esim. dieselveron alennus, lentopolttoaineen verovapaus) talouden tukemiseksi, vaikka ilmastotavoitteet edellyttäisivät niiden purkamista",
+        "vaikutus": "Välitön halpa energia ja teollisuuden kilpailukyky, mutta kasvavat päästöt ja riippuvuus tuontienergiasta",
+        "seuraukset": "Vuonna 2025 fossiilisten tuet ovat edelleen yli 1 miljardia euroa vuodessa, mikä hidastaa vihreää siirtymää ja pahentaa ilmastonmuutosta; Suomi jää jälkeen EU:n Fit for 55 -tavoitteista",
+        "sopeutuminen": "Yhteiskunta sopeutuu korkeaan energiankulutukseen, ja yritykset investoivat hitaasti uusiutuviin",
+        "kertautuminen": "Tuet ylläpitävät riippuvuutta, mikä lisää hintakriisejä ja ilmastopaineita",
+        "normalisoituminen": "Fossiilisten tukien jatkaminen koetaan 'taloudellisena realiteettina', mikä vaikuttaa tuleviin energiapolitiikan päätöksiin"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["fyysinen_terveys", "hallinto_ja_valta", "sosiaalinen_luottamus"],
+      "populationExposure": ["koko_väestö", "teollisuus", "maaseutu"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2000, "horizon": "2000–2040+" },
+      "notes": ["Ajallinen viive: 10–20 vuotta ennen ilmastovaikutusten akuutin pahenemisen."]
+    },
+    {
+      "id": "energia-olki3-viiveet",
+      "title": "Olkiluoto 3 -ydinvoimalan rakentamisen viiveet (2005–2023)",
+      "aihe": "Päätös rakentaa Olkiluoto 3 -ydinvoimala ilman riittävää riskienhallintaa ja aikataulutusta",
+      "elinkaarivaiheet": {
+        "paatos": "Päätös aloittaa Olkiluoto 3 -ydinvoimalan rakentaminen vuonna 2005 kiinteällä hinnalla, mutta ilman riittävää valvontaa ja riskienhallintaa",
+        "vaikutus": "Välitön energiantuotannon odotus, mutta kasvavat kustannukset ja viiveet",
+        "seuraukset": "Viiveet 14 vuotta (valmistui 2023), kokonaiskustannukset nousivat yli 11 miljardiin euroon (alkuperäinen arvio 3 miljardia), mikä pahensi energian hintakriisiä 2022–2023",
+        "sopeutuminen": "Yhteiskunta sopeutui tuontienergiaan ja korkean hinnan sähkön käyttöön",
+        "kertautuminen": "Viiveet heikensivät energiaturvallisuutta ja lisäsivät riippuvuutta tuontienergiasta",
+        "normalisoituminen": "Ydinvoimahankkeiden viiveet koetaan 'normaalina' suurprojekteissa, mikä vaikuttaa tuleviin ydinvoimapäätöksiin"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["hallinto_ja_valta", "sosiaalinen_luottamus", "turvallisuus_ja_sota"],
+      "populationExposure": ["koko_väestö", "energiateollisuus"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2005, "horizon": "2005–2030+" },
+      "notes": ["Ajallinen viive: 10–15 vuotta ennen kustannusten ja viiveiden täyden vaikutuksen."]
+    },
+    {
+      "id": "energia-tuulivoiman-vastustus",
+      "title": "Tuulivoima- ja aurinkoenergiahankkeiden vastustus (maankäyttökonfliktit) (2015–2025)",
+      "aihe": "Päätös edistää tuulivoimaa ja aurinkoenergiaa ilman riittävää paikallista osallistumista ja maankäyttösuunnittelua",
+      "elinkaarivaiheet": {
+        "paatos": "Päätös nopeuttaa tuulivoima- ja aurinkohankkeita ilmastotavoitteiden nimissä, priorisoiden keskushallintoa paikallisen vastustuksen yli",
+        "vaikutus": "Välitön uusiutuvan energian tuotannon kasvu, mutta kasvava paikallinen vastustus",
+        "seuraukset": "Vuonna 2025 yli 200 tuulivoimahanketta on keskeytetty tai hylätty paikallisen vastustuksen vuoksi, mikä hidastaa vihreää siirtymää ja pahentaa energian hintakriisiä",
+        "sopeutuminen": "Paikalliset yhteisöt sopeutuvat vastustukseen ja oikeudenkäynteihin, kun taas valtakunnalliset tavoitteet hidastuvat",
+        "kertautuminen": "Vastustus laajenee, mikä heikentää ilmastotavoitteiden saavuttamista",
+        "normalisoituminen": "Tuulivoiman vastustus koetaan 'normaalina' paikallisena demokratiana, mikä vaikuttaa tuleviin hankepäätöksiin"
+      },
+      "normiriski": 4,
+      "vaikutuskerrokset": ["sosiaalinen_luottamus", "hallinto_ja_valta", "fyysinen_terveys"],
+      "populationExposure": ["paikalliset asukkaat", "energiayhtiöt", "ilmastotoimijat"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2015, "horizon": "2015–2030+" },
+      "notes": ["Ajallinen viive: 3–8 vuotta ennen ilmastotavoitteiden viiveiden akuutin vaikutuksen."]
+    },
+    {
+      "id": "energia-hintakriisi-2022",
+      "title": "Energian hintakriisi Venäjän kaasun lopettamisen jälkeen (2022–2025)",
+      "aihe": "Päätös vähentää riippuvuutta Venäjän energiasta nopeasti ilman riittävää varautumista",
+      "elinkaarivaiheet": {
+        "paatos": "Päätös lopettaa Venäjän kaasun tuonti ja korvata se LNG:llä ja muilla lähteillä nopeasti Ukrainan sodan jälkeen",
+        "vaikutus": "Välitön energian saatavuus, mutta kasvavat hinnat ja varastointipaineet",
+        "seuraukset": "Vuonna 2022–2023 sähkön hinta nousi ennätyskorkealle (yli 50 c/kWh ajoittain), mikä pahensi asumiskustannuksia, teollisuuden kilpailukykyä ja köyhyyttä; vuoteen 2026 mennessä kriisi on johtanut pysyvään korkeampaan energian hintatasoon",
+        "sopeutuminen": "Kuluttajat ja yritykset sopeutuvat energiansäästöön ja uusiutuviin",
+        "kertautuminen": "Hintavaihtelut jatkuvat, mikä lisää taloudellista epävarmuutta",
+        "normalisoituminen": "Korkeat energian hinnat koetaan 'normaalina' geopoliittisen tilanteen seurauksena"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["fyysinen_terveys", "henkinen_terveys", "hallinto_ja_valta"],
+      "populationExposure": ["koko_väestö", "teollisuus", "kotitaloudet"],
+      "conflictMode": "hybridi",
+      "timeframe": { "decisionYear": 2022, "horizon": "2022–2030+" },
+      "notes": ["Ajallinen viive: 1–3 vuotta ennen hintojen ja köyhyyden täyden vaikutuksen."]
+    },
+    {
+      "id": "energia-kaivostoiminta-akkumineraalit",
+      "title": "Kaivostoiminnan ympäristö- ja ilmastovaikutukset akkumineraaleissa (2015–2025)",
+      "aihe": "Päätös edistää kaivostoimintaa kriittisten mineraalien (litium, koboltti, nikkeli) tuotantoon vihreän siirtymän nimissä",
+      "elinkaarivaiheet": {
+        "paatos": "Päätös nopeuttaa kaivoshankkeita akkumineraalien tuotantoon ilman riittävää ympäristöarviointia ja paikallista hyväksyntää",
+        "vaikutus": "Välitön mineraalien saatavuus sähköautoihin ja akkuihin, mutta kasvavat ympäristövaikutukset",
+        "seuraukset": "Vuonna 2025 kaivosten ympäristövaikutukset (vesistöjen saastuminen, biodiversiteetin menetys) ovat johtaneet paikalliseen vastustukseen ja oikeudenkäynteihin, mikä hidastaa vihreää siirtymää",
+        "sopeutuminen": "Paikalliset yhteisöt sopeutuvat vastustukseen ja oikeudenkäynteihin",
+        "kertautuminen": "Ympäristöhaitat laajenevat, mikä heikentää luottamusta vihreään siirtymään",
+        "normalisoituminen": "Kaivosten ympäristöhaitat koetaan 'vihreän siirtymän välttämättömänä hintana'"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["fyysinen_terveys", "sosiaalinen_luottamus", "hallinto_ja_valta"],
+      "populationExposure": ["paikalliset asukkaat", "ympäristöjärjestöt", "teollisuus"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2015, "horizon": "2015–2040+" },
+      "notes": ["Ajallinen viive: 5–15 vuotta ennen ympäristöhaittojen akuutin vaikutuksen."]
+    }
+  ]
+}
