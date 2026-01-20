@@ -1,0 +1,57 @@
+{
+  "id": "koulujarjestelma-2026-001",
+  "title": "Suomen koulujärjestelmän rakenteelliset säästöt ja niiden elinkaarivaikutukset",
+  "aihe": "2010-luvun säästöpäätökset perusopetuksessa ja toisen asteen koulutuksessa (ryhmäkokojen kasvu, oppimisen tuen leikkaukset, opettajien työtaakan lisäys)",
+  "vuosi": 2026,
+  "malli": "Seurausten talo – Päätöksen elinkaari",
+  "elinkaarivaiheet": {
+    "paatos": "2010-luvun alun ja 2020-luvun säästöpäätökset: ryhmäkokojen sallittu kasvu 20 → 25–30, erityisopetuksen tuntien supistus, opettajien tunti- ja hallintotaakan lisäys ilman palkkakorvausta",
+    "vaikutus": "Välitön kustannusvaikutus, joka kohdistuu suoraan oppilaisiin, opettajiin ja koulujen kapasiteettiin. Oppimisen tuki riittämätön, opetusryhmät heterogeenisempiä.",
+    "seuraukset": "Kuormitus kasvaa, oppimistulokset heikkenevät (PISA-tulokset laskeneet), oppilaiden uupumus ja mielenterveysongelmat lisääntyvät, opettajien työuupumus ja alanvaihto kiihtyy.",
+    "sopeutuminen": "Oppilaat sopeutuvat heikompaan opetukseen ja vähäisempään tukeen, opettajat kehittävät kiertokeinoja (esim. vähemmän yksilöllistä ohjausta, enemmän ryhmätyötä).",
+    "kertautuminen": "Ongelma siirtyy sukupolvelta toiselle: heikentynyt osaaminen → heikompi työelämävalmius → yhteiskunnan tuottavuus heikkenee pitkällä aikavälillä.",
+    "normalisoituminen": "Tämä on pahin vaihe juuri nyt – isot ryhmät, riittämätön tuki, opettajien burnout ja oppilaiden oppimisvajeet koetaan vääjäämättöminä 'tavanomaisena suomalaisena kouluna'."
+  },
+  "normiriski": 5,
+  "normitila": "MUUTOS ON MUUTTUMASSA NORMIKSI – ja on jo pitkälti normalisoitunut",
+  "hyodyt_optimistinen": "Jos elinkaarimalli pakotettaisiin käyttöön, jokainen uusi säästöpäätös joutuisi julkiseen 5–15 vuoden simulointiin → poliittinen paine korjaaviin toimiin kasvaisi merkittävästi.",
+  "riskit_realistinen": "Järjestelmä jää koristeeksi: päätöksentekijät hyväksyvät raportin muodollisesti mutta toteavat 'yhteiskunnallisista syistä joudumme silti toteuttamaan' → normalisoituminen jatkuu virallisella leimalla.",
+  "yhteenveto": "Suomen koulujärjestelmä on erinomainen esimerkki hyväntahtoisten päätösten pitkäaikaisesta normalisoitumisesta rakenteelliseksi haitaksi, jota kukaan ei enää kyseenalaista koska 'näin on aina ollut'. Ilman institutionaalista muistia ja pakollista seurausten näkyväksi tekemistä korjaamme asioita vasta sukupolvien mittaisen vahingon jälkeen.",
+  "kysymys_lukijalle": "Pitäisikö koulupäätösten elinkaarimalli tehdä pakolliseksi laissa vai riittäisikö vapaaehtoinen käyttö kunnissa?",
+  "lahteet": [
+    {
+      "tyyppi": "virallinen_raportti",
+      "nimi": "Opetushallitus – Koulutuksen tilastolliset vuosikirjat 2015–2025",
+      "linkki": "https://www.oph.fi/fi/tilastot/koulutuksen-tilastolliset-vuosikirjat",
+      "huomio": "Ryhmäkoot, oppimisen tuen resurssit, opettajien työajat"
+    },
+    {
+      "tyyppi": "kansainvalinen_vertailu",
+      "nimi": "OECD PISA 2022 & 2025 (ennakkotulokset)",
+      "linkki": "https://www.oecd.org/pisa/",
+      "huomio": "Suomen oppimistulosten lasku, erityisesti heikoimpien oppilaiden osalta"
+    },
+    {
+      "tyyppi": "tutkimus",
+      "nimi": "THL – Nuorten mielenterveys ja koulu-uupumus 2023–2026",
+      "linkki": "https://thl.fi/fi/tutkimus-ja-kehittaminen/tutkimukset-ja-hankkeet/nuorten-mielenterveys",
+      "huomio": "Uupumuksen ja masennuksen kasvu perusopetuksen lopussa"
+    },
+    {
+      "tyyppi": "alan_jarjesto",
+      "nimi": "OAJ – Opettajien työolot ja alanvaihto 2024–2025 raportti",
+      "linkki": "https://www.oaj.fi/",
+      "huomio": "Opettajien burnout ja alanvaihtoennusteet"
+    },
+    {
+      "tyyppi": "media_analyysi",
+      "nimi": "HS, Yle, MTV – Useat artikkelit opettajapulasta ja ryhmäkoista 2023–2026",
+      "linkki": "https://www.hs.fi/haku/?query=opettajapula+ryhm%C3%A4koko",
+      "huomio": "Kansalaiskeskustelu ja poliittiset linjaukset"
+    }
+  ],
+  "created_at": "2026-01-20",
+  "updated_at": "2026-01-20",
+  "status": "reviewed",
+  "versio": 1
+}
