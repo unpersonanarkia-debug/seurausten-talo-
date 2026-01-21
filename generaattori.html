@@ -2,7 +2,7 @@
 <html lang="fi">
 <head>
 <meta charset="UTF-8">
-<title>Seurausten talo – API-pohjainen analyysi</title>
+<title>Seurausten talo – Pitkä elinkaarianalyysi</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
@@ -18,14 +18,14 @@ header, footer {
   text-align:center;
 }
 main {
-  max-width:1000px;
+  max-width:1200px;
   margin:3rem auto;
   padding:2.5rem;
   border:2px solid #000;
 }
 textarea {
   width:100%;
-  min-height:120px;
+  min-height:150px;
   padding:1rem;
   font-size:1rem;
   border:2px solid #000;
@@ -43,7 +43,9 @@ button {
   margin-top:3rem;
   padding:2rem;
   border:2px solid #000;
-  min-height:250px;
+  min-height:400px;
+  white-space: pre-line;
+  overflow-wrap: break-word;
 }
 .error {
   border:2px solid #000;
@@ -60,13 +62,13 @@ button {
 
 <header>
   <h1>Seurausten talo</h1>
-  <p>Päätöksen elinkaarimalli · API-analyysi</p>
+  <p>Päätöksen elinkaarimalli – Pitkä analyysi (API)</p>
   <p>Suora linkki: <a href="https://seurausten-talo.vercel.app/generaattori.html">https://seurausten-talo.vercel.app/generaattori.html</a></p>
 </header>
 
 <main>
 
-<textarea id="aihe" placeholder="Kirjoita päätös tai kysymys..."></textarea>
+<textarea id="aihe" placeholder="Kirjoita päätös tai geopoliittinen kysymys…"></textarea>
 <button onclick="ajaAnalyysi()">Aja seurausten talo</button>
 
 <div id="aiTila">
@@ -112,34 +114,36 @@ async function ajaAnalyysi() {
 
     const data = await response.json();
 
-    // Luo pitkä analyysi >500 sanaa
-    const pitkaTeksti = `
-Päätöksen "${data.paatos}" analysointi seurausten talon mallilla tarjoaa monitasoisen ymmärryksen siitä, miten päätökset vaikuttavat organisaation rakenteisiin, toimijoihin ja prosesseihin. Vaikutukset eivät ilmene vain yksittäisenä tapahtumana, vaan ne kytkeytyvät toisiinsa ja muodostavat ketjun, joka voi johtaa sekä odotettuihin että odottamattomiin seurauksiin. 
+    // Generoi pitkä analyysi, >500 sanaa, polkuineen
+    const analyysi = `
+${data.paatos}
 
-Vaikutusten arviointi osoittaa, että ${data.vaikutus} Tämä tarkoittaa, että päätöksen välittömät vaikutukset voivat olla merkittäviä taloudellisesti tai operatiivisesti, mutta samalla ne saattavat synnyttää epäsuoria ja pitkäaikaisia seurauksia, jotka usein jäävät havainnoimatta ilman systemaattista mallinnusta. Organisaation on tärkeää tunnistaa, mitkä tekijät vaikuttavat riskitasoon, jotta voidaan estää normaaliin toimintakulttuuriin juurtuvien haitallisten käytäntöjen syntyminen.
+TS ${data.paatosVuosi} elinkaarimallissa ${data.konteksti} – päätös vireille ${data.vireilletulo} näyttäytyy ${data.lyhyenKavisin}. Lyhyen aikavälin vakaus ${data.lyhyenKertaantuminen}, normalisoituen pitkällä aikavälillä ${data.normi}.
 
-Seuraukset muodostavat ketjun, jossa ${data.seuraukset} Tämä ketju korostaa, kuinka yksittäiset päätökset voivat kumuloitua ja aiheuttaa muutoksia organisaation dynamiikkaan, esimerkiksi henkilöstön sopeutumiseen ja motivaatioon, resurssien käyttöön ja lopulta päätöksentekoprosessien tehokkuuteen. On huomionarvoista, että mitä korkeampi normiriski on, sitä merkittävämmiksi ja monimutkaisemmiksi seuraukset muodostuvat.
+Päätös (${data.vuosiPaatos}): ${data.paatosKuvaus}
 
-Sopeutuminen on keskeinen osa elinkaarta, ja ${data.sopeutuminen} Tämä tarkoittaa, että organisaation jäsenet oppivat mukautumaan muutoksiin joko virallisten ohjeiden mukaisesti tai kehittämällä epävirallisia käytäntöjä, jotka saattavat kuitenkin poiketa alkuperäisestä päätöksestä. Sopeutuminen vaikuttaa myös siihen, miten päätöksen vaikutukset dokumentoidaan ja miten niitä seurataan tulevaisuudessa.
+Vaikutus (${data.vuosiVaikutusStart}–${data.vuosiVaikutusEnd}): ${data.vaikutusKuvaus}
 
-Kertautuminen ja normiksi muuttuminen ${data.kertautuminen} Tämä vaihe on erityisen kriittinen, sillä mikäli päätös muuttuu automaattiseksi normiksi, sen vaikutukset voivat jatkua pitkälle tulevaisuuteen ilman uutta arviointia. Organisaatioiden on tällöin tärkeää kehittää mekanismeja palautteen keräämiseksi, seuranta- ja auditointiprosesseja sekä arviointikriteerejä, jotta voidaan tunnistaa mahdolliset haitat ja korjata ne ajoissa.
+Seuraukset (${data.vuosiSeurauksetStart}–${data.vuosiSeurauksetEnd}): ${data.seurauksetKuvaus}
 
-Normiriski ${data.normiriski} / 6 ja riskiluokka ${data.riskiluokka} tarjoaa yksityiskohtaisen kuvan siitä, kuinka todennäköistä on, että päätöksen vaikutukset kumuloituvat tai normalisoituvat organisaation rakenteisiin. ${data.normitila} Näin ollen päätösten arvioinnissa on tärkeää huomioida kaikki elinkaaren vaiheet, ja kehittää strategioita riskien hallitsemiseksi, jotta organisaatio voi säilyttää joustavuuden, tehokkuuden ja kestävän toiminnan pitkällä aikavälillä.
+Sopeutuminen (${data.vuosiSopeutuminenStart}–${data.vuosiSopeutuminenEnd}): ${data.sopeutuminenKuvaus}
 
-Tämä analyysi kuvastaa sitä, miten seurausten talon malli auttaa hahmottamaan päätösten monimutkaisia ketjuja, tarjoaa visuaalisen ja kirjallisen ymmärryksen vaikutuksista, sekä auttaa organisaatiota tekemään tietoisia ja riskitietoisia päätöksiä. Mallin avulla voidaan paitsi ennustaa todennäköisiä vaikutuksia, myös suunnitella interventioita ja varautua odottamattomiin seurauksiin, mikä tekee päätöksenteosta kokonaisvaltaisempaa ja vähemmän alttiina yllätyksille. 
-    `;
+Kertaantuminen (${data.vuosiKertaantuminenStart}–${data.vuosiKertaantuminenEnd}): ${data.kertaantuminenKuvaus}
 
-    tila.innerHTML = `
-      <h2>Seurausten talon analyysi</h2>
-      <p>${pitkaTeksti}</p>
+Normi (${data.vuosiNormi}+): ${data.normiKuvaus}
 
-      <hr>
+PÄÄTÖS ${data.vuosiPaatos}: ${data.paatosLyhyt}
+├── VAIKUTUS ${data.vuosiVaikutusEnd}: ${data.vaikutusLyhyt}
+├── SEURAUKSET ${data.vuosiSeurauksetEnd}: ${data.seurauksetLyhyt}
+├── SOPEUTUMINEN ${data.vuosiSopeutuminenEnd}: ${data.sopeutuminenLyhyt}
+├── KERTAANTUMINEN ${data.vuosiKertaantuminenEnd}: ${data.kertaantuminenLyhyt}
+└── NORMI ${data.vuosiNormi}: ${data.normiLyhyt}
 
-      <p><strong>Normiriski:</strong> ${data.normiriski} / 6</p>
-      <p><strong>${data.riskiluokka}</strong></p>
-      <p>${data.normitila}</p>
-    `;
-    
+Oppimavihje: ${data.oppi}
+`;
+
+    tila.innerHTML = `<pre>${analyysi}</pre>`;
+
   } catch (err) {
     console.error(err);
     tila.innerHTML = `
