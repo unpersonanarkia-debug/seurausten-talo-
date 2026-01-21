@@ -1,0 +1,32 @@
+{
+  "casebooks": [
+    {
+      "file": "talous.casebook.json",
+      "kirjasto": "Talous.casebook – Suomen talouden kriisien ja normalisoituneiden haittojen kokoelma",
+      "tags": ["talous", "kriisi", "rahoitus", "velka"],
+      "caseCount": 5
+    },
+    {
+      "file": "ymparisto.casebook.json",
+      "kirjasto": "Ympäristö.casebook – Suomen ympäristökriisien ja normalisoituneiden haittojen kokoelma",
+      "tags": ["ympäristö", "ilmastonmuutos", "saasteet", "luonto"],
+      "caseCount": 3
+    },
+    {
+      "file": "terveys.casebook.json",
+      "kirjasto": "Terveys.casebook – Suomen terveydenhuollon kriisien ja normalisoituneiden haittojen kokoelma",
+      "tags": ["terveys", "mielenterveys", "korona", "hoitojonot"],
+      "caseCount": 3
+    },
+    // ... jatka kaikille 13:lle (voit kopioida ne käsin tai generoida skriptillä)
+    {
+      "file": "canonical.casebook.json",
+      "kirjasto": "Canonical.casebook – Viisi rakenteellista invarianttia (v0.1)",
+      "tags": ["canonical", "invariantti", "rakenteellinen", "abstrakti"],
+      "caseCount": 5
+    }
+  ],
+  "updated": "2026-01-21",
+  "totalCasebooks": 13,
+  "totalCases": 78
+}
