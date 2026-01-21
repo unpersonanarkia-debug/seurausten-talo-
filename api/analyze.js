@@ -1,31 +1,46 @@
 export default async function handler(req, res) {
-  // 1. METHOD CHECK
+
+  /* ===============================
+     1. GET = healthcheck
+  =============================== */
+  if (req.method === "GET") {
+    return res.status(200).json({
+      status: "OK",
+      service: "Seurausten talo API",
+      usage: "POST { aihe: string } -> analyysi"
+    });
+  }
+
+  /* ===============================
+     2. SALLI VAIN POST ANALYYSIIN
+  =============================== */
   if (req.method !== "POST") {
-    return res.status(405).json({ error: "Only POST allowed" });
+    return res.status(405).json({ error: "Method not allowed" });
   }
 
   try {
     /* ===============================
-       2. BODY PARSING (KORJATTU)
-       Vercel parsii JSONin valmiiksi
+       3. BODY (Vercel-parsittu)
     =============================== */
-    const body = req.body && typeof req.body === "object"
-      ? req.body
-      : {};
+    const body =
+      req.body && typeof req.body === "object"
+        ? req.body
+        : {};
 
     const { aihe } = body;
 
     /* ===============================
-       3. VALIDATION
+       4. VALIDATION
     =============================== */
     if (!aihe || typeof aihe !== "string" || aihe.trim().length === 0) {
-      return res.status(400).json({ error: "Aihe puuttuu tai virheellinen" });
+      return res.status(400).json({ error: "Aihe puuttuu tai on virheellinen" });
     }
 
     const cleanAihe = aihe.trim();
+    const lower = cleanAihe.toLowerCase();
 
     /* ===============================
-       SEURAUSTEN TALON TILA
+       5. SEURAUSTEN TALON TILA
     =============================== */
     const tila = {
       paatos: cleanAihe,
@@ -36,10 +51,8 @@ export default async function handler(req, res) {
       normiriski: 0
     };
 
-    const lower = cleanAihe.toLowerCase();
-
     /* ===============================
-       (1) PÄÄTÖS – oletukset lukitaan
+       (1) PÄÄTÖS – lähtöriski
     =============================== */
     if (cleanAihe.length > 50) tila.normiriski += 1;
     if (/\d+/.test(cleanAihe)) tila.normiriski += 1;
@@ -47,13 +60,13 @@ export default async function handler(req, res) {
     /* ===============================
        (2) VAIKUTUS – suora vaikutus
     =============================== */
-    if (/(leikkaus|säästö|supistus|vähennys|yt|purk|pakko)/i.test(lower)) {
+    if (/(leikkaus|säästö|supistus|vähennys|yt|pakko)/i.test(lower)) {
       tila.vaikutus =
-        "Välitön kustannusvaikutus, joka kohdistuu suoraan toimijoihin ja kapasiteettiin.";
+        "Välitön kustannus- ja kapasiteettivaikutus, joka kohdistuu suoraan toimijoihin.";
       tila.normiriski += 3;
     } else if (/(uudistus|tehost|muutos|keskit|velvoit)/i.test(lower)) {
       tila.vaikutus =
-        "Rakenteellinen muutos, jonka vaikutukset näkyvät viiveellä ja epätasaisesti.";
+        "Rakenteellinen muutos, jonka vaikutukset realisoituvat viiveellä.";
       tila.normiriski += 2;
     } else {
       tila.vaikutus =
@@ -61,7 +74,7 @@ export default async function handler(req, res) {
     }
 
     /* ===============================
-       (3) SEURAUKSET – epäsuorat vaikutukset
+       (3) SEURAUKSET – epäsuorat
     =============================== */
     if (tila.normiriski >= 4) {
       tila.seuraukset =
@@ -69,26 +82,26 @@ export default async function handler(req, res) {
       tila.normiriski += 1;
     } else if (tila.normiriski >= 2) {
       tila.seuraukset =
-        "Seuraukset ovat hallittavia mutta vaativat aktiivista seurantaa.";
+        "Seuraukset ovat hallittavia, mutta vaativat jatkuvaa seurantaa.";
     } else {
       tila.seuraukset =
         "Seuraukset pysyvät rajattuina eikä merkittävää haitallista kertymää synny.";
     }
 
     /* ===============================
-       (4) SOPEUTUMINEN – käyttäytyminen
+       (4) SOPEUTUMINEN
     =============================== */
     tila.sopeutuminen =
       tila.normiriski >= 4
-        ? "Toimijat sopeutuvat kuormitukseen epävirallisin keinoin ja varjokäytännöin."
-        : "Toimijat mukautuvat maltillisesti ilman merkittävää vääristymää.";
+        ? "Toimijat sopeutuvat kuormitukseen epävirallisin käytännöin ja kiertokeinoin."
+        : "Toimijat mukautuvat muutokseen ilman merkittävää käyttäytymisen vääristymää.";
 
     /* ===============================
-       (5) KERTAUTUMINEN – normiksi
+       (5) KERTAUTUMINEN – normi
     =============================== */
     if (tila.normiriski >= 5) {
       tila.kertautuminen =
-        "Päätöksestä tulee automaattinen normi ja sitä toistetaan ilman uutta arviointia.";
+        "Päätöksestä muodostuu automaattinen normi, jota toistetaan ilman uutta arviointia.";
     } else if (tila.normiriski >= 3) {
       tila.kertautuminen =
         "Päätös on vaarassa normalisoitua pysyväksi käytännöksi.";
@@ -97,30 +110,32 @@ export default async function handler(req, res) {
         "Päätös ei lukkiudu normiksi ja säilyy korjattavana.";
     }
 
-    // TURVARAJA
+    /* ===============================
+       6. TURVARAJA
+    =============================== */
     if (tila.normiriski > 6) tila.normiriski = 6;
 
     /* ===============================
-       VASTAUS
+       7. VASTAUS
     =============================== */
     return res.status(200).json({
-      malli: "Seurausten talo v2.1 – Päätöksen elinkaari",
+      malli: "Seurausten talo – Päätöksen elinkaari",
       paatos: tila.paatos,
       vaikutus: tila.vaikutus,
       seuraukset: tila.seuraukset,
       sopeutuminen: tila.sopeutuminen,
       kertautuminen: tila.kertautuminen,
       normiriski: tila.normiriski,
-      normitila:
-        tila.normiriski >= 4
-          ? "🚨 MUUTOS ON MUUTTUMASSA NORMIKSI"
-          : "✅ Muutos ei ole lukkiutunut normiksi",
       riskiluokka:
         tila.normiriski >= 4
           ? "KORKEA"
           : tila.normiriski >= 2
           ? "KESKITASO"
-          : "MATALA"
+          : "MATALA",
+      normitila:
+        tila.normiriski >= 4
+          ? "🚨 MUUTOS ON MUUTTUMASSA NORMIKSI"
+          : "✅ Muutos ei ole lukkiutunut normiksi"
     });
 
   } catch (error) {
