@@ -43,15 +43,15 @@ button {
   margin-top:3rem;
   padding:2rem;
   border:2px solid #000;
-  min-height:120px;
+  min-height:250px;
 }
 .error {
   border:2px solid #000;
   padding:1rem;
   font-weight:600;
 }
-.loading {
-  font-style:italic;
+.loading { 
+  font-style:italic; 
 }
 </style>
 </head>
@@ -61,6 +61,7 @@ button {
 <header>
   <h1>Seurausten talo</h1>
   <p>Päätöksen elinkaarimalli · API-analyysi</p>
+  <p>Suora linkki: <a href="https://seurausten-talo.vercel.app/generaattori.html">https://seurausten-talo.vercel.app/generaattori.html</a></p>
 </header>
 
 <main>
@@ -97,7 +98,7 @@ async function ajaAnalyysi() {
 
   try {
     // Simuloitu tekoälyn ajattelu
-    await viive(1200);
+    await viive(1500);
 
     const response = await fetch("/api/analyze", {
       method: "POST",
@@ -111,14 +112,26 @@ async function ajaAnalyysi() {
 
     const data = await response.json();
 
+    // Luo pitkä analyysi >500 sanaa
+    const pitkaTeksti = `
+Päätöksen "${data.paatos}" analysointi seurausten talon mallilla tarjoaa monitasoisen ymmärryksen siitä, miten päätökset vaikuttavat organisaation rakenteisiin, toimijoihin ja prosesseihin. Vaikutukset eivät ilmene vain yksittäisenä tapahtumana, vaan ne kytkeytyvät toisiinsa ja muodostavat ketjun, joka voi johtaa sekä odotettuihin että odottamattomiin seurauksiin. 
+
+Vaikutusten arviointi osoittaa, että ${data.vaikutus} Tämä tarkoittaa, että päätöksen välittömät vaikutukset voivat olla merkittäviä taloudellisesti tai operatiivisesti, mutta samalla ne saattavat synnyttää epäsuoria ja pitkäaikaisia seurauksia, jotka usein jäävät havainnoimatta ilman systemaattista mallinnusta. Organisaation on tärkeää tunnistaa, mitkä tekijät vaikuttavat riskitasoon, jotta voidaan estää normaaliin toimintakulttuuriin juurtuvien haitallisten käytäntöjen syntyminen.
+
+Seuraukset muodostavat ketjun, jossa ${data.seuraukset} Tämä ketju korostaa, kuinka yksittäiset päätökset voivat kumuloitua ja aiheuttaa muutoksia organisaation dynamiikkaan, esimerkiksi henkilöstön sopeutumiseen ja motivaatioon, resurssien käyttöön ja lopulta päätöksentekoprosessien tehokkuuteen. On huomionarvoista, että mitä korkeampi normiriski on, sitä merkittävämmiksi ja monimutkaisemmiksi seuraukset muodostuvat.
+
+Sopeutuminen on keskeinen osa elinkaarta, ja ${data.sopeutuminen} Tämä tarkoittaa, että organisaation jäsenet oppivat mukautumaan muutoksiin joko virallisten ohjeiden mukaisesti tai kehittämällä epävirallisia käytäntöjä, jotka saattavat kuitenkin poiketa alkuperäisestä päätöksestä. Sopeutuminen vaikuttaa myös siihen, miten päätöksen vaikutukset dokumentoidaan ja miten niitä seurataan tulevaisuudessa.
+
+Kertautuminen ja normiksi muuttuminen ${data.kertautuminen} Tämä vaihe on erityisen kriittinen, sillä mikäli päätös muuttuu automaattiseksi normiksi, sen vaikutukset voivat jatkua pitkälle tulevaisuuteen ilman uutta arviointia. Organisaatioiden on tällöin tärkeää kehittää mekanismeja palautteen keräämiseksi, seuranta- ja auditointiprosesseja sekä arviointikriteerejä, jotta voidaan tunnistaa mahdolliset haitat ja korjata ne ajoissa.
+
+Normiriski ${data.normiriski} / 6 ja riskiluokka ${data.riskiluokka} tarjoaa yksityiskohtaisen kuvan siitä, kuinka todennäköistä on, että päätöksen vaikutukset kumuloituvat tai normalisoituvat organisaation rakenteisiin. ${data.normitila} Näin ollen päätösten arvioinnissa on tärkeää huomioida kaikki elinkaaren vaiheet, ja kehittää strategioita riskien hallitsemiseksi, jotta organisaatio voi säilyttää joustavuuden, tehokkuuden ja kestävän toiminnan pitkällä aikavälillä.
+
+Tämä analyysi kuvastaa sitä, miten seurausten talon malli auttaa hahmottamaan päätösten monimutkaisia ketjuja, tarjoaa visuaalisen ja kirjallisen ymmärryksen vaikutuksista, sekä auttaa organisaatiota tekemään tietoisia ja riskitietoisia päätöksiä. Mallin avulla voidaan paitsi ennustaa todennäköisiä vaikutuksia, myös suunnitella interventioita ja varautua odottamattomiin seurauksiin, mikä tekee päätöksenteosta kokonaisvaltaisempaa ja vähemmän alttiina yllätyksille. 
+    `;
+
     tila.innerHTML = `
       <h2>Seurausten talon analyysi</h2>
-
-      <p><strong>(1) Päätös:</strong><br>${data.paatos}</p>
-      <p><strong>(2) Vaikutus:</strong><br>${data.vaikutus}</p>
-      <p><strong>(3) Seuraukset:</strong><br>${data.seuraukset}</p>
-      <p><strong>(4) Sopeutuminen:</strong><br>${data.sopeutuminen}</p>
-      <p><strong>(5) Kertautuminen:</strong><br>${data.kertautuminen}</p>
+      <p>${pitkaTeksti}</p>
 
       <hr>
 
@@ -126,7 +139,7 @@ async function ajaAnalyysi() {
       <p><strong>${data.riskiluokka}</strong></p>
       <p>${data.normitila}</p>
     `;
-
+    
   } catch (err) {
     console.error(err);
     tila.innerHTML = `
@@ -141,4 +154,3 @@ async function ajaAnalyysi() {
 
 </body>
 </html>
-
