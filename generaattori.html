@@ -50,6 +50,9 @@ button {
   padding:1rem;
   font-weight:600;
 }
+.loading {
+  font-style:italic;
+}
 </style>
 </head>
 
@@ -63,10 +66,10 @@ button {
 <main>
 
 <textarea id="aihe" placeholder="Kirjoita päätös tai kysymys..."></textarea>
-<button onclick="ajaAnalyysi()">Aja seurausten talo (API)</button>
+<button onclick="ajaAnalyysi()">Aja seurausten talo</button>
 
 <div id="aiTila">
-  <em>Odottaa API-vastausta…</em>
+  <em>Odottaa analyysiä…</em>
 </div>
 
 </main>
@@ -77,6 +80,10 @@ button {
 </footer>
 
 <script>
+function viive(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 async function ajaAnalyysi() {
   const aihe = document.getElementById("aihe").value.trim();
   const tila = document.getElementById("aiTila");
@@ -86,58 +93,42 @@ async function ajaAnalyysi() {
     return;
   }
 
-  tila.innerHTML = "<em>Kutsutaan seurausten taloa…</em>";
+  tila.innerHTML = "<div class='loading'>⏳ Seurausten talo analysoi päätöstä…</div>";
 
   try {
-    const response = await fetch(
-      "https://seurausten-talo.vercel.app/api/analyze",
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ aihe })
-      }
-    );
+    // Simuloitu tekoälyn ajattelu
+    await viive(1200);
+
+    const response = await fetch("/api/analyze", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ aihe })
+    });
 
     if (!response.ok) {
-      throw new Error("API vastasi virheellä");
+      throw new Error("HTTP " + response.status);
     }
 
     const data = await response.json();
 
-    /*
-      OLETUS API-VASTAUKSESTA:
-      {
-        paatos: "...",
-        vaikutus: "...",
-        seuraukset: "...",
-        sopeutuminen: "...",
-        kertautuminen: "...",
-        normiriski: 3
-      }
-    */
-
     tila.innerHTML = `
-      <h2>Seurausten talon vastaus</h2>
+      <h2>Seurausten talon analyysi</h2>
 
-      <p><strong>(1) Päätös:</strong> ${data.paatos}</p>
-      <p><strong>(2) Vaikutus:</strong> ${data.vaikutus}</p>
-      <p><strong>(3) Seuraukset:</strong> ${data.seuraukset}</p>
-      <p><strong>(4) Sopeutuminen:</strong> ${data.sopeutuminen}</p>
-      <p><strong>(5) Kertautuminen:</strong> ${data.kertautuminen}</p>
+      <p><strong>(1) Päätös:</strong><br>${data.paatos}</p>
+      <p><strong>(2) Vaikutus:</strong><br>${data.vaikutus}</p>
+      <p><strong>(3) Seuraukset:</strong><br>${data.seuraukset}</p>
+      <p><strong>(4) Sopeutuminen:</strong><br>${data.sopeutuminen}</p>
+      <p><strong>(5) Kertautuminen:</strong><br>${data.kertautuminen}</p>
 
       <hr>
 
-      <p><strong>Normiriski:</strong> ${data.normiriski}/5</p>
-      <p>
-        ${
-          data.normiriski >= 3
-            ? "⚠ MUUTOS ON MUUTTUMASSA NORMIKSI"
-            : "✓ Muutos ei lukkiudu normiksi"
-        }
-      </p>
+      <p><strong>Normiriski:</strong> ${data.normiriski} / 6</p>
+      <p><strong>${data.riskiluokka}</strong></p>
+      <p>${data.normitila}</p>
     `;
 
   } catch (err) {
+    console.error(err);
     tila.innerHTML = `
       <div class="error">
         API-kutsu epäonnistui.<br>
@@ -150,3 +141,4 @@ async function ajaAnalyysi() {
 
 </body>
 </html>
+
