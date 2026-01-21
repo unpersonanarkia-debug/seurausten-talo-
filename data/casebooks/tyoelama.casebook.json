@@ -1,0 +1,103 @@
+{
+  "kirjasto": "Tyoelama.casebook – Suomen työelämän ja työmarkkinoiden kriisien kokoelma",
+  "versio": "1.0",
+  "paivitetty": "2026-01-21",
+  "kuvaus": "Case-esimerkit työelämästä: nollatuntisopimukset, burnout, etätyön pakko, työehtosopimusten rapautuminen ja ikääntyvien syrjäytyminen. Jokainen case mallintaa päätöksen elinkaaren Seurausten talon mukaisesti: päätös → vaikutus → seuraukset → sopeutuminen → kertautuminen → normalisoituminen.",
+  "cases": [
+    {
+      "id": "tyoelama-nollatuntisopimukset",
+      "title": "Nollatuntisopimusten yleistyminen ja epävarmuus (2010–2025)",
+      "aihe": "Päätös sallia nollatuntisopimukset ja joustavat työsuhteet työmarkkinoiden joustavuuden nimissä",
+      "elinkaarivaiheet": {
+        "paatos": "Työmarkkinajärjestöt ja lainsäätäjä päättävät sallia nollatuntisopimukset ja joustavat työsuhteet ilman riittävää turvaverkkoa",
+        "vaikutus": "Välitön työvoiman saatavuus joustavasti, mutta kasvava taloudellinen ja henkinen epävarmuus työntekijöillä",
+        "seuraukset": "Vuonna 2025 nollatuntisopimuksia on yli 100 000, työllisyysaste korkea mutta toimeentulo epävakaa → burnout, mielenterveysongelmat ja köyhyysriski kasvavat",
+        "sopeutuminen": "Työntekijät sopeutuvat useisiin työnantajiin ja lisätöihin",
+        "kertautuminen": "Epävarmuus vahvistaa työuupumusta ja syrjäytymistä",
+        "normalisoituminen": "Nollatuntisopimukset koetaan 'normaalina joustavuutena' työmarkkinoilla"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["henkinen_terveys", "fyysinen_terveys", "sosiaalinen_luottamus"],
+      "populationExposure": ["nuoret työntekijät", "osa-aikaiset", "matalapalkka-aloilla työskentelevät"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2010, "horizon": "2010–2040+" },
+      "notes": ["Ajallinen viive: 3–10 vuotta ennen mielenterveysongelmien ja köyhyyden akuutin vaikutuksen."]
+    },
+    {
+      "id": "tyoelama-burnout-epidemia",
+      "title": "Työuupumus ja burnout-epidemia (2015–2025)",
+      "aihe": "Päätös lisätä työtaakkaa ja tehostamista ilman riittävää työhyvinvoinnin tukea",
+      "elinkaarivaiheet": {
+        "paatos": "Työnantajat ja valtio päättävät tehostaa työtä (esim. tulosohjaus, henkilöstön vähentäminen) ilman riittävää työhyvinvoinnin tukea",
+        "vaikutus": "Välitön tuottavuuden nousu, mutta kasvava kuormitus ja uupumus",
+        "seuraukset": "Vuonna 2025 burnout on yksi yleisimmistä syistä työkyvyttömyyseläkkeisiin (yli 30 % tapauksista), sairauspoissaolot kasvaneet 20–30 %",
+        "sopeutuminen": "Työntekijät sopeutuvat ylitöihin ja vähäiseen palautumiseen",
+        "kertautuminen": "Uupumus vahvistaa sairauspoissaoloja ja vaihtuvuutta",
+        "normalisoituminen": "Burnout koetaan 'normaalina' modernin työelämän osana"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["henkinen_terveys", "fyysinen_terveys", "hallinto_ja_valta"],
+      "populationExposure": ["työntekijät", "johtajat", "julkinen sektori"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2015, "horizon": "2015–2035+" },
+      "notes": ["Ajallinen viive: 2–7 vuotta ennen sairauspoissaolojen ja eläkkeiden eksponentiaalisen kasvun."]
+    },
+    {
+      "id": "tyoelama-etatyon-pakko",
+      "title": "Etätyön pakollinen käyttöönotto ja sen jälkivaikutukset (2020–2025)",
+      "aihe": "Päätös pakottaa etätyöhön pandemian aikana ilman riittävää tukea ja rajanvetoa",
+      "elinkaarivaiheet": {
+        "paatos": "Työnantajat ja valtio päättävät pakottaa etätyöhön pandemian aikana ilman riittävää tukea (työergonomia, rajanveto työn ja vapaa-ajan välillä)",
+        "vaikutus": "Välitön tartuntojen väheneminen, mutta kasvava eristäytyminen ja kuormitus",
+        "seuraukset": "Vuonna 2025 etätyö on vakiintunut, mutta burnout kasvanut 25–40 %, työuupumus ja yksinäisyys yleistyneet, työ- ja perhe-elämän rajat hämärtyneet",
+        "sopeutuminen": "Työntekijät sopeutuvat hybridimalliin, mutta rajanveto heikkenee",
+        "kertautuminen": "Eristäytyminen vahvistaa mielenterveysongelmia",
+        "normalisoituminen": "Etätyön pakko koetaan 'normaalina' joustavuutena"
+      },
+      "normiriski": 4,
+      "vaikutuskerrokset": ["henkinen_terveys", "fyysinen_terveys", "sosiaalinen_luottamus"],
+      "populationExposure": ["toimistotyöntekijät", "perheet", "etätyötä tekevät"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2020, "horizon": "2020–2035+" },
+      "notes": ["Ajallinen viive: 2–5 vuotta ennen burnoutin ja yksinäisyyden eksponentiaalisen kasvun."]
+    },
+    {
+      "id": "tyoelama-tyoehtosopimusten-rapautuminen",
+      "title": "Työehtosopimusten rapautuminen ja porrastus (2015–2025)",
+      "aihe": "Päätös heikentää työehtosopimusten yleissitovuutta ja porrastaa palkkoja",
+      "elinkaarivaiheet": {
+        "paatos": "Työmarkkinajärjestöt ja valtio päättävät heikentää TES-yleissitovuutta ja porrastaa palkkoja kilpailukyvyn nimissä",
+        "vaikutus": "Välitön yritysten kustannussäästö, mutta kasvava palkkaero ja epävarmuus",
+        "seuraukset": "Vuonna 2025 TES-kattavuus on laskenut alle 80 %, palkkaerot kasvaneet, työntekijöiden neuvotteluasema heikentynyt ja työrauha kärsinyt",
+        "sopeutuminen": "Työntekijät sopeutuvat yksilöllisiin sopimuksiin ja epävarmuuteen",
+        "kertautuminen": "Palkkaerot ja epävarmuus vahvistavat eriarvoisuutta",
+        "normalisoituminen": "TES-rapautuminen koetaan 'normaalina' joustavuutena"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["sosiaalinen_luottamus", "henkinen_terveys", "hallinto_ja_valta"],
+      "populationExposure": ["työntekijät", "ammattiliitot", "työnantajat"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2015, "horizon": "2015–2035+" },
+      "notes": ["Ajallinen viive: 5–10 vuotta ennen eriarvoisuuden ja työrauhan täyden heikkenemisen."]
+    },
+    {
+      "id": "tyoelama-ikaantyvien-syrjaytyminen",
+      "title": "Ikääntyvien työntekijöiden syrjäytyminen ja eläkeuudistusten vaikutukset (2010–2025)",
+      "aihe": "Päätös nostaa eläkeikää ja heikentää työllistymistukea ikääntyville",
+      "elinkaarivaiheet": {
+        "paatos": "Päätös nostaa eläkeikää ja heikentää työllistymistukea ikääntyville työntekijöille (esim. eläkeuudistus 2017)",
+        "vaikutus": "Välitön työssäjatkamisen pidentyminen, mutta kasvava syrjäytymisriski",
+        "seuraukset": "Vuonna 2025 ikääntyvien (55+) työttömyys pitkittyy, syrjäytymisriski kasvaa 2–3-kertaiseksi, mielenterveysongelmat ja varhaiseläkkeet yleistyvät",
+        "sopeutuminen": "Ikääntyvät sopeutuvat osa-aikatyöhön tai varhaiseläkkeeseen",
+        "kertautuminen": "Syrjäytyminen vahvistaa työvoimapulaa ja sosiaalisia kustannuksia",
+        "normalisoituminen": "Ikääntyvien syrjäytyminen koetaan 'normaalina' eläkeuudistusten seurauksena"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["henkinen_terveys", "fyysinen_terveys", "sosiaalinen_luottamus"],
+      "populationExposure": ["55+ työntekijät", "työnantajat", "eläkejärjestelmä"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2010, "horizon": "2010–2040+" },
+      "notes": ["Ajallinen viive: 5–15 vuotta ennen syrjäytymisen ja kustannusten eksponentiaalisen kasvun."]
+    }
+  ]
+}

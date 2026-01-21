@@ -1,0 +1,103 @@
+{
+  "kirjasto": "Liikenne.casebook – Suomen liikenne- ja liikkumispolitiikan kriisien kokoelma",
+  "versio": "1.0",
+  "paivitetty": "2026-01-21",
+  "kuvaus": "Case-esimerkit liikenteestä: autokeskeinen infra, raideliikenteen leikkaukset, sähköautojen latausinfran hitaus, lentoliikenteen päästöt ja pyöräilyn aliresursointi. Jokainen case mallintaa päätöksen elinkaaren Seurausten talon mukaisesti: päätös → vaikutus → seuraukset → sopeutuminen → kertautuminen → normalisoituminen.",
+  "cases": [
+    {
+      "id": "liikenne-autokeskeinen-infra",
+      "title": "Autokeskeinen infra ja ruuhkautuminen (1990–2025)",
+      "aihe": "Päätös rakentaa infraa ensisijaisesti autoilun ehdoilla ilman riittävää joukkoliikenteen ja kevyen liikenteen panostusta",
+      "elinkaarivaiheet": {
+        "paatos": "Valtio ja kunnat päättävät priorisoida moottoriteitä, parkkipaikkoja ja autoliikenteen sujuvuutta joukkoliikenteen ja pyöräteiden sijaan",
+        "vaikutus": "Välitön autoilun helpottuminen ja talouskasvu, mutta kasvava ruuhkautuminen ja päästöt",
+        "seuraukset": "Vuonna 2025 pääkaupunkiseudun ruuhkakustannukset yli 1 miljardia euroa vuodessa, päästöt liikenteestä edelleen ~20 % Suomen kokonaispäästöistä, terveyshaitat (ilmanlaatu, stressi) kasvaneet",
+        "sopeutuminen": "Asukkaat sopeutuvat pitkiin työmatkoihin ja autoiluun pakollisena",
+        "kertautuminen": "Ruuhkat ja päästöt pahenevat, mikä kuormittaa terveydenhuoltoa ja taloutta",
+        "normalisoituminen": "Autokeskeisyys koetaan 'normaalina' liikkumismuotona"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["fyysinen_terveys", "henkinen_terveys", "hallinto_ja_valta"],
+      "populationExposure": ["kaupunkilaiset", "autoilijat", "työmatkalaiset"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 1990, "horizon": "1990–2050+" },
+      "notes": ["Ajallinen viive: 10–30 vuotta ennen ruuhkien ja päästöjen eksponentiaalisen pahenemisen."]
+    },
+    {
+      "id": "liikenne-raideliikenteen-leikkaukset",
+      "title": "Raideliikenteen leikkaukset ja HSL:n ongelmat (2000–2025)",
+      "aihe": "Päätös leikata raideliikenteen rahoitusta ja investointeja taloussyistä",
+      "elinkaarivaiheet": {
+        "paatos": "Valtio ja HSL päättävät leikata raideliikenteen investointeja ja ylläpitoa (esim. junavuorojen vähentäminen, ratahankkeiden viivästyminen)",
+        "vaikutus": "Välitön säästö, mutta kasvava joukkoliikenteen epäluotettavuus",
+        "seuraukset": "Vuonna 2025 HSL:n junamyöhästymiset yli 20 %, matkustajamäärät eivät kasva tavoitellusti, autoilun osuus kasvaa ja päästöt liikenteestä eivät laske",
+        "sopeutuminen": "Matkustajat sopeutuvat autoihin tai etätyöhön",
+        "kertautuminen": "Leikkaukset pahentavat ruuhkia ja ilmastopäästöjä",
+        "normalisoituminen": "Raideliikenteen leikkaukset koetaan 'taloudellisena realiteettina'"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["fyysinen_terveys", "sosiaalinen_luottamus", "hallinto_ja_valta"],
+      "populationExposure": ["junalaiset", "pääkaupunkiseutu", "työmatkalaiset"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2000, "horizon": "2000–2040+" },
+      "notes": ["Ajallinen viive: 5–15 vuotta ennen joukkoliikenteen romahduksen ja päästöjen kasvun."]
+    },
+    {
+      "id": "liikenne-sahkoautojen-latausinfra",
+      "title": "Sähköautojen latausinfran hitaus ja riittämättömyys (2015–2025)",
+      "aihe": "Päätös edistää sähköautoja ilman riittävää latausinfran rakentamista",
+      "elinkaarivaiheet": {
+        "paatos": "Valtio ja energiayhtiöt päättävät tukea sähköautojen hankintaa (esim. hankintatuet) ilman kattavaa julkista latausverkostoa",
+        "vaikutus": "Välitön sähköautojen myynnin kasvu, mutta kasvava latausongelma",
+        "seuraukset": "Vuonna 2025 latauspisteitä on liian vähän (erityisesti maaseudulla ja kerrostaloissa), mikä hidastaa siirtymää ja aiheuttaa range anxietyä; sähköautojen osuus alle 10 % uusista autoista",
+        "sopeutuminen": "Kuluttajat sopeutuvat kotilataukseen tai hybridiautoihin",
+        "kertautuminen": "Infran hitaus hidastaa päästövähennyksiä liikenteessä",
+        "normalisoituminen": "Latausinfran riittämättömyys koetaan 'normaalina' siirtymävaiheen ongelmana"
+      },
+      "normiriski": 4,
+      "vaikutuskerrokset": ["fyysinen_terveys", "hallinto_ja_valta", "sosiaalinen_luottamus"],
+      "populationExposure": ["autoilijat", "kerrostaloasukkaat", "maaseutu"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2015, "horizon": "2015–2040+" },
+      "notes": ["Ajallinen viive: 5–10 vuotta ennen siirtymän pysähtymisen ja päästöjen kasvun."]
+    },
+    {
+      "id": "liikenne-lentoliikenteen-paastot",
+      "title": "Lentoliikenteen päästöt ja vastustus (2000–2025)",
+      "aihe": "Päätös tukea lentoliikennettä (verovapaus, lentokenttien laajennus) ilman riittävää päästöjen hillintää",
+      "elinkaarivaiheet": {
+        "paatos": "Valtio päättää pitää lentopolttoaineen verovapaana ja laajentaa lentokenttiä talouskasvun nimissä",
+        "vaikutus": "Välitön matkustajamäärien kasvu ja taloudellinen hyöty, mutta kasvavat päästöt",
+        "seuraukset": "Vuonna 2025 lentoliikenteen päästöt ovat kasvaneet 50 % vuodesta 2000, mikä vaikeuttaa ilmastotavoitteita; vastustus kasvanut (esim. lentokenttien laajennukset)",
+        "sopeutuminen": "Matkustajat sopeutuvat lentämiseen, lentoyhtiöt viherpesuun",
+        "kertautuminen": "Päästöt vahvistavat ilmastonmuutosta ja äärisäitä",
+        "normalisoituminen": "Lentoliikenteen päästöt koetaan 'normaalina' globalisaation hintana"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["fyysinen_terveys", "hallinto_ja_valta", "sosiaalinen_luottamus"],
+      "populationExposure": ["lentomatkustajat", "ilmastotoimijat", "koko väestö"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2000, "horizon": "2000–2050+" },
+      "notes": ["Ajallinen viive: 10–30 vuotta ennen päästöjen ja vastustuksen eksponentiaalisen kasvun."]
+    },
+    {
+      "id": "liikenne-pyorailyn-aliresursointi",
+      "title": "Pyöräilyn ja kävelyn aliresursointi (1990–2025)",
+      "aihe": "Päätös aliresursoida pyöräteitä ja kävelyolosuhteita autoliikenteen priorisoinnin vuoksi",
+      "elinkaarivaiheet": {
+        "paatos": "Kunnat ja valtio päättävät aliresursoida pyöräteitä ja kävelyolosuhteita (esim. budjetti alle 10 % liikenneinvestoinneista)",
+        "vaikutus": "Välitön autoilun sujuvuus, mutta kasvava turvallisuusriski ja vähäinen käyttö",
+        "seuraukset": "Vuonna 2025 pyöräilyn osuus matkoista Suomessa alle 10 % (Pääkaupunkiseudulla 15 %), liikenneturvallisuus heikko, päästöt ja terveyshaitat kasvaneet",
+        "sopeutuminen": "Asukkaat sopeutuvat autoiluun tai vähäiseen liikkumiseen",
+        "kertautuminen": "Aliresursointi vahvistaa autokeskeisyyttä ja terveysongelmia",
+        "normalisoituminen": "Pyöräilyn aliresursointi koetaan 'normaalina' liikenneratkaisuna"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["fyysinen_terveys", "sosiaalinen_luottamus", "hallinto_ja_valta"],
+      "populationExposure": ["kaupunkilaiset", "lapset", "liikkujat"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 1990, "horizon": "1990–2050+" },
+      "notes": ["Ajallinen viive: 10–30 vuotta ennen terveyshaittojen ja päästöjen eksponentiaalisen kasvun."]
+    }
+  ]
+}

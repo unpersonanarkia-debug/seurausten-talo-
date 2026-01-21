@@ -1,0 +1,103 @@
+{
+  "kirjasto": "Ilmasto.casebook – Suomen ilmastopolitiikan ja ilmastonmuutoksen kriisien kokoelma",
+  "versio": "1.0",
+  "paivitetty": "2026-01-21",
+  "kuvaus": "Case-esimerkit ilmastosta: fossiiliriippuvuuden jatkaminen, metsäkato ja hiilinielujen heikkeneminen, ilmastosopimusten toimeenpanon viiveet, äärisäiden vaikutukset ja sopeutumisen hitaus, vihreän siirtymän kustannukset ja vastustus. Jokainen case mallintaa päätöksen elinkaaren Seurausten talon mukaisesti: päätös → vaikutus → seuraukset → sopeutuminen → kertautuminen → normalisoituminen.",
+  "cases": [
+    {
+      "id": "ilmasto-fossiiliriippuvuus",
+      "title": "Fossiiliriippuvuuden jatkaminen ja vihreän siirtymän hitaus (1990–2025)",
+      "aihe": "Päätös jatkaa fossiilisten polttoaineiden käyttöä ja tukea niitä ilmastotavoitteista huolimatta",
+      "elinkaarivaiheet": {
+        "paatos": "Valtio ja teollisuus päättävät jatkaa fossiilisten polttoaineiden tukia ja käyttöä (esim. turve, kivihiili, öljy) talouskasvun ja energiaturvallisuuden nimissä",
+        "vaikutus": "Välitön halpa energia ja teollisuuden kilpailukyky, mutta kasvavat päästöt ja riippuvuus tuontienergiasta",
+        "seuraukset": "Vuonna 2025 Suomen päästöt ovat laskeneet vain ~40 % vuoden 1990 tasosta (EU-tavoite 55 %), fossiilisten tuet edelleen yli 1 miljardia euroa vuodessa, mikä hidastaa siirtymää ja pahentaa ilmaston lämpenemistä",
+        "sopeutuminen": "Yhteiskunta sopeutuu korkeaan energiankulutukseen ja tuontienergiaan",
+        "kertautuminen": "Riippuvuus vahvistaa hintakriisejä ja ilmastopaineita",
+        "normalisoituminen": "Fossiiliriippuvuus koetaan 'väliaikaisena realiteettina' siirtymässä"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["fyysinen_terveys", "hallinto_ja_valta", "sosiaalinen_luottamus"],
+      "populationExposure": ["koko_väestö", "teollisuus", "maaseutu"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 1990, "horizon": "1990–2050+" },
+      "notes": ["Ajallinen viive: 10–30 vuotta ennen lämpenemisen ja äärisäiden akuutin pahenemisen."]
+    },
+    {
+      "id": "ilmasto-metsakato-hiilinielut",
+      "title": "Metsäkato ja hiilinielujen heikkeneminen (2000–2025)",
+      "aihe": "Päätös sallia metsien hakkuut ja maankäytön muutos ilman riittävää hiilinielujen suojelua",
+      "elinkaarivaiheet": {
+        "paatos": "Maa- ja metsätalousministeriö sekä metsäteollisuus päättävät priorisoida hakkuita ja bioenergian tuotantoa ilmastotavoitteiden sijaan",
+        "vaikutus": "Välitön taloudellinen hyöty ja bioenergian tuotanto, mutta hiilinielujen heikkeneminen",
+        "seuraukset": "Vuonna 2025 Suomen metsien hiilinielut ovat heikentyneet merkittävästi (LULUCF-sektori muuttunut päästölähteeksi), mikä vaikeuttaa 2035 hiilineutraaliustavoitetta",
+        "sopeutuminen": "Metsäteollisuus sopeutuu lisäämällä tuontipuuta, valtio kompensoi päästökaupalla",
+        "kertautuminen": "Hiilinielujen menetys pahentaa ilmastonmuutosta ja biodiversiteettikatoa",
+        "normalisoituminen": "Metsien hakkuut koetaan 'normaalina' taloudellisena toimintana"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["fyysinen_terveys", "hallinto_ja_valta", "sosiaalinen_luottamus"],
+      "populationExposure": ["metsänomistajat", "ilmastotoimijat", "koko väestö"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2000, "horizon": "2000–2050+" },
+      "notes": ["Ajallinen viive: 5–20 vuotta ennen hiilinielujen menetyksen täyden ilmastovaikutuksen."]
+    },
+    {
+      "id": "ilmasto-sopimusten-toimeenpano-viiveet",
+      "title": "Ilmastosopimusten toimeenpanon viiveet (Kyoto–Pariisi–Fit for 55)",
+      "aihe": "Päätös sitoutua kansainvälisiin ilmastosopimuksiin ilman riittävää kansallista toimeenpanoa",
+      "elinkaarivaiheet": {
+        "paatos": "Suomi sitoutuu Kyotoon, Pariisin sopimukseen ja EU:n Fit for 55 -pakettiin, mutta toimeenpano viivästyy taloudellisten ja poliittisten syiden vuoksi",
+        "vaikutus": "Välitön kansainvälinen maine, mutta päästövähennykset jäävät jälkeen",
+        "seuraukset": "Vuonna 2025 Suomi jää jälkeen EU:n 55 % päästövähennystavoitteesta (erityisesti liikenne ja maatalous), mikä johtaa sakko- ja korvausvelvoitteisiin",
+        "sopeutuminen": "Valtio kompensoi päästökaupalla ja offseteilla",
+        "kertautuminen": "Viiveet pahentavat ilmastokriisiä ja kansainvälistä painetta",
+        "normalisoituminen": "Toimeenpanon viiveet koetaan 'normaalina' poliittisena kompromissina"
+      },
+      "normiriski": 4,
+      "vaikutuskerrokset": ["hallinto_ja_valta", "sosiaalinen_luottamus", "turvallisuus_ja_sota"],
+      "populationExposure": ["koko väestö", "päättäjät", "yritykset"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2005, "horizon": "2005–2050+" },
+      "notes": ["Ajallinen viive: 5–15 vuotta ennen toimeenpanon epäonnistumisen akuutin vaikutuksen."]
+    },
+    {
+      "id": "ilmasto-aarisaiden-vaikutukset",
+      "title": "Äärisäiden vaikutukset ja sopeutumisen hitaus (2010–2025)",
+      "aihe": "Päätös jättää sopeutuminen äärisäihin riittämättömäksi ilmastonmuutoksen kiihtyessä",
+      "elinkaarivaiheet": {
+        "paatos": "Valtio ja kunnat päättävät priorisoida lyhyen aikavälin taloutta pitkän aikavälin sopeutumistoimien sijaan",
+        "vaikutus": "Välitön säästö infrastruktuuriin, mutta kasvava haavoittuvuus äärisäille",
+        "seuraukset": "Vuonna 2025 tulvat, myrskyt ja helleaallot aiheuttavat vuosittain satojen miljoonien eurojen vahingot (esim. 2024–2025 tulvat Etelä-Suomessa), terveyshaitat ja taloudelliset menetykset kasvavat",
+        "sopeutuminen": "Yhteiskunta sopeutuu hätäapuihin ja jälleenrakennukseen",
+        "kertautuminen": "Äärisäät toistuvat useammin, mikä kuormittaa taloutta ja terveydenhuoltoa",
+        "normalisoituminen": "Äärisäät koetaan 'uuden normaalina' ilmastonmuutoksessa"
+      },
+      "normiriski": 5,
+      "vaikutuskerrokset": ["fyysinen_terveys", "henkinen_terveys", "hallinto_ja_valta"],
+      "populationExposure": ["koko väestö", "maaseutu", "rannikkoalueet"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2010, "horizon": "2010–2050+" },
+      "notes": ["Ajallinen viive: 5–15 vuotta ennen äärisäiden toistuvuuden ja kustannusten eksponentiaalisen kasvun."]
+    },
+    {
+      "id": "ilmasto-vihrean-siirtyman-kustannukset",
+      "title": "Vihreän siirtymän kustannukset ja vastustus (2015–2025)",
+      "aihe": "Päätös edistää vihreää siirtymää ilman riittävää sosiaalista oikeudenmukaisuutta ja tukea",
+      "elinkaarivaiheet": {
+        "paatos": "Valtio päättää nopeuttaa vihreää siirtymää (esim. päästökauppa, verot, kieltoja) ilman riittävää tukea hiili-intensiivisille alueille ja kotitalouksille",
+        "vaikutus": "Välitön päästöjen lasku tietyillä sektoreilla, mutta kasvavat kustannukset ja vastustus",
+        "seuraukset": "Vuonna 2025 siirtymän kustannukset (esim. sähköautojen latausinfra, lämmitysremontit) ovat johtaneet yli 500 000 kotitalouden taloudelliseen paineeseen, vastustus kasvanut erityisesti maaseudulla",
+        "sopeutuminen": "Kotitaloudet sopeutuvat korkeampiin kustannuksiin ja tukia hakevaan byrokratiaan",
+        "kertautuminen": "Vastustus vahvistaa polarisaatiota ja hidastaa siirtymää",
+        "normalisoituminen": "Siirtymän kustannukset koetaan 'normaalina' ilmastotoimien hintana"
+      },
+      "normiriski": 4,
+      "vaikutuskerrokset": ["henkinen_terveys", "sosiaalinen_luottamus", "hallinto_ja_valta"],
+      "populationExposure": ["maaseutu", "pienituloiset", "teollisuus"],
+      "conflictMode": "rakenteellinen",
+      "timeframe": { "decisionYear": 2015, "horizon": "2015–2050+" },
+      "notes": ["Ajallinen viive: 3–10 vuotta ennen vastustuksen ja polarisaation täyden vaikutuksen."]
+    }
+  ]
+}
