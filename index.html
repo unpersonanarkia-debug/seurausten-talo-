@@ -9,14 +9,15 @@
     /* --------- VÄRIT JA FONTIT --------- */
     :root {
       --dark-blue: #1f2d3a;
-      --light-beige: #f8f5f0;
       --accent-okra: #d28a22;
       --mid-grey: #c7c4bc;
+      --sand-beige: #f3ecdc;
+      --off-white: #fdfbfa;
     }
 
     body {
       font-family: "Helvetica Neue", Arial, sans-serif;
-      background-color: var(--light-beige);
+      background-color: var(--off-white);
       color: var(--dark-blue);
       line-height: 1.6;
       margin: 0;
@@ -25,16 +26,16 @@
 
     /* --------- HEADER & LOGO --------- */
     header {
-      background: var(--light-beige);
+      background: var(--off-white);
       border-bottom: 4px solid var(--accent-okra);
       text-align: center;
-      padding: 2rem 1rem 2.2rem;
+      padding: 2rem 1rem 2rem;
     }
 
     header img {
       max-width: 200px;
       height: auto;
-      margin-bottom: 0.8rem;
+      margin-bottom: 1rem;
     }
 
     header h1 {
@@ -46,7 +47,7 @@
       font-size: 1.1rem;
       font-weight: normal;
       color: #374859;
-      margin-top: 0.2rem;
+      margin-top: 0.3rem;
     }
 
     /* --------- GRAPH SECTION --------- */
@@ -57,6 +58,7 @@
       border: 2px solid var(--mid-grey);
       border-radius: 8px;
       max-width: 960px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
 
     .graph-section h3 {
@@ -77,7 +79,7 @@
 
     .graph-controls select {
       border: 1px solid var(--mid-grey);
-      background: var(--light-beige);
+      background: var(--off-white);
     }
 
     .graph-controls button {
@@ -142,7 +144,7 @@
     }
 
     pre {
-      background: #fff;
+      background: #ffffff;
       border-left: 4px solid var(--accent-okra);
       padding: 1rem;
       overflow-x: auto;
@@ -152,7 +154,7 @@
     footer {
       margin-top: 3rem;
       background: var(--dark-blue);
-      color: var(--light-beige);
+      color: var(--sand-beige);
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
@@ -193,7 +195,7 @@
       </select>
       <button onclick="loadCase()">Lataa graafi</button>
     </div>
-    
+
     <div id="cy"></div>
   </div>
 
@@ -209,7 +211,7 @@
 
     <blockquote>
       Seurausten talo on ehdotus tällaisesta instituutiosta.<br>
-      Se ei tuomitse, ei säädä lakeja, ei estä päätöksiä –<br>
+      Se ei tuomitse, ei säädä lakeja, ei estä päätöksiä – <br>
       se vain tekee näkyväksi, mitä päätöksistä seuraa ajan kuluessa.
     </blockquote>
 
@@ -297,3 +299,4 @@
   </script>
 </body>
 </html>
+
