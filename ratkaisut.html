@@ -96,10 +96,23 @@
 
 <body>
   <header>
-    <img src="logo.png" alt="Seurausten talo logo" />
-    <h1>Seurausten Talon ratkaisuja</h1>
-    <h2>Kestäviä tapoja ymmärtää, puhdistaa ja rakentaa</h2>
-  </header>
+  <a href="index.html" class="site-logo-link">
+    <img src="assets/logo.png" alt="Seurausten talo logo" class="site-logo" />
+  </a>
+  <h1>Seurausten Talon ratkaisuja</h1>
+  <h2>Kestäviä ja uusia innovaatiota ratkaistuna</h2>
+</header>
+
+<!-- CSS -->
+.site-logo {
+  max-width:200px;
+  height:auto;
+  display:block;
+  margin:0 auto 0.5rem;
+  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.15));
+  transition: transform 0.3s ease;
+}
+.site-logo:hover { transform: scale(1.05); }
 
   <nav class="toc">
     <a href="#mannynkuori">Männynkuori</a> |
