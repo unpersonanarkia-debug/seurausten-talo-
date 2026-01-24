@@ -6,180 +6,154 @@
   <title>Seurausten talo</title>
   <script src="https://unpkg.com/cytoscape@3.23.0/dist/cytoscape.min.js"></script>
   <style>
-    /* --------- VÄRIT JA FONTIT --------- */
     :root {
-      --dark-blue: #1f2d3a;
-      --accent-okra: #d28a22;
-      --mid-grey: #c7c4bc;
-      --sand-beige: #f3ecdc;
-      --off-white: #fdfbfa;
+      --dark-blue:#1f2d3a;
+      --accent-okra:#d28a22;
+      --mid-grey:#c7c4bc;
+      --sand-beige:#f3ecdc;
+      --off-white:#fdfbfa;
     }
 
     body {
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      background-color: var(--off-white);
-      color: var(--dark-blue);
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
+      font-family:"Helvetica Neue", Arial, sans-serif;
+      background-color:var(--off-white);
+      color:var(--dark-blue);
+      line-height:1.6;
+      margin:0;padding:0;
     }
 
-    /* --------- HEADER & LOGO --------- */
+    /* ----- HEADER ----- */
     header {
-      background: var(--off-white);
-      border-bottom: 4px solid var(--accent-okra);
-      text-align: center;
-      padding: 2rem 1rem 2rem;
+      background:var(--off-white);
+      border-bottom:4px solid var(--accent-okra);
+      text-align:center;
+      padding:0 1rem 1.5rem;
+    }
+    header nav {
+      border-bottom:2px solid var(--mid-grey);
+      background:var(--off-white);
+      padding:0.8rem 1rem;
+      text-align:center;
+      box-shadow:0 2px 5px rgba(0,0,0,0.05);
+      margin-bottom:1rem;
+    }
+    header nav a {
+      display:inline-block;margin:0 1rem;
+      color:var(--dark-blue);text-decoration:none;
+      font-weight:500;transition:color .2s;
+    }
+    header nav a:hover{color:var(--accent-okra);}
+    header img{
+      max-width:420px;height:auto;margin:1.5rem auto 0.8rem;
+    }
+    header h1{font-size:2rem;margin:0.2rem 0;}
+    header h2{font-size:1.1rem;font-weight:normal;color:#374859;margin-top:0.3rem;}
+
+    /* ----- GRAPH SECTION ----- */
+    .graph-section{
+      margin:2rem auto;
+      padding:1.5rem;
+      background:#fff;
+      border:2px solid var(--mid-grey);
+      border-radius:8px;
+      max-width:960px;
+      box-shadow:0 2px 4px rgba(0,0,0,0.05);
+    }
+    .graph-section h3{margin-top:0;color:var(--dark-blue);}
+    .graph-controls{margin-bottom:1rem;}
+    .graph-controls select,.graph-controls button{
+      padding:0.5rem 1rem;margin:0.25rem;border-radius:4px;font-size:1rem;
+    }
+    .graph-controls select{
+      border:1px solid var(--mid-grey);
+      background:var(--off-white);
+    }
+    .graph-controls button{
+      border:none;
+      background:var(--accent-okra);
+      color:#fff;
+      cursor:pointer;
+    }
+    .graph-controls button:hover{background:#b17218;}
+    #cy{
+      width:100%;height:500px;
+      border:1px solid var(--mid-grey);
+      border-radius:4px;
+      margin-top:1rem;
+      background:#faf9f7;
     }
 
-    header img {
-      max-width: 420px;
-      height: auto;
-      margin-bottom: 1rem;
+    /* ----- CONTENT ----- */
+    main{max-width:960px;margin:0 auto;padding:0 1rem;}
+    p{margin-bottom:1rem;}
+    blockquote{
+      margin:2rem 0;
+      padding-left:1rem;
+      border-left:4px solid var(--accent-okra);
+      color:var(--dark-blue);
+      font-style:italic;
+      background:rgba(255,255,255,0.45);
+    }
+    .ratkaisut-preview{
+      margin:3rem auto;
+      max-width:900px;
+      background:#fff;
+      border-left:6px solid var(--accent-okra);
+      border-radius:6px;
+      padding:1.5rem 2rem;
+      box-shadow:0 2px 6px rgba(0,0,0,0.05);
+    }
+    .ratkaisut-preview h3{color:var(--accent-okra);}
+    .ratkaisut-preview p{font-size:1rem;line-height:1.7;}
+    .ratkaisut-preview a{
+      display:inline-block;margin-top:0.5rem;
+      color:var(--accent-okra);font-weight:600;
+      text-decoration:none;border-bottom:1px solid transparent;
+      transition:border .2s;
+    }
+    .ratkaisut-preview a:hover{border-bottom:1px solid var(--accent-okra);}
+    pre{
+      background:#fff;
+      border-left:4px solid var(--accent-okra);
+      padding:1rem;
+      overflow-x:auto;
     }
 
-    header h1 {
-      font-size: 2rem;
-      margin: 0.2rem 0;
+    /* ----- FOOTER ----- */
+    footer{
+      margin-top:3rem;
+      background:var(--dark-blue);
+      color:var(--sand-beige);
+      text-align:center;
+      padding:1rem;
+      font-size:0.9rem;
     }
-
-    header h2 {
-      font-size: 1.1rem;
-      font-weight: normal;
-      color: #374859;
-      margin-top: 0.3rem;
-    }
-
-    /* --------- GRAPH SECTION --------- */
-    .graph-section {
-      margin: 2rem auto;
-      padding: 1.5rem;
-      background: #ffffff;
-      border: 2px solid var(--mid-grey);
-      border-radius: 8px;
-      max-width: 960px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-
-    .graph-section h3 {
-      margin-top: 0;
-      color: var(--dark-blue);
-    }
-
-    .graph-controls {
-      margin-bottom: 1rem;
-    }
-
-    .graph-controls select, .graph-controls button {
-      padding: 0.5rem 1rem;
-      margin: 0.25rem;
-      border-radius: 4px;
-      font-size: 1rem;
-    }
-
-    .graph-controls select {
-      border: 1px solid var(--mid-grey);
-      background: var(--off-white);
-    }
-
-    .graph-controls button {
-      border: none;
-      background: var(--accent-okra);
-      color: #fff;
-      cursor: pointer;
-    }
-
-    .graph-controls button:hover {
-      background: #b17218;
-    }
-
-    #cy {
-      width: 100%;
-      height: 500px;
-      border: 1px solid var(--mid-grey);
-      border-radius: 4px;
-      margin-top: 1rem;
-      background: #faf9f7;
-    }
-
-    /* --------- TEKSTI & NAV --------- */
-    main {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 0 1rem;
-    }
-
-    p {
-      margin-bottom: 1rem;
-    }
-
-    blockquote {
-      margin: 2rem 0;
-      padding-left: 1rem;
-      border-left: 4px solid var(--accent-okra);
-      color: var(--dark-blue);
-      font-style: italic;
-      background: rgba(255,255,255,0.4);
-    }
-
-    nav {
-      margin: 2.5rem 0;
-      padding: 1rem 0;
-      border-top: 2px solid var(--mid-grey);
-      border-bottom: 2px solid var(--mid-grey);
-      text-align: center;
-    }
-
-    nav a {
-      display: inline-block;
-      margin: 0.3rem 0.75rem;
-      text-decoration: none;
-      color: var(--dark-blue);
-      font-weight: 500;
-    }
-
-    nav a:hover {
-      color: var(--accent-okra);
-      text-decoration: underline;
-    }
-
-    pre {
-      background: #ffffff;
-      border-left: 4px solid var(--accent-okra);
-      padding: 1rem;
-      overflow-x: auto;
-    }
-
-    /* --------- FOOTER --------- */
-    footer {
-      margin-top: 3rem;
-      background: var(--dark-blue);
-      color: var(--sand-beige);
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-    }
-
-    footer a {
-      color: var(--accent-okra);
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
+    footer a{color:var(--accent-okra);text-decoration:none;}
+    footer a:hover{text-decoration:underline;}
   </style>
 </head>
 
 <body>
   <header>
+    <nav>
+      <a href="#cy">Demo</a>
+      <a href="toggle-lista.html">Rakennekehikko</a>
+      <a href="ympyra-kaavio.html">Ympyräkaavio</a>
+      <a href="ascii-ympyra.html">ASCII-pohja</a>
+      <a href="ympyra-kaavio-interaktiivinen.html">Elinkaarinäkymä</a>
+      <a href="valmis-pohja.html">Staattinen malli</a>
+      <a href="ympyra-virtaus.html">Vaiheiden virtaus</a>
+      <a href="generaattori.html">Elinkaari-generaattori</a>
+      <a href="ratkaisut.html">🌱 Ratkaisut</a>
+    </nav>
     <img src="/images/logo.webp" alt="Seurausten talo">
+    <h1>Seurausten talo</h1>
+    <h2>Instituutio, joka tekee näkyväksi päätösten seuraukset</h2>
   </header>
 
   <div class="graph-section">
     <h3>🎮 Interaktiivinen H.O.C. demo</h3>
-    <p>Testaa päätösten elinkaarta reaaliaikaisilla case-esimerkeillä:</p>
-
+    <p>Testaa päätösten elinkaarta reaaliaikaisilla case‑esimerkeillä:</p>
     <div class="graph-controls">
       <label for="caseSelect">Valitse case: </label>
       <select id="caseSelect">
@@ -193,19 +167,16 @@
       </select>
       <button onclick="loadCase()">Lataa graafi</button>
     </div>
-
     <div id="cy"></div>
   </div>
 
   <main>
     <p>Seurausten talo on paikka, jossa teot jatkuvat ajan läpi.</p>
-
     <p>Ihmiskunta osaa rakentaa välineitä – valtioita, markkinoita, teknologiaa –
-      mutta ei vielä rakenteita, jotka tekisivät ihmisestä kypsän käyttämään niitä.</p>
-
+    mutta ei vielä rakenteita, jotka tekisivät ihmisestä kypsän käyttämään niitä.</p>
     <p>Meillä on historiaa, arkistoja ja dataa enemmän kuin koskaan, mutta puuttuu
-      institutionaalinen muistijärjestelmä, joka pakottaisi oppimaan aiemmista
-      virheistä ja estäisi samojen kriisien toistamisen eri nimillä.</p>
+    institutionaalinen muistijärjestelmä, joka pakottaisi oppimaan aiemmista virheistä
+     ja estämään samojen kriisien toistumisen eri nimillä.</p>
 
     <blockquote>
       Seurausten talo on ehdotus tällaisesta instituutiosta.<br>
@@ -213,16 +184,17 @@
       se vain tekee näkyväksi, mitä päätöksistä seuraa ajan kuluessa.
     </blockquote>
 
-    <nav>
-      <a href="toggle-lista.html">Rakennekehikko</a>
-      <a href="ympyra-kaavio.html">Ympyräkaavio</a>
-      <a href="ascii-ympyra.html">ASCII-pohja</a>
-      <a href="ympyra-kaavio-interaktiivinen.html">Elinkaarinäkymä</a>
-      <a href="valmis-pohja.html">Staattinen malli</a>
-      <a href="ympyra-virtaus.html">Vaiheiden virtaus</a>
-      <a href="generaattori.html">Elinkaari-generaattori</a>
-      <a href="ratkaisut.html">🌱 Ratkaisut</a>
-    </nav>
+    <!-- 🌱 Lyhyt Ratkaisut-osio -->
+    <div class="ratkaisut-preview" id="ratkaisut">
+      <h3>🌱 Ratkaisut – Luonnon ja tieteen kohtaamispaikka</h3>
+      <p>
+        Seurausten Talon ratkaisut yhdistävät luonnon tieteen, biopohjaisen materiaalikehityksen ja ihmisen vastuullisen toiminnan. 
+        Avoimen tutkimuksen artikkeleissa kerromme, miten <span style="color:var(--accent-okra);font-weight:600;">
+        männynkuoren antioksidantit, biosuodattimet, sähköstimuloidut kasvualustat ja uudet palontorjunta‑aineet</span> 
+        avaavat polkuja kestävämpään tulevaisuuteen. 
+      </p>
+      <p><a href="ratkaisut.html">Lue ratkaisut sivulta →</a></p>
+    </div>
 
     <h2>Päätöksen elinkaari</h2>
     <pre>
@@ -240,7 +212,7 @@
     </pre>
 
     <p>Seurausten talo alkaa siitä, mihin päätöksenteko yleensä päättyy.</p>
-    <p>Täällä päätökset eivät pääty hetkeensä. Ne saavat aikajanan,
+    <p>Täällä päätökset eivät pääty hetkeensä. Ne saavat aikajanan, 
       joka elää vuosikymmeniä eteenpäin ja palaa takaisin päätöksenteon rakenteisiin.</p>
   </main>
 
@@ -251,49 +223,45 @@
 
   <script>
     let cy;
-
     function initCytoscape() {
       cy = cytoscape({
         container: document.getElementById('cy'),
         style: [
-          { selector: 'node[id="0"]', style: {'background-color': '#ff6b6b', 'label': 'data(label)', 'width': 80, 'height': 80}},
-          { selector: 'node[id="1"], node[id="2"]', style: {'background-color': '#ffd93d', 'label': 'data(label)', 'width': 60, 'height': 60}},
-          { selector: 'node[id="3"], node[id="4"]', style: {'background-color': '#6bcf7f', 'label': 'data(label)', 'width': 60, 'height': 60}},
-          { selector: 'node[id="5"]', style: {'background-color': '#4ecdc4', 'label': 'data(label)', 'width': 80, 'height': 80}},
-          { selector: 'edge', style: {'width': 'mapData(weight, 0, 1, 1, 4)', 'line-color': '#999', 'curve-style': 'bezier', 'target-arrow-shape': 'triangle'}},
-          { selector: 'edge[label*="fyysinen"]', style: {'line-color': '#ff4444'}},
-          { selector: 'edge[label*="sosiaalinen"]', style: {'line-color': '#ffaa00'}},
-          { selector: 'edge[label*="hallinto"]', style: {'line-color': '#4488ff'}},
-          { selector: 'edge[label*="henkinen"]', style: {'line-color': '#ff44ff'}}
+          { selector: 'node[id="0"]', style:{'background-color':'#ff6b6b','label':'data(label)','width':80,'height':80}},
+          { selector: 'node[id="1"], node[id="2"]', style:{'background-color':'#ffd93d','label':'data(label)','width':60,'height':60}},
+          { selector: 'node[id="3"], node[id="4"]', style:{'background-color':'#6bcf7f','label':'data(label)','width':60,'height':60}},
+          { selector: 'node[id="5"]', style:{'background-color':'#4ecdc4','label':'data(label)','width':80,'height':80}},
+          { selector: 'edge', style:{'width':'mapData(weight,0,1,1,4)','line-color':'#999','curve-style':'bezier','target-arrow-shape':'triangle'}},
+          { selector: 'edge[label*="fyysinen"]', style:{'line-color':'#ff4444'}},
+          { selector: 'edge[label*="sosiaalinen"]', style:{'line-color':'#ffaa00'}},
+          { selector: 'edge[label*="hallinto"]', style:{'line-color':'#4488ff'}},
+          { selector: 'edge[label*="henkinen"]', style:{'line-color':'#ff44ff'}}
         ],
-        layout: { name: 'cose' }
+        layout:{name:'cose'}
       });
     }
-
-    async function loadCase() {
-      const caseName = document.getElementById('caseSelect').value;
-      let dataUrl = 'data/casebooks/terveydenhuolto.json';
-      if (['subprime2008','kreikka_velka','krypto2022','enron'].includes(caseName)) {
-        dataUrl = 'data/casebooks/talous.json';
+    async function loadCase(){
+      const caseName=document.getElementById('caseSelect').value;
+      let dataUrl='data/casebooks/terveydenhuolto.json';
+      if(['subprime2008','kreikka_velka','krypto2022','enron'].includes(caseName)){
+        dataUrl='data/casebooks/talous.json';
       }
-      try {
-        const response = await fetch(dataUrl);
-        const data = await response.json();
-        const caseData = data.casebooks[caseName];
+      try{
+        const response=await fetch(dataUrl);
+        const data=await response.json();
+        const caseData=data.casebooks[caseName];
         cy.elements().remove();
         cy.add(caseData);
-        cy.layout({ name: 'cose' }).run();
+        cy.layout({name:'cose'}).run();
         cy.fit();
-      } catch (error) {
-        console.error('Case dataa ei löytynyt:', error);
-        document.getElementById('cy').innerHTML =
-          '<p style="padding:20px;color:#666;">Case-dataa ei löytynyt. Tarkista data/casebooks/-kansio.</p>';
+      }catch(error){
+        console.error('Case dataa ei löytynyt:',error);
+        document.getElementById('cy').innerHTML=
+         '<p style="padding:20px;color:#666;">Case‑dataa ei löytynyt. Tarkista data/casebooks/‑kansio.</p>';
       }
     }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      initCytoscape();
-      setTimeout(loadCase, 500);
+    document.addEventListener('DOMContentLoaded',()=>{
+      initCytoscape(); setTimeout(loadCase,500);
     });
   </script>
 </body>
