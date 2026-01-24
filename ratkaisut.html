@@ -7,221 +7,206 @@
   <link rel="icon" href="favicon.ico" />
   <style>
     :root {
-      --dark-blue: #1f2d3a;
-      --accent-okra: #d28a22;
-      --mid-grey: #c7c4bc;
-      --off-white: #fdfbfa;
+      --dark-blue:#1f2d3a;
+      --accent-okra:#d28a22;
+      --mid-grey:#c7c4bc;
+      --off-white:#fdfbfa;
     }
-
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      background-color: var(--off-white);
-      color: var(--dark-blue);
-      line-height: 1.65;
-      margin: 0; padding: 0;
+    html{scroll-behavior:smooth;}
+    body{
+      font-family:"Helvetica Neue",Arial,sans-serif;
+      background-color:var(--off-white);
+      color:var(--dark-blue);
+      line-height:1.65;
+      margin:0;padding:0;
     }
-
-    header {
-      background: var(--off-white);
-      border-bottom: 4px solid var(--accent-okra);
-      text-align: center;
-      padding: 2.2rem 1rem 1.5rem;
+    header{
+      background:var(--off-white);
+      border-bottom:4px solid var(--accent-okra);
+      text-align:center;
+      padding:2.2rem 1rem 1.5rem;
     }
-
-    header img { max-width: 180px; height: auto; margin-bottom: .6rem; }
-    h1 { font-size: 2rem; margin: .2rem 0; }
-    h2 { font-size: 1.1rem; font-weight: normal; color: #374859; margin: .3rem 0; }
-
-    /* NAV (Sisällysluettelo) */
-    nav.toc {
-      position: sticky; top: 0; z-index: 999;
-      background: var(--off-white);
-      border-bottom: 2px solid var(--mid-grey);
-      padding: 0.8rem 1rem; text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    header img{max-width:180px;height:auto;margin-bottom:.6rem;}
+    h1{font-size:2rem;margin:.2rem 0;}
+    h2{font-size:1.1rem;font-weight:normal;color:#374859;margin:.3rem 0;}
+    nav.toc{
+      position:sticky;top:0;z-index:999;
+      background:var(--off-white);
+      border-bottom:2px solid var(--mid-grey);
+      padding:.8rem 1rem;text-align:center;
+      box-shadow:0 2px 5px rgba(0,0,0,0.05);
     }
-    nav.toc a {
-      display:inline-block; margin:0 1rem;
-      color: var(--dark-blue); text-decoration:none;
-      font-weight:500; transition: color .2s;
+    nav.toc a{
+      display:inline-block;margin:0 1rem;
+      color:var(--dark-blue);text-decoration:none;
+      font-weight:500;transition:color .2s;
     }
-    nav.toc a:hover { color: var(--accent-okra); }
-
-    main { max-width:960px; margin:auto; padding:2rem 1rem 5rem; }
-    article {
-      background:#fff; border-left:6px solid var(--accent-okra);
-      border-radius:6px; margin:3rem 0;
+    nav.toc a:hover{color:var(--accent-okra);}
+    main{max-width:960px;margin:auto;padding:2rem 1rem 5rem;}
+    article{
+      background:#fff;border-left:6px solid var(--accent-okra);
+      border-radius:6px;margin:3rem 0;
       box-shadow:0 2px 6px rgba(0,0,0,0.05);
     }
-
-    .banner img {
-      width:100%; height:auto; border-top-left-radius:6px;
-      border-top-right-radius:6px;
+    .banner img{
+      width:100%;height:auto;
+      border-top-left-radius:6px;border-top-right-radius:6px;
     }
-
-    .content { padding:1.5rem 2rem 2rem; }
-    .meta { font-size:0.9rem; color:#666; margin-bottom:1rem; }
-
-    article h3 { color:var(--accent-okra); margin-top:0; }
-    article h4 { margin-top:1.2rem; color:var(--dark-blue); }
-
-    ul { list-style-type:"– "; padding-left:1.2rem; }
-    blockquote {
+    .content{padding:1.5rem 2rem 2rem;}
+    .meta{font-size:.9rem;color:#666;margin-bottom:1rem;}
+    article h3{color:var(--accent-okra);margin-top:0;}
+    article h4{margin-top:1.2rem;color:var(--dark-blue);}
+    ul{list-style-type:"– ";padding-left:1.2rem;}
+    blockquote{
       border-left:4px solid var(--accent-okra);
-      background:#fff8f0; padding:1rem 1.2rem; font-style:italic;
+      background:#fff8f0;padding:1rem 1.2rem;font-style:italic;
       margin:1.5rem 0;
     }
-
-    footer {
-      background:var(--dark-blue); color:#fdfbfa;
-      text-align:center; padding:1rem; font-size:0.9rem;
+    .readmore a{
+      display:inline-block;margin-top:1rem;
+      text-decoration:none;font-weight:600;
+      color:var(--accent-okra);border-bottom:1px solid transparent;
+      transition:color .2s,border .2s;
+    }
+    .readmore a:hover{border-bottom:1px solid var(--accent-okra);}
+    footer{
+      background:var(--dark-blue);color:#fdfbfa;
+      text-align:center;padding:1rem;font-size:.9rem;
     }
     footer a{color:var(--accent-okra);text-decoration:none;}
     footer a:hover{text-decoration:underline;}
-
-    /* Takaisin ylös */
-    #backToTop {
-      display:none; position:fixed; bottom:25px; right:25px;
-      background:var(--accent-okra); color:#fff; border:none;
-      border-radius:50%; width:46px; height:46px;
-      font-size:1.6rem; cursor:pointer;
-      box-shadow:0 3px 6px rgba(0,0,0,0.15);
-      transition:background .25s, transform .25s;
-      z-index:1000;
+    #backToTop{
+      display:none;position:fixed;bottom:25px;right:25px;
+      background:var(--accent-okra);color:#fff;border:none;
+      border-radius:50%;width:46px;height:46px;font-size:1.6rem;
+      cursor:pointer;box-shadow:0 3px 6px rgba(0,0,0,0.15);
+      transition:background .25s,transform .25s;z-index:1000;
     }
-    #backToTop:hover { background:#b17218; transform:scale(1.05); }
+    #backToTop:hover{background:#b17218;transform:scale(1.05);}
   </style>
 </head>
 
 <body>
-  <header>
-  <a href="index.html" class="site-logo-link">
-    <img src="assets/logo.png" alt="Seurausten talo logo" class="site-logo" />
+<header>
+  <a href="index.html">
+    <img src="assets/logo.png" alt="Seurausten talo logo" />
   </a>
-  <h1>Seurausten Talon ratkaisuja</h1>
-  <h2>Kestäviä ja uusia innovaatiota ratkaistuna</h2>
+  <h1>🌱 Seurausten Talon ratkaisuja</h1>
+  <h2>Kestäviä ja uusia innovaatioita</h2>
 </header>
 
-  <nav class="toc">
-    <a href="#mannynkuori">Männynkuori</a> |
-    <a href="#jatevesi">Jätevesisuodatin</a> |
-    <a href="#kasvualusta">Kasvualusta</a> |
-    <a href="#palontorjunta">Palontorjunta‑aineet</a>
-  </nav>
+<nav class="toc">
+  <a href="#mannynkuori">Männynkuori</a> |
+  <a href="#jatevesi">Jätevesisuodatin</a> |
+  <a href="#kasvualusta">Kasvualusta</a> |
+  <a href="#palontorjunta">Palontorjunta‑aineet</a>
+</nav>
 
-  <main>
+<main>
 
-    <!-- 🌿 MÄNNYKUORI -->
-    <article id="mannynkuori">
-      <div class="banner"><img src="assets/mannynkuori.jpg" alt="Männynkuori"/></div>
-      <div class="content">
-        <h3>🌿 Männynkuoriuute — luonnollinen tuki kehon puhdistukselle</h3>
-        <p class="meta">Julkaistu 24.1.2026 | Kategoria: Kehon puhdistus & luontaistuotteet</p>
-        <p>
-          Männynkuori (<em>Pinus sylvestris</em>) sisältää polyfenoleja ja OPC‑yhdisteitä,
-          jotka toimivat antioksidantteina ja tukevat maksan normaalia toimintaa.
-          Niiden avulla keho voi poistaa haitallisia yhdisteitä luonnollisesti suoliston ja sapen kautta.
-        </p>
-        <blockquote>
-          “Luonnon oma detoksifikaatio ei tapahdu pakkopuhdistuksena – se tapahtuu, kun 
-          tarjoamme keholle työkaluja, joita se ymmärtää.”
-        </blockquote>
-        <h4>Detox‑shotti</h4>
-        <ul>
-          <li>200–400 mg männynkuoriuutetta</li>
-          <li>1 tl psylliumkuitua ja pellavansiemenrouhetta</li>
-          <li>500 mg magnesiumsitraattia</li>
-          <li>1 tl kurkumaa + ripaus mustapippuria</li>
-        </ul>
-        <p><em>Nauti 1–2× päivässä veden tai mehun kanssa.</em></p>
-      </div>
-    </article>
+  <!-- 🌿 MÄNNYKUORI -->
+  <article id="mannynkuori">
+    <div class="banner"><img src="assets/mannynkuori.jpg" alt="Männynkuori" /></div>
+    <div class="content">
+      <h3>🌿 Männynkuoriuute — luonnollinen tuki kehon puhdistukselle</h3>
+      <p class="meta">Julkaistu 24.1.2026 | Kategoria: Kehon puhdistus & luontaistuotteet</p>
+      <p>
+        Männynkuori (<em>Pinus sylvestris</em>) sisältää polyfenoleja ja OPC‑yhdisteitä, 
+        jotka toimivat antioksidantteina ja tukevat maksan normaalia toimintaa.  
+        Niiden avulla keho voi poistaa haitallisia yhdisteitä luonnollisesti suoliston ja sapen kautta.
+      </p>
+      <blockquote>
+        “Luonnon oma detoksifikaatio ei tapahdu pakkopuhdistuksena – se tapahtuu, kun 
+        tarjoamme keholle työkaluja, joita se ymmärtää.”
+      </blockquote>
+      <h4>Detox‑shotti</h4>
+      <ul>
+        <li>200–400 mg männynkuoriuutetta</li>
+        <li>1 tl psylliumkuitua ja pellavansiemenrouhetta</li>
+        <li>500 mg magnesiumsitraattia</li>
+        <li>1 tl kurkumaa + ripaus mustapippuria</li>
+      </ul>
+      <p><em>Nauti 1–2× päivässä veden tai mehun kanssa.</em></p>
+      <p class="readmore"><a href="ratkaisut-mannynkuori.html">Lue koko artikkeli →</a></p>
+    </div>
+  </article>
 
-    <!-- 💧 JÄTEVESISUODATIN -->
-    <article id="jatevesi">
-      <div class="banner"><img src="assets/jatevesi.jpg" alt="Jätevesisuodatin"/></div>
-      <div class="content">
-        <h3>💧 Rauta‑modifioitu männynkuori — biosuodatin lääkejäämien poistoon vedestä</h3>
-        <p class="meta">Julkaistu 24.1.2026 | Kategoria: Ympäristöratkaisut & puhdistamot</p>
-        <p>
-          Oulun yliopiston tutkija Mahdiyeh Mohammadzadeh ja professori Tiina Leiviskä ovat todentaneet 
-          rautaoksidilla modifioidun männynkuoren poistavan jopa 90 % antibiootteja ja masennuslääkkeitä 
-          jätevedestä. Se on biohajoava ja edullinen vaihtoehto aktiivihiilelle.
-        </p>
-        <ul>
-          <li>Validointi: laboratoriotestit 5–10 t€.</li>
-          <li>Prototyyppi: suodatinmoduuli männynkuorijauheesta + rautakloridista.</li>
-          <li>Skaalaus: teollinen tuotanto puhdistamoille 1–2 v.</li>
-        </ul>
-        <p>
-          <strong>Hyöty:</strong> vähentää antibioottiresistenssin leviämistä ja täyttää EU:n mikrosaastedirektiivin vaatimukset.
-        </p>
-      </div>
-    </article>
+  <!-- 💧 JÄTEVESISUODATIN -->
+  <article id="jatevesi">
+    <div class="banner"><img src="assets/jatevesi.jpg" alt="Jätevesisuodatin" /></div>
+    <div class="content">
+      <h3>💧 Rauta‑modifioitu männynkuori — biosuodatin lääkejäämien poistoon vedestä</h3>
+      <p class="meta">Julkaistu 25.1.2026 | Kategoria: Ympäristöratkaisut & puhdistamot</p>
+      <p>
+        Oulun yliopiston tutkijat Mahdiyeh Mohammadzadeh ja Tiina Leiviskä todensivat, 
+        että rautamodifioitu männynkuori poistaa jopa 90 % lääkejäämiä. 
+        Se on biohajoava ja edullinen vaihtoehto aktiivihiilelle.
+      </p>
+      <ul>
+        <li>Validointi: laboratoriotestit 5–10 t€.</li>
+        <li>Prototyyppi: rautakloridi + männynkuorijauhe.</li>
+        <li>Skaalaus: teollinen tuotanto 1–2 v.</li>
+      </ul>
+      <p><strong>Hyöty:</strong> vähentää antibioottiresistenssiä ja täyttää EU:n mikrosaastedirektiivin vaatimukset.</p>
+      <p class="readmore"><a href="ratkaisut-jatevesi.html">Lue koko artikkeli →</a></p>
+    </div>
+  </article>
 
-    <!-- 🌾 KASVUALUSTA -->
-    <article id="kasvualusta">
-      <div class="banner"><img src="assets/kasvualusta.jpg" alt="Bioelektroninen kasvualusta"/></div>
-      <div class="content">
-        <h3>🌾 Bioelektroninen kasvualusta — sähköinen tuki kasvien kasvulle</h3>
-        <p class="meta">Julkaistu 24.1.2026 | Kategoria: Agro & biotekniikka</p>
-        <p>
-          Matalajännitteinen stimulaatio (0.5 V) juuriston ympärillä aktivoi maaperän mikrobeja ja lisää ravinteiden liikkuvuutta. 
-          Kokeissa tomaattien ja ohra‑kasvien biomassa nousi jopa 200 %.
-        </p>
-        <ul>
-          <li>Parantaa ravinteiden ottoa (N, P, K).</li>
-          <li>Käytännön malli: superkondensaattoritiilet tai kupari‑sinkki ‑parit.</li>
-          <li>Turvaraja: alle 1 mA per kasvi.</li>
-        </ul>
-        <blockquote>
-          “Bioelektroniikka ei korvaa luontoa – se antaa luonnon kommunikoida paremmin.”
-        </blockquote>
-      </div>
-    </article>
+  <!-- 🌾 KASVUALUSTA -->
+  <article id="kasvualusta">
+    <div class="banner"><img src="assets/kasvualusta.jpg" alt="Bioelektroninen kasvualusta" /></div>
+    <div class="content">
+      <h3>🌾 Bioelektroninen kasvualusta — sähköinen tuki kasvien kasvulle</h3>
+      <p class="meta">Julkaistu 25.1.2026 | Kategoria: Agro & biotekniikka</p>
+      <p>
+        Matalajännitteinen stimulaatio (0.5 V) juuriston ympärillä aktivoi maaperän mikrobeja 
+        ja lisää ravinteiden liikkuvuutta. Kokeissa tomaattien biomassa nousi jopa 200 %.
+      </p>
+      <ul>
+        <li>Parantaa ravinteiden ottoa (N, P, K)</li>
+        <li>Käytännön malli: superkondensaattoritiilet tai kupari‑sinkki parit</li>
+        <li>Turvaraja: alle 1 mA per kasvi</li>
+      </ul>
+      <blockquote>“Bioelektroniikka ei korvaa luontoa – se antaa luonnon kommunikoida paremmin.”</blockquote>
+      <p class="readmore"><a href="ratkaisut-kasvustimulaatio.html">Lue koko artikkeli →</a></p>
+    </div>
+  </article>
 
-    <!-- 🔥 PALONTORJUNTA -->
-    <article id="palontorjunta">
-      <div class="banner"><img src="assets/greekfire.jpg" alt="Uudet palontorjunta-aineet"/></div>
-      <div class="content">
-        <h3>🔥 Uudet palontorjunta‑aineet — hallittu palaminen ja “Greek Fire” inspiraationa</h3>
-        <p class="meta">Julkaistu 24.1.2026 | Kategoria: Materiaalikemia & turvallisuus</p>
-        <p>
-          Antiikin Kreikkalainen tuli oli bysaanttilaisten salainen ase, joka pystyi palaamaan jopa veden päällä. 
-          Moderni tutkimus viittaa petroleum‑pohjaiseen seokseen, joka sisälsi tervaa, hartsia ja quicklimeä. 
-          Tämä “tarttuva mutta hallittu” palaminen voi tulevaisuudessa toimia 
-          uuden sukupolven palontorjunnan ja öljyvuotojen hallinnan mallina.
-        </p>
-        <ul>
-          <li>Perusaineet: petroleum / hartsi / quicklime / rikkilisä.</li>
-          <li>Sienet ja käävät palon ylläpitäjinä – hidastavat ja vakauttavat palaa.</li>
-          <li>Sovellukset: hallittu öljypalaminen, bio‑palontorjunta materiaaleihin.</li>
-        </ul>
-        <blockquote>
-          “Tuli ei ole vihollinen, jos ymmärrämme sen hydrauliikan ja sykkeen.”
-        </blockquote>
-      </div>
-    </article>
+  <!-- 🔥 PALONTORJUNTA -->
+  <article id="palontorjunta">
+    <div class="banner"><img src="assets/greekfire.jpg" alt="Uudet palontorjunta-aineet" /></div>
+    <div class="content">
+      <h3>🔥 Uudet palontorjunta‑aineet — hallittu palaminen ja Greek Fire inspiraationa</h3>
+      <p class="meta">Julkaistu 26.1.2026 | Kategoria: Materiaalikemia & turvallisuus</p>
+      <p>
+        Antiikin Greek Fire oli tarttuva, vedenpäällä palaava aine, jonka kemialliset periaatteet 
+        voivat inspiroita moderneja biopohjaisia palontorjunta‑materiaaleja — aineita, 
+        jotka palaessaan puhdistavat ympäristönsä hallitusti eivätkä räjähtäen.
+      </p>
+      <ul>
+        <li>Rakenteet: petroleum / hartsi / quicklime / rikkilisä</li>
+        <li>Sienet ja käävät hidaspalon ytimenä</li>
+        <li>Reaktiivisuus: natrium ja magnesium selittävät vedessä syttymisen</li>
+      </ul>
+      <blockquote>“Tuli ei ole vihollinen – se on energia, joka puhdistaa kun sitä ymmärtää.”</blockquote>
+      <p class="readmore"><a href="ratkaisut-palontorjunta.html">Lue koko artikkeli →</a></p>
+    </div>
+  </article>
 
-  </main>
+</main>
 
-  <button id="backToTop" title="Takaisin ylös">↑</button>
+<button id="backToTop" title="Takaisin ylös">↑</button>
 
-  <footer>
-    © 2026 Seurausten talo | 
-    <a href="https://seuraustentalo.fi">seuraustentalo.fi</a> |
-    <a href="https://github.com/unpersonanarkia-debug/seurausten-talo">GitHub</a>
-  </footer>
+<footer>
+  © 2026 Seurausten talo | 
+  <a href="https://seuraustentalo.fi">seuraustentalo.fi</a> | 
+  <a href="https://github.com/unpersonanarkia-debug/seurausten-talo">GitHub</a>
+</footer>
 
-  <script>
-    const topBtn = document.getElementById("backToTop");
-    window.addEventListener("scroll", () => {
-      topBtn.style.display = window.scrollY > 400 ? "block" : "none";
-    });
-    topBtn.addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-  </script>
+<script>
+  const topBtn=document.getElementById("backToTop");
+  window.addEventListener("scroll",()=>{topBtn.style.display=window.scrollY>400?"block":"none";});
+  topBtn.addEventListener("click",()=>{window.scrollTo({top:0,behavior:"smooth"});});
+</script>
 </body>
 </html>
