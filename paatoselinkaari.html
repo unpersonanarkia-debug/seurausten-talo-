@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seurausten talo – Päätöksen elinkaari</title>
+  <meta name="description" content="Seurausten talo – päätöksen elinkaari ja havaintolomake päätösketjujen tarkasteluun.">
+
+  <style>
+    :root {
+      --dark-blue:#1f2d3a;
+      --accent-okra:#d28a22;
+      --mid-grey:#c7c4bc;
+      --off-white:#fdfbfa;
+    }
+
+    body {
+      font-family:"Helvetica Neue", Arial, sans-serif;
+      background:var(--off-white);
+      color:var(--dark-blue);
+      margin:0; padding:0;
+      line-height:1.7;
+    }
+
+    /* ----- Header ----- */
+    header {
+      background:var(--off-white);
+      border-bottom:4px solid var(--accent-okra);
+      text-align:center;
+      padding:0 1rem 2rem;
+    }
+    header nav {
+      border-bottom:2px solid var(--mid-grey);
+      background:var(--off-white);
+      padding:.8rem 1rem;
+      text-align:center;
+      box-shadow:0 2px 5px rgba(0,0,0,0.05);
+      margin-bottom:1rem;
+    }
+    header nav a {
+      display:inline-block;margin:0 .75rem;
+      color:var(--dark-blue);
+      text-decoration:none;
+      font-weight:500;
+      transition:color .2s;
+    }
+    header nav a:hover{color:var(--accent-okra);}
+    header img {
+      max-width:200px;height:auto;
+      margin:1.5rem auto .6rem;
+    }
+    header h1 {
+      font-size:2rem;margin:.3rem 0;
+    }
+    header p {
+      max-width:760px;margin:0.5rem auto 0;
+      font-size:1rem;line-height:1.6;
+    }
+
+    /* ----- Content Layout ----- */
+    main {
+      max-width:960px;
+      margin:2rem auto;
+      padding:0 1rem;
+    }
+    section {
+      background:#fff;
+      padding:1.5rem 2rem;
+      border-left:6px solid var(--accent-okra);
+      border-radius:6px;
+      margin-bottom:2rem;
+      box-shadow:0 2px 6px rgba(0,0,0,0.05);
+    }
+    section h2 { margin-top:0; color:var(--accent-okra); }
+
+    .lifecycle {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:1rem;
+      margin-top:1rem;
+    }
+    .stage {
+      background:var(--off-white);
+      border:1px solid var(--mid-grey);
+      border-radius:6px;
+      padding:1rem;
+    }
+    .stage strong {
+      display:block;
+      margin-bottom:.5rem;
+      color:var(--dark-blue);
+    }
+
+    form label {
+      display:block;
+      margin-top:1rem;
+      font-weight:600;
+    }
+    form input, form textarea {
+      width:100%;
+      padding:0.6rem;
+      margin-top:0.3rem;
+      border-radius:4px;
+      border:1px solid #ccc;
+      font-size:1rem;
+    }
+    form textarea { min-height:140px; }
+
+    button {
+      margin-top:1.5rem;
+      padding:0.7rem 1.2rem;
+      font-size:1rem;
+      border:none;
+      border-radius:4px;
+      cursor:pointer;
+      background:var(--accent-okra);
+      color:#fff;
+      transition:background .25s;
+    }
+    button:hover { background:#b17218; }
+
+    #submitStatus { margin-top:1rem; font-size:0.95rem; color:var(--dark-blue); }
+
+    /* ----- Footer ----- */
+    footer {
+      background:var(--dark-blue);
+      color:var(--off-white);
+      text-align:center;
+      padding:1rem;
+      font-size:.9rem;
+    }
+    footer a { color:var(--accent-okra); text-decoration:none; }
+    footer a:hover { text-decoration:underline; }
+
+    @media(max-width:768px){
+      header img{max-width:160px;}
+      section{padding:1rem 1.2rem;}
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Etusivu</a>
+      <a href="toggle-lista.html">Toggle‑lista</a>
+      <a href="ympyra-kaavio.html">Ympyräkaavio</a>
+      <a href="ratkaisut.html">🌱 Ratkaisut</a>
+    </nav>
+    <img src="assets/logo.png" alt="Seurausten talo logo">
+    <h1>Seurausten talo</h1>
+    <p>
+      Seurausten talo tekee näkyväksi päätösketjut ja niiden seuraukset.  
+      Tämä ei ole raportointijärjestelmä – tämä on peili järjestelmälle itselleen.
+    </p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Päätöksen elinkaari (6 vaihetta)</h2>
+
+      <div class="lifecycle">
+        <div class="stage">
+          <strong>1. Laukaisin</strong>
+          Ulkoinen tai sisäinen tapahtuma, joka käynnistää tarpeen päätökselle.
+        </div>
+
+        <div class="stage">
+          <strong>2. Tulkinta</strong>
+          Miten tilanne ja sen vaikutukset ymmärretään organisaatiossa tai yhteisössä.
+        </div>
+
+        <div class="stage">
+          <strong>3. Päätös</strong>
+          Varsinainen ratkaisu tai valinta – myös tekemättä jättäminen on päätös.
+        </div>
+
+        <div class="stage">
+          <strong>4. Välitön seuraus</strong>
+          Hetkellinen vaikutus, joka on suoraan todettavissa päätöksen jälkeen.
+        </div>
+
+        <div class="stage">
+          <strong>5. Kertautuva vaikutus</strong>
+          Epäsuorat, rinnakkaiset ja pitkäaikaiset heijasteet päätöksestä.
+        </div>
+
+        <div class="stage">
+          <strong>6. Normalisoitu tila</strong>
+          Uusi normaali – tilanne, jota ei enää kyseenalaisteta ja jonka juuret ovat unohtuneet.
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Lisää havainto tai tulkinta</h2>
+      <p>
+        Tämä lomake on tarkoitettu rakenteellisten ilmiöiden tunnistamiseen.  
+        Tiedot eivät poistu selaimestasi – ne tallennetaan vain paikallisesti.
+      </p>
+
+      <form id="consequenceForm">
+        <label for="inputName">Nimi / rooli (vapaaehtoinen)</label>
+        <input type="text" id="inputName" placeholder="Esim. kehittäjä tai analyytikko" />
+
+        <label for="inputEmail">Sähköposti (vapaaehtoinen)</label>
+        <input type="email" id="inputEmail" placeholder="vain jos haluat" />
+
+        <label for="inputComment">Havainto tai tulkinta</label>
+        <textarea id="inputComment" placeholder="Mikä päätösketju tai seuraus on merkittävä?"></textarea>
+
+        <button type="button" id="btnSubmit">📥 Tallenna</button>
+        <p id="submitStatus"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 Seurausten talo – Itseoppiva ja autonominen muisti
+  </footer>
+
+  <script>
+    function collectFormData(){
+      return{
+        nimi:document.getElementById("inputName").value,
+        sahkoposti:document.getElementById("inputEmail").value,
+        havainto:document.getElementById("inputComment").value,
+        aikaleima:new Date().toISOString()
+      };
+    }
+
+    function saveToLocalStorage(data){
+      const key="seuraustenTaloHavainnot";
+      const existing=JSON.parse(localStorage.getItem(key))||[];
+      existing.push(data);
+      localStorage.setItem(key,JSON.stringify(existing));
+    }
+
+    function downloadJSON(data){
+      const blob=new Blob([JSON.stringify(data,null,2)],{type:"application/json"});
+      const link=document.createElement("a");
+      link.href=URL.createObjectURL(blob);
+      link.download="seurausten-talo-havainto.json";
+      link.click();
+    }
+
+    document.getElementById("btnSubmit").addEventListener("click",()=>{
+      const data=collectFormData();
+      if(!data.havainto.trim()){
+        document.getElementById("submitStatus").textContent="Kirjoita havainto ennen tallennusta.";
+        return;
+      }
+      saveToLocalStorage(data);
+      downloadJSON(data);
+      document.getElementById("submitStatus").textContent="Tallennettu ja ladattu JSON‑tiedostona.";
+      document.getElementById("consequenceForm").reset();
+    });
+  </script>
+</body>
+</html>
