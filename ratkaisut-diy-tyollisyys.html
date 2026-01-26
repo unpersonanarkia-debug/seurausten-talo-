@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🔧 DIY‑työllistymisen työkalut – Magneettikiillotuskone askel askeleelta</title>
+  <link rel="icon" href="favicon.ico" />
+  <meta name="description" content="DIY‑työllistymisen työkalut – magneettikiillotuskoneen rakennus ja käyttö osaamisen muuttamiseksi toimeentuloksi.">
+  <style>
+    :root {
+      --dark-blue:#1f2d3a;
+      --accent-okra:#d28a22;
+      --mid-grey:#c7c4bc;
+      --off-white:#fdfbfa;
+    }
+    body {
+      font-family:"Helvetica Neue", Arial, sans-serif;
+      background-color:var(--off-white);
+      color:var(--dark-blue);
+      line-height:1.7;
+      margin:0; padding:0;
+    }
+
+    header {
+      background:var(--off-white);
+      border-bottom:4px solid var(--accent-okra);
+      text-align:center;
+      padding:2rem 1rem 1.5rem;
+    }
+    header img {
+      max-width:180px;
+      height:auto;
+      margin-bottom:.7rem;
+    }
+    h1 {
+      font-size:2rem;
+      margin:.3rem 0;
+    }
+    h2 {
+      font-size:1.1rem;
+      font-weight:400;
+      color:#374859;
+      margin-top:.3rem;
+    }
+
+    main {
+      max-width:960px;
+      margin:0 auto;
+      background:#fff;
+      padding:2rem 2.2rem 4rem;
+      border-left:6px solid var(--accent-okra);
+      border-radius:6px;
+      box-shadow:0 2px 8px rgba(0,0,0,0.05);
+    }
+    .banner img {
+      width:100%;
+      height:auto;
+      border-radius:6px;
+      margin-bottom:1.5rem;
+    }
+    h3 {
+      color:var(--accent-okra);
+      margin-top:2rem;
+    }
+    h4 {
+      color:var(--dark-blue);
+      margin-top:1.2rem;
+    }
+    ul,ol {
+      padding-left:1.4rem;
+    }
+    ul {
+      list-style-type:"– ";
+    }
+    blockquote {
+      border-left:4px solid var(--accent-okra);
+      background:#fff8f0;
+      padding:1rem 1.2rem;
+      font-style:italic;
+      margin:2rem 0;
+    }
+
+    footer {
+      background:var(--dark-blue);
+      color:var(--off-white);
+      text-align:center;
+      padding:1rem;
+      font-size:.9rem;
+      margin-top:3rem;
+    }
+    footer a {
+      color:var(--accent-okra);
+      text-decoration:none;
+    }
+    footer a:hover {
+      text-decoration:underline;
+    }
+    #backToTop {
+      display:none;
+      position:fixed;
+      bottom:25px;
+      right:25px;
+      background:var(--accent-okra);
+      color:#fff;
+      border:none;
+      border-radius:50%;
+      width:48px;
+      height:48px;
+      font-size:1.6rem;
+      line-height:48px;
+      cursor:pointer;
+      box-shadow:0 3px 6px rgba(0,0,0,0.15);
+      transition:background .25s,transform .25s;
+      z-index:100;
+    }
+    #backToTop:hover {background:#b17218;transform:scale(1.05);}
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img src="assets/logo.png" alt="Seurausten talo logo"></a>
+    <h1>🔧 DIY‑työllistymisen työkalut</h1>
+    <h2>Magneettikiillotuskone – tekoälyttömän aikakauden mekaaninen ratkaisu</h2>
+  </header>
+
+  <main>
+    <div class="banner">
+      <img src="assets/diy-magneettikiillotus.jpg" alt="DIY magneettikiillotuskone" />
+    </div>
+
+    <p class="meta">
+      Julkaistu 28. tammikuuta 2026 | Kategoria: Teknologia & Työllisyys
+    </p>
+
+    <h3>Johdanto</h3>
+    <p>
+      Työttömäksi jääminen ei aina tarkoita osaamisen puutetta – usein kyse on vain siitä, 
+      että tekninen osaaminen ei löydä enää suoraa työpaikkaa. 
+      DIY‑työllistymisen työkalut tarjoavat menetelmiä, joilla tekninen tekijä voi rakentaa itse 
+      toimivia ratkaisuja, ansaita sivutuloja ja pitää osaamisensa elävänä.
+    </p>
+    <p>
+      Ensimmäinen konsepti on <strong>magneettikiillotuskone</strong> 
+      (magnetic pin polisher / magnetic levitation finishing), 
+      jota käytetään metalliosien purseiden, oksidien ja naarmujen poistoon.
+    </p>
+
+    <h3>Mikä on magneettikiillotus?</h3>
+    <p>
+      Menetelmässä pienet ruostumattomat teräsneulat liikkuvat voimakkaasti pyörivän 
+      magneettikentän vaikutuksesta nesteessä. Neulat osuvat kappaleeseen tuhansia kertoja 
+      sekunnissa ja poistavat purseet, oksidikerrokset ja hienot naarmut jättäen kiiltävän pinnan.
+    </p>
+    <ul>
+      <li>pölytön ja hiljainen</li>
+      <li>hellävarainen mutta tehokas</li>
+      <li>soveltuu monimutkaisille muodoille ja pienille komponenteille</li>
+    </ul>
+
+    <h3>Miksi tämä sopii DIY‑työllistymiseen?</h3>
+    <p>
+      Kaupalliset magneettikiillotuskoneet maksavat useita tuhansia euroja, mutta toimiva 
+      perusversio voidaan rakentaa itse sadoilla euroilla. 
+      Samalla laite opettaa mekaniikkaa, sähköä ja materiaalien dynaamista käyttäytymistä – 
+      juuri niitä taitoja, joita monilla työttömillä teknisen alan osaajilla jo on.
+    </p>
+
+    <h3>Perusrakenne ja toimintaperiaate</h3>
+    <ol>
+      <li>Pyörivä magneettikenttä</li>
+      <li>Ohutpohjainen ei‑magneettinen astia</li>
+      <li>Ruostumattomat teräsneulat</li>
+      <li>Vesi ja mieto pesuaine</li>
+    </ol>
+    <p>
+      Magneetit kiinnitetään levyyn, joka pyörii moottorin akselissa. 
+      Kenttä kulkee astian pohjan läpi ja saa neulat liikkumaan kaaottisesti mutta hallittuna.
+    </p>
+
+    <h3>Tarvittavat osat</h3>
+    <ul>
+      <li><strong>Moottori:</strong> Pesukoneen moottori (200–400 W) tai DC‑moottori (12–24 V) + nopeudensäädin</li>
+      <li><strong>Magneetit:</strong> Neodyymimagneetit (N42–N52), halkaisija 25–30 mm, paksuus 8–12 mm</li>
+      <li><strong>Magneettikiekko:</strong> Alumiini‑, puu‑ tai 3D‑tulostettu levy (halkaisija 150–250 mm)</li>
+      <li><strong>Astia:</strong> muovinen kulho tai ämpäri, pohja 3–6 mm, ei metallia</li>
+      <li><strong>Media:</strong> teräsneulat 0,5 × 5 mm sekä vettä + pesuainetta</li>
+    </ul>
+
+    <h3>Rakentaminen askel askeleelta</h3>
+    <ol>
+      <li><strong>Magneettikiekko:</strong> Aseta magneetit vuorottelevin napaisuuksin, liimaa epoksilla ja tasapainota.</li>
+      <li><strong>Moottorin asennus:</strong> Kiinnitä moottori tukevasti rungon alle ja kiekko akseliin.</li>
+      <li><strong>Astian sijoitus:</strong> Aseta astiapohja 5–12 mm päähän magneettipinnasta (läheisyys säätää kenttää).</li>
+      <li><strong>Täyttö ja testaus:</strong> Lisää neulat, vesi ja pesuaine, käynnistä moottori matalilla kierroksilla ja nouse vähitellen.</li>
+    </ol>
+
+    <h3>Optimointi ja vinkit</h3>
+    <ul>
+      <li>Etäisyys astian ja kiekon välillä 7–9 mm on yleensä optimi.</li>
+      <li>Hyvä liike muodostaa aaltoilevia pyörteitä – ei kasautumia.</li>
+      <li>Yksi väärin päin asennettu magneetti pilaa kentän tasaisuuden.</li>
+    </ul>
+
+    <h3>Edistynyt ratkaisu – Halbach‑array</h3>
+    <p>
+      Halbach‑asettelu keskittää magneettikentän yhden puolen suuntaan ja heikentää toista, 
+      mikä tuottaa jopa 2‑kertaisen tehon aktiiviselle puolelle. 
+      8–16 segmentin Halbach‑rengas luo tasaisemman ja voimakkaamman kentän.
+    </p>
+
+    <h3>Käyttö ja prosessointi</h3>
+    <ul>
+      <li>Lisää kappaleita enintään 20–30 % astian tilavuudesta.</li>
+      <li>Käsittelyaika 20–90 minuuttia riippuen materiaalista.</li>
+      <li>Tarkista tulos säännöllisesti – hienosäädä nopeutta ja etäisyyttä.</li>
+    </ul>
+
+    <h3>Turvallisuus</h3>
+    <ul>
+      <li>Käytä suojalaseja ja pidä sormet loitolla magneettikiekosta.</li>
+      <li>Voimakkaat neodyymimagneetit puristavat – käsittele varovasti.</li>
+      <li>Älä käytä laitetta sydämentahdistimen lähellä.</li>
+    </ul>
+
+    <h3>Käytännön ansaintamallit</h3>
+    <ul>
+      <li><strong>Alihankintapalvelu:</strong> pienet koneistamot, 3D‑tulostajat, korusepät.</li>
+      <li><strong>Oma tuote:</strong> viimeistellyt metalliosat tai mekaaniset komponentit.</li>
+      <li><strong>Osaamispohjainen työ:</strong> prototyypit, yksittäiskappaleet ja nopeat toimitukset.</li>
+    </ul>
+
+    <blockquote>
+      "Työkalu on vain puolet ratkaisua – toinen puolisko on osaaminen, joka rakentaa sen."
+    </blockquote>
+
+    <p>
+      Magneettikiillotuskone on esimerkki siitä, että pienestä projektista voi tulla 
+      todellinen toimeentulon lähde. Se on tekemisen ja oppimisen alusta, ei pelkkä laite.
+    </p>
+  </main>
+
+  <button id="backToTop" title="Takaisin ylös">↑</button>
+
+  <footer>
+    © 2026 Seurausten Talo | 
+    <a href="ratkaisut.html">Palaa Ratkaisut‑sivulle</a>
+  </footer>
+
+  <script>
+    const topBtn=document.getElementById("backToTop");
+    window.addEventListener("scroll",()=>{topBtn.style.display=window.scrollY>400?"block":"none";});
+    topBtn.addEventListener("click",()=>{window.scrollTo({top:0,behavior:"smooth"});});
+  </script>
+</body>
+</html>
+
