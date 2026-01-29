@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Seurausten Talo – Valtion simulaatio</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background: linear-gradient(#f8fafc, #eef2ff);
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 4px;
+    }
+    .subtitle {
+      text-align: center;
+      color: #475569;
+      margin-bottom: 24px;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .panel {
+      background: white;
+      border-radius: 14px;
+      padding: 22px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+    .panel h2 {
+      margin-top: 0;
+    }
+    .slider-group {
+      margin-bottom: 16px;
+    }
+    label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+    input[type=range] {
+      width: 100%;
+    }
+    .hint {
+      font-size: 12px;
+      color: #64748b;
+    }
+    button {
+      padding: 14px 18px;
+      border-radius: 10px;
+      border: none;
+      background: #1e40af;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 12px;
+    }
+    button:hover {
+      background: #1d4ed8;
+    }
+    .result {
+      padding: 22px;
+      border-radius: 14px;
+      text-align: center;
+      font-size: 18px;
+      margin-top: 16px;
+      line-height: 1.4;
+    }
+    .chaos {
+      background: #fee2e2;
+      color: #7f1d1d;
+      border: 2px solid #fecaca;
+    }
+    .recovery {
+      background: #dcfce7;
+      color: #14532d;
+      border: 2px solid #bbf7d0;
+    }
+    .house {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .room {
+      border: 2px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 14px;
+      text-align: center;
+      font-weight: 600;
+    }
+    .room.weak {
+      border-color: #ef4444;
+      background: #fff1f2;
+    }
+    .roof {
+      grid-column: 1 / -1;
+      background: linear-gradient(#e0f2fe, #bae6fd);
+      border-radius: 14px;
+      padding: 14px;
+      text-align: center;
+      font-weight: 700;
+    }
+    .narrative {
+      margin-top: 12px;
+      font-size: 14px;
+      color: #334155;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Seurausten Talo</h1>
+<div class="subtitle">Valtio on yhtä vahva kuin sen heikoin lenkki</div>
+
+<div class="container">
+
+  <div class="panel">
+    <h2>Päätöksenteko</h2>
+
+    <div class="slider-group">
+      <label>Ihmisten palautumiskyky</label>
+      <input id="human" type="range" min="0" max="1" step="0.05" value="0.4" />
+      <div class="hint">Uupumus, mielenterveys, arjen kestävyys</div>
+    </div>
+
+    <div class="slider-group">
+      <label>Yhteiskunnallinen luottamus</label>
+      <input id="social" type="range" min="0" max="1" step="0.05" value="0.45" />
+      <div class="hint">Luottamus instituutioihin ja toisiin ihmisiin</div>
+    </div>
+
+    <div class="slider-group">
+      <label>Luonnon uusiutumiskyky</label>
+      <input id="natural" type="range" min="0" max="1" step="0.05" value="0.3" />
+      <div class="hint">Ekosysteemien kantokyky ja palautuminen</div>
+    </div>
+
+    <div class="slider-group">
+      <label>Päätöksenteon tahti</label>
+      <input id="tempo" type="range" min="0" max="1" step="0.05" value="0.8" />
+      <div class="hint">Kuinka nopeasti päätöksiä viedään läpi</div>
+    </div>
+
+    <button onclick="runSimulation()">Aja päätös</button>
+
+    <div id="result" class="result"></div>
+  </div>
+
+  <div class="panel">
+    <h2>Seurausten talo</h2>
+    <div class="house">
+      <div class="roof">Harmonia / Sopusointu</div>
+      <div id="room1" class="room">1. Kielto<br><small>Rajat & ihmisarvo</small></div>
+      <div id="room2" class="room">2. Seuranta<br><small>Heikoin lenkki</small></div>
+      <div id="room3" class="room">3. Oppiminen<br><small>Ennen kriisiä</small></div>
+      <div id="room4" class="room">4. Tahti<br><small>Luonnon sykli</small></div>
+    </div>
+    <div id="narrative" class="narrative"></div>
+  </div>
+
+</div>
+
+<script>
+function runSimulation() {
+  const human = parseFloat(document.getElementById('human').value);
+  const social = parseFloat(document.getElementById('social').value);
+  const natural = parseFloat(document.getElementById('natural').value);
+  const tempo = parseFloat(document.getElementById('tempo').value);
+
+  const capitals = { human, social, natural };
+  let weakest = 'human';
+  let weakestValue = human;
+
+  for (const key in capitals) {
+    if (capitals[key] < weakestValue) {
+      weakest = key;
+      weakestValue = capitals[key];
+    }
+  }
+
+  document.querySelectorAll('.room').forEach(r => r.classList.remove('weak'));
+  document.getElementById('room2').classList.add('weak');
+
+  const resultDiv = document.getElementById('result');
+  const narrative = document.getElementById('narrative');
+
+  if (tempo > weakestValue) {
+    resultDiv.className = 'result chaos';
+    resultDiv.innerHTML = '<strong>KAAOS</strong><br>Tahti ylittää heikoimman lenkin kestokyvyn.';
+    narrative.innerHTML = 'Päätöksenteko eteni nopeammin kuin ' + weakest + '-pääoma pystyi palautumaan. Järjestelmä reagoi kriisillä ja pakottaa palaamaan rajoihin.';
+  } else {
+    resultDiv.className = 'result recovery';
+    resultDiv.innerHTML = '<strong>PALAUTUMINEN</strong><br>Tahti on sovitettu heikoimman mukaan.';
+    narrative.innerHTML = 'Päätöksenteon tahti kunnioittaa ' + weakest + '-pääoman palautumista. Järjestelmä pysyy koossa ja mahdollistaa kestävän jatkon.';
+  }
+}
+</script>
+
+</body>
+</html>
