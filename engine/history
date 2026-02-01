@@ -1,0 +1,18 @@
+{
+  id: "string",
+  name: "string",
+  region: "string",
+  timeframe: "string",
+  triggeringPattern: {
+    weakestLink: "human | social | natural | political | financial | built | cultural",
+    silentDecay: true | false,
+    rhythmMismatch: true | false
+  },
+  observedOutcome: {
+    shortTerm: "string",
+    midTerm: "string",
+    longTerm: "string"
+  },
+  resonanceTags: ["luottamus", "ylitahti", "normalisoitu_kärsimys"],
+  notes: "string"
+}
