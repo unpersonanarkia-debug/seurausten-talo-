@@ -1,0 +1,74 @@
+[
+  {
+    "id": "weimar_germany",
+    "name": "Weimarin tasavalta",
+    "region": "Saksa",
+    "timeframe": "1919–1933",
+    "triggeringPattern": {
+      "weakestLink": "social",
+      "silentDecay": true,
+      "rhythmMismatch": true
+    },
+    "observedOutcome": {
+      "shortTerm": "Instituutiot toimivat nimellisesti, mutta luottamus mureni.",
+      "midTerm": "Polarisaatio ja radikalisoituminen normalisoituivat.",
+      "longTerm": "Demokratia romahti laillista tietä."
+    },
+    "resonanceTags": ["luottamuspula", "normalisoitu_epävakaus"],
+    "notes": "Ei äkillinen romahdus vaan pitkä rapautuminen."
+  },
+  {
+    "id": "soviet_union",
+    "name": "Neuvostoliitto",
+    "region": "Itä-Eurooppa",
+    "timeframe": "1960–1991",
+    "triggeringPattern": {
+      "weakestLink": "economic",
+      "silentDecay": true,
+      "rhythmMismatch": true
+    },
+    "observedOutcome": {
+      "shortTerm": "Järjestelmä näytti vakaalta ja kontrolloidulta.",
+      "midTerm": "Tehottomuus ja kyynisyys institutionalisoituivat.",
+      "longTerm": "Äkillinen romahdus ilman selkeää ulkoista iskua."
+    },
+    "resonanceTags": ["hiljainen_rapautuminen", "näennäinen_vakaus"],
+    "notes": "Hiljainen kuolema ennen äkillistä loppua."
+  },
+  {
+    "id": "us_financial_crisis",
+    "name": "Finanssikriisi",
+    "region": "Yhdysvallat / globaali",
+    "timeframe": "2000–2008",
+    "triggeringPattern": {
+      "weakestLink": "financial",
+      "silentDecay": true,
+      "rhythmMismatch": true
+    },
+    "observedOutcome": {
+      "shortTerm": "Kasvu ja vauraus jatkuivat.",
+      "midTerm": "Riskit kasautuivat näkymättömästi.",
+      "longTerm": "Kaaos palautti rajat pakotetusti."
+    },
+    "resonanceTags": ["ylitahti", "mittarilusio"],
+    "notes": "Seuranta petti, koska se mittasi väärää asiaa."
+  },
+  {
+    "id": "climate_global",
+    "name": "Ilmastokriisi",
+    "region": "Globaali",
+    "timeframe": "1980–",
+    "triggeringPattern": {
+      "weakestLink": "natural",
+      "silentDecay": true,
+      "rhythmMismatch": true
+    },
+    "observedOutcome": {
+      "shortTerm": "Taloudellinen kasvu jatkui.",
+      "midTerm": "Ekosysteemit heikkenivät.",
+      "longTerm": "Korjaus tapahtuu vain kaaoksen tai pakon kautta."
+    },
+    "resonanceTags": ["luonnon_ylikuormitus", "hidas_kriisi"],
+    "notes": "Klassinen esimerkki hiljaisesta rapautumisesta."
+  }
+]
